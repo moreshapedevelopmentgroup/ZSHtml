@@ -618,4 +618,41 @@ function initCUPlayer(sitePath, divId, videoSrc) {
 }
 
 // 主页js
-// 导航栏
+
+// 输入框对焦消除文字
+function valueDisplay(element, text) {
+	$(element).focusin(function () {
+		if ($(this).val() === text) {
+			$(this).val('')
+			$(this).css('color','#000')
+		}
+	})
+	$(element).focusout(function () {
+		if ($(this).val() === '') {
+			$(this).val(text)
+			$(this).css('color','#606266')
+		}
+	})
+}
+
+function textDisplay(element, text) {
+	$(element).focusin(function () {
+		if ($(this).text() === text) {
+			$(this).text('')
+			$(this).css('color','#000')
+		}
+	})
+	$(element).focusout(function () {
+		if ($(this).text() === '') {
+			$(this).text(text)
+			$(this).css('color','#606266')
+		}
+	})
+}
+
+// 每间隔x个元素添加样式
+function eqcss(element,x,css) {
+	for (var i = 0; i < $(element).length; i++) {
+		$(element).eq((i+1)*x-1).css(css)
+	}
+}

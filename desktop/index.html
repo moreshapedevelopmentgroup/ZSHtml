@@ -68,16 +68,56 @@
                     <div class="panel-align">
                         <h3 class="panel-h3">海量套餐搜一搜</h3>
                         <div class="panel-search">
-                            <input type="search">
-                            <img src="../images/panel-search.jpg">
+                            <input type="search" value="请输入商品号">
+                            <img class="search-btn" src="../images/panel-search.jpg">
                         </div>
-                        <ul>
+                        <ul class="panel-hot-search clearfix">
                             <li><a href="#">电视背景</a></li>
                             <li><a href="#">北欧风</a></li>
                             <li><a href="#">新中式</a></li>
                             <li><a href="#">护墙板</a></li>
                         </ul>
-                        <div></div>
+                        <div class="clearfix">
+                            <div class="panel-brand float-left">
+                                <ul class="panel-brand-logo clearfix">
+                                    <li><img src="../images/logo (1).jpg"></li>
+                                    <li><img src="../images/logo (2).jpg"></li>
+                                    <li><img src="../images/logo (3).jpg"></li>
+                                    <li><img src="../images/logo (4).jpg"></li>
+                                    <li><img src="../images/logo (5).jpg"></li>
+                                    <li><img src="../images/logo (6).jpg"></li>
+                                    <li><img src="../images/logo (7).jpg"></li>
+                                    <li><img src="../images/logo (8).jpg"></li>
+                                    <li><img src="../images/logo (9).jpg"></li>
+                                    <li><img src="../images/logo (10).jpg"></li>
+                                    <li><img src="../images/logo (11).jpg"></li>
+                                    <li><img src="../images/logo (12).jpg"></li>
+                                    <li><img src="../images/logo (1).jpg"></li>
+                                    <li><img src="../images/logo (2).jpg"></li>
+                                    <li><img src="../images/logo (3).jpg"></li>
+                                    <li><img src="../images/logo (4).jpg"></li>
+                                </ul>
+                                <h3>100+品牌商品套餐买，省钱又好看</h3>
+                                <p>与品牌厂家直接合作，精选每个行业极具竞争力的龙头企业，全面保障产品质量</p>
+                            </div>
+                            <form class="panel-form float-left">
+                                <ul class="clearfix">
+                                    <li><a href="#">我要装修</a></li>
+                                    <li><a href="#">申请样板房</a></li>
+                                    <li><a href="#">介绍客户</a></li>
+                                    <li><a href="#">申请代理</a></li>
+                                    <li><a href="#">我是装修工</a></li>
+                                    <li><a href="#">要看样板房</a></li>
+                                </ul>
+                                <div class="panel-form-box">
+                                    <textarea>请补充您的需求</textarea>
+                                    <div class="panel-phone">
+                                        <input type="text">
+                                    </div>
+                                    <input type="button" value="发布需求">
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -91,6 +131,16 @@
     <script src="../js/jquery.flexslider-min.js"></script>
     <script src="../js/jqslider.js"></script>
     <script src="../js/common.js"></script>
+    <script>
+        valueDisplay('.panel-align .panel-search input', '请输入商品号')
+        textDisplay('.panel-align .panel-form textarea', '请补充您的需求')
+        eqcss('.panel-align .panel-brand .panel-brand-logo li', 4, {
+            'margin-right': '0'
+        })
+        eqcss('.panel-align .panel-form li a', 3, {
+            'margin-right': '0'
+        })
+    </script>
 </body>
 
 </html>
