@@ -650,9 +650,35 @@ function textDisplay(element, text) {
 	})
 }
 
-// 每间隔x个元素添加样式
-function eqcss(element,x,css) {
-	for (var i = 0; i < $(element).length; i++) {
-		$(element).eq((i+1)*x-1).css(css)
+// 横向滚动
+$('.product-dot ul').append(dot());
+
+function dot() {
+	dot = '<a><li class="active"></li></a>'
+	var uil = $('.product-ul li').length;
+
+	if(uil > 3) {
+		if(uil % 3 == 0) {
+			dotl = parseInt(uil / 3) - 1;
+		} else {
+			dotl = parseInt(uil / 3);
+		}
+	} else {
+		dotl = 0;
+		$('.product-dot ul').hide();
 	}
+	for(var i = 0; i < dotl; i++) {
+		dot += '<a><li></li></a>'
+	}
+	return dot
 }
+
+$('.product-ul').width((dotl + 1) * 1149)
+
+$('.product-dot a').click(function() {
+	$(this).children().addClass('active')
+	$(this).siblings().children().removeClass('active');
+	$('.product-list').stop().animate({
+		scrollLeft: $(this).index() * 1149
+	}, 800);
+});
