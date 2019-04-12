@@ -624,13 +624,13 @@ function valueDisplay(element, text) {
 	$(element).focusin(function () {
 		if ($(this).val() === text) {
 			$(this).val('')
-			$(this).css('color','#000')
+			$(this).css('color', '#000')
 		}
 	})
 	$(element).focusout(function () {
 		if ($(this).val() === '') {
 			$(this).val(text)
-			$(this).css('color','#606266')
+			$(this).css('color', '#606266')
 		}
 	})
 }
@@ -639,13 +639,13 @@ function textDisplay(element, text) {
 	$(element).focusin(function () {
 		if ($(this).text() === text) {
 			$(this).text('')
-			$(this).css('color','#000')
+			$(this).css('color', '#000')
 		}
 	})
 	$(element).focusout(function () {
 		if ($(this).text() === '') {
 			$(this).text(text)
-			$(this).css('color','#606266')
+			$(this).css('color', '#606266')
 		}
 	})
 }
@@ -657,8 +657,8 @@ function dot() {
 	dot = '<a><li class="active"></li></a>'
 	var uil = $('.product-ul li').length;
 
-	if(uil > 3) {
-		if(uil % 3 == 0) {
+	if (uil > 3) {
+		if (uil % 3 == 0) {
 			dotl = parseInt(uil / 3) - 1;
 		} else {
 			dotl = parseInt(uil / 3);
@@ -667,18 +667,70 @@ function dot() {
 		dotl = 0;
 		$('.product-dot ul').hide();
 	}
-	for(var i = 0; i < dotl; i++) {
+	for (var i = 0; i < dotl; i++) {
 		dot += '<a><li></li></a>'
 	}
 	return dot
 }
-
 $('.product-ul').width((dotl + 1) * 1149)
-
-$('.product-dot a').click(function() {
+$('.product-dot a').click(function () {
 	$(this).children().addClass('active')
 	$(this).siblings().children().removeClass('active');
 	$('.product-list').stop().animate({
 		scrollLeft: $(this).index() * 1149
 	}, 800);
 });
+
+// 给元素添加可视区域高度并随窗口大小改变而改变
+function clientHeight(dom, num) {
+	var hh = document.documentElement.clientHeight
+	var div = $(dom)
+	if (num === undefined) {
+		div.height(hh)
+	} else if (num.indexOf('-')) {
+		div.height(hh - parseFloat(num))
+	} else if (num.indexOf('+')) {
+		div.height(hh + parseFloat(num))
+	} else {
+		div.height(hh)
+	}
+	$(window).resize(function () {
+		hh = document.documentElement.clientHeight
+		if (num === undefined) {
+			div.height(hh)
+		} else if (num.indexOf('-')) {
+			div.height(hh - parseFloat(num))
+		} else if (num.indexOf('+')) {
+			div.height(hh + parseFloat(num))
+		} else {
+			div.height(hh)
+		}
+	})
+}
+
+// 给元素添加可视区域宽度并随窗口大小改变而改变
+function clientWidth(dom, num) {
+	var ww = document.documentElement.clientWidth
+	var div = $(dom)
+	if (num === undefined) {
+		div.width(ww)
+	} else if (num.indexOf('-')) {
+		div.width(ww - parseFloat(num))
+	} else if (num.indexOf('+')) {
+		div.width(ww + parseFloat(num))
+	} else {
+		div.width(ww)
+	}
+	$(window).resize(function () {
+		ww = document.documentElement.clientWidth
+		if (num === undefined) {
+			div.width(ww)
+		} else if (num.indexOf('-')) {
+			div.width(ww - parseFloat(num))
+		} else if (num.indexOf('+')) {
+			div.width(ww + parseFloat(num))
+		} else {
+			div.width(ww)
+		}
+	})
+}
