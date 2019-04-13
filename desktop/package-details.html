@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>套餐首页</title>
+    <title>套餐详情</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -28,9 +28,7 @@
             </div>
         </div>
         <div class="header-nav header-fixed clearfix">
-            <div class="header-logo float-left">
-                <img src="../images/header-logo.jpg">
-            </div>
+            <img class="float-left" src="../images/header-logo.png">
             <ul class="nav-list nav-fixed float-left clearfix">
                 <li><a href="#">主材套餐</a>
                     <div class="nav-list-badge">HOT</div>
@@ -51,31 +49,36 @@
     <section>
         <div class="blue-line"></div>
         <div class="package-content">
-                <div class="left-nav">
-                    <div class="tips">
-                        局部套餐折后再折<br>
-                        2018-12-1日起满3000返200
-                    </div>
-                    <div class="left-nav-titel"><img src="../images/Burger-menu.png">全屋搭配套餐</div>
-                    <ul class="left-nav-list">
-                        <li><a href="#">全部套餐</a></li>
-                        <li><a href="#">新现代风格</a></li>
-                        <li><a href="#">北欧风格</a></li>
-                        <li><a href="#">新中式风格</a></li>
-                        <li><a href="#">欧美风格</a></li>
-                        <li><a href="#">极简风格</a></li>
-                        <li><a href="#">原木风格</a></li>
-                        <li><a href="#">港式风格</a></li>
-                        <li><a class="mb-0" href="#">其他</a></li>
-                    </ul>
+            <div class="left-nav-details">
+                <div class="left-nav-titel">主材套餐<img src="../images/Burger-menu.png"></div>
+                <ul class="left-nav-list">
+                    <li><a href="#">一、图片展示</a></li>
+                    <li><a href="#">二、设计意图</a></li>
+                    <li><a href="#">三、客厅</a></li>
+                    <li><a href="#">四、卧室</a></li>
+                    <li><a href="#">五、厨房</a></li>
+                    <li><a href="#">六、卫生间</a></li>
+                    <li><a href="#">七、天花材料</a></li>
+                    <li><a href="#">八、线条和装饰画</a></li>
+                    <li><a href="#">九、全屋灯饰</a></li>
+                    <li><a class="mb-0" href="#">十、全屋窗帘</a></li>
+                </ul>
+                <button class="service-btn">咨询客服</button>
+                <div class="tips">
+                    全屋套餐折后再折<br>
+                    2018-12-1日起满3000返200
                 </div>
-                <div class="package-content-list">
-                    <div class="common-box"></div>
-                </div>
+                <div class="buy">已选13个商品</div>
+                <button class="buy-btn">一键加入装修清单</button>
             </div>
+            <div class="package-content-list-details">
+                <div class="common-box"></div>
+            </div>
+        </div>
     </section>
     <!-- 尾部 -->
     <footer>
+        <div class="blue-line"></div>
         <div class="certification">
             <ul class="certification-list common-box clearfix">
                 <li class="clearfix">
@@ -167,10 +170,10 @@
     <script src="../js/jqslider.js"></script>
     <script src="../js/common.js"></script>
     <script>
-        clientHeight('.left-nav', '-515')
-        clientHeight('.package-content-list', '-515')
-        clientHeight('.package-content', '-515')
-        clientWidth('.package-content-list', '-310')
+        clientHeight('.left-nav-details', '-137')
+        clientHeight('.package-content-list-details', '-137')
+        clientHeight('.package-content', '-137')
+        clientWidth('.package-content-list-details', '-220')
     </script>
 </body>
 

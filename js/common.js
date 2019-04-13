@@ -4,8 +4,8 @@
 *需要结合jquery和Validform和artdialog一起使用
 ----------------------------------------------------------*/
 
-/*检测浏览器方法
-------------------------------------------------*/
+// /*检测浏览器方法
+// ------------------------------------------------*/
 // var pageurl = window.location.search;
 // if (pageurl == '?m2w') {
 // 	addCookie('m2wcookie', '1', 0);
@@ -13,9 +13,9 @@
 // if (getCookie('m2wcookie') != '1' && browserRedirect()) {
 // 	location.href = 'http://m.dtcms.net';
 // }
-/*工具类方法
-------------------------------------------------*/
-//检测是否移动设备来访
+// /*工具类方法
+// ------------------------------------------------*/
+// //检测是否移动设备来访
 // function browserRedirect() {
 // 	var sUserAgent = navigator.userAgent.toLowerCase();
 // 	var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
