@@ -4236,6 +4236,11 @@ body {
     width: 1182px;
 }
 
+.vido-box {
+    margin: 0 auto;
+    width: 1175px;
+}
+
 .br-0 {
     border-right: 0 !important;
 }
@@ -5689,6 +5694,7 @@ body {
 .goods-content-bg img {
     margin-top: 12px;
 }
+
 /* 商品详情样式结束 */
 
 /* 特卖会样式 */
@@ -5727,6 +5733,7 @@ body {
 .sale-list li a {
     margin-bottom: 15px;
 }
+
 /* 特卖会样式结束 */
 
 /* 我的清单样式 */
@@ -5801,4 +5808,245 @@ body {
 .mylist-content-list .paragraph {
     text-indent: 2em;
 }
+
+.mylist-content-list .top-bg {
+    margin-top: 50px;
+    padding-top: 16px;
+    padding-left: 60px;
+    height: 46px;
+    background: url(../images/mylist-top-bg.jpg);
+    font-size: 18px;
+    text-align: left;
+    color: #fff;
+    box-sizing: content-box;
+    cursor: default;
+}
+
+.mylist-content-list .mylist-info {
+    margin-top: 1px;
+    padding-bottom: 28px;
+    background-color: #fff;
+    text-align: left;
+}
+
+.mylist-content-list .mylist-info .info-top {
+    padding-top: 32px;
+    text-align: left;
+}
+
+.mylist-content-list .mylist-info .info-top img {
+    margin-left: 66px;
+    margin-right: 16px;
+}
+
+.mylist-content-list .mylist-info .info-top span {
+    font-size: 16px;
+    line-height: 59px;
+    cursor: default;
+}
+
+.mylist-content-list .mylist-info .info-top .zhname {
+    color: #a6a6a6;
+}
+
+.mylist-content-list .mylist-info .info-top .time {
+    margin-left: 440px;
+}
+
+.mylist-content-list .mylist-info .info-top .type {
+    margin-left: 86px;
+}
+
+.mylist-content-list .mylist-info .info-designer {
+    margin-top: 16px;
+}
+
+.mylist-content-list .mylist-info .info-designer .img-border {
+    position: relative;
+    margin-left: 40px;
+    width: 370px;
+    height: 200px;
+    border: 1px solid #d6d6d6;
+}
+
+.mylist-content-list .mylist-info .info-designer .img-border img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 188px;
+    margin: -94px 0 0 -175px;
+}
+
+.mylist-content-list .mylist-info .info-designer .info-right {
+    width: 820px;
+}
+
+.mylist-content-list .mylist-info .info-designer .tips-gray {
+    margin-bottom: 16px;
+    margin-left: 62px;
+    margin-right: 50px;
+    font-size: 12px;
+    color: #979797;
+    cursor: default;
+}
+
+.mylist-content-list .mylist-info .info-designer .tips {
+    margin-bottom: 16px;
+    margin-left: 62px;
+    margin-right: 50px;
+    font-size: 14px;
+    color: #010101;
+    cursor: default;
+}
+
+.mylist-content-list .mylist-info .info-designer .price {
+    margin-bottom: 16px;
+    margin-left: 62px;
+    margin-right: 50px;
+    font-size: 18px;
+    color: #ff0101;
+    cursor: default;
+}
+
+.mylist-content-list .mylist-info .info-designer .ml {
+    margin-left: 62px;
+}
+
+.mylist-content-list .mylist-info .info-designer button {
+    margin-left: 20px;
+    width: 160px;
+    height: 43px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    outline: none;
+    cursor: pointer;
+}
+
+.mylist-content-list .mylist-info .info-designer .deposit {
+    border: 1px solid #ff7a29;
+    color: #ff7a29;
+}
+
+.mylist-content-list .mylist-list li {
+    margin-top: 1px;
+    margin-right: 1px;
+    float: left;
+    width: 410px;
+    height: 440px;
+    background-color: #fff;
+}
+
+.mylist-content-list .mylist-list li .need {
+    margin-top: 50px;
+    margin-left: 60px;
+    height: 28px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.mylist-content-list .mylist-list input {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.mylist-content-list .mylist-list input:checked {
+    background-color: #ffd119;
+}
+
+.mylist-content-list .mylist-list .badge {
+    margin-top: 50px;
+    margin-right: 60px;
+    padding: 0;
+    width: 72px;
+    height: 28px;
+    background-color: #ff0000;
+    font-size: 14px;
+    line-height: 28px;
+    color: #fff;
+    cursor: default;
+}
+
+.mylist-content-list .mylist-list .style {
+    height: 22px;
+    line-height: 22px;
+}
+
+.mylist-content-list .mylist-list .style span {
+    font-size: 14px;
+    color: #c5c5c5;
+    cursor: default;
+}
+
+.mylist-content-list .mylist-list .style .ml {
+    margin-left: 80px;
+}
+
+.mylist-content-list .mylist-list .style .mr {
+    margin-right: 80px;
+}
+
+.mylist-content-list .mylist-list .price {
+    margin-top: 22px;
+    font-size: 18px;
+    cursor: default;
+}
+
+.mylist-content-list .mylist-list .price .price-red {
+    color: #ff0000;
+}
+
+.mylist-content-list .mylist-list .price .price-gray {
+    padding-left: 20px;
+    color: #909090;
+    text-decoration: line-through;
+}
+
+.mylist-content-list .bottom-bg {
+    margin-top: 1px;
+    margin-bottom: 58px;
+    width: 1232px;
+    height: 90px;
+    background: url(../images/mylist-bottom-bg.jpg)
+}
+
+.mylist-content-list .bottom-bg button {
+    margin-top: 27px;
+    width: 165px;
+    height: 36px;
+    background-color: #ff7019;
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: 36px;
+    color: #fff;
+    cursor: pointer;
+}
 /* 我的清单样式结束 */
+
+/* 装修视频样式 */
+.vido-bg {
+    background-color: #292929;
+}
+
+.vido-bg .vido-content {
+    margin-top: 14px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #fff;
+}
+
+.vido-bg .vido-content .subject-titel {
+    margin-top: 56px;
+    font-size: 24px;
+    color: #394866;
+    text-align: left;
+    cursor: default;
+}
+/* 装修视频样式结束 */
