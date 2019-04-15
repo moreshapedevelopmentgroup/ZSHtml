@@ -4241,6 +4241,11 @@ body {
     width: 1175px;
 }
 
+.vidoplay-box {
+    margin: 0 auto;
+    width: 1920px;
+}
+
 .br-0 {
     border-right: 0 !important;
 }
@@ -6028,6 +6033,7 @@ body {
     color: #fff;
     cursor: pointer;
 }
+
 /* 我的清单样式结束 */
 
 /* 装修视频样式 */
@@ -6049,4 +6055,150 @@ body {
     text-align: left;
     cursor: default;
 }
+
+.vido-bg .vido-content .subject-list {
+    margin-top: 20px;
+}
+
+.vido-bg .vido-content .subject-list li {
+    margin-top: 18px;
+    float: left;
+}
+
+.vido-bg .vido-content .subject-list li a {
+    display: block;
+    margin-right: 22px;
+    width: 277px;
+    height: 92px;
+    background-color: #0ba3cf;
+    font-size: 24px;
+    line-height: 92px;
+    color: #fff;
+}
+
+.vido-bg .vido-content .vido-titel {
+    margin-top: 56px;
+    font-size: 24px;
+    color: #4c4c4c;
+    text-align: left;
+    cursor: default;
+}
+
+.vido-bg .vido-content .vido-list {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+.vido-bg .vido-content .vido-list li {
+    position: relative;
+    margin-top: 32px;
+    margin-right: 28px;
+    float: left;
+}
+
+.vido-bg .vido-content .vido-list li .shade {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -92px 0 0 -180px;
+    width: 360px;
+    height: 184px;
+    background-color: #fff;
+    opacity: 0.8;
+    text-align: center;
+    line-height: 184px;
+    cursor: pointer;
+}
+
+.vido-bg .vido-content .vido-list li .shade .play {
+    margin-left: 24px;
+}
 /* 装修视频样式结束 */
+
+/* 装修视频播放页样式 */
+.vidoplay-bg {
+    width: 100%;
+    height: 820px;
+    background-color: #1a1a1a;
+}
+
+.vidoplay-bg .left {
+    position: relative;
+    width: 412px;
+    height: 820px;
+}
+
+.vidoplay-bg .left .player {
+    margin-top: 40px;
+    font-size: 18px;
+    color: #fff;
+    cursor: default;
+}
+
+.vidoplay-bg .left .player>img {
+    margin-right: 12px;
+}
+
+.vidoplay-bg .left .recommend {
+    margin: 22px auto 0 auto;
+    padding-left: 24px;
+    width: 344px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #394866;
+    font-size: 18px;
+    text-align: left;
+    line-height: 50px;
+    color: #fff;
+    box-sizing: content-box;
+    cursor: default;
+}
+
+.vidoplay-bg .left>img {
+    margin-top: 18px;
+}
+
+.vidoplay-bg .left .titel {
+    margin-top: 30px;
+    padding: 0 28px;
+    font-size: 18px;
+    text-align: left;
+    color: #fff;
+    cursor: default;
+}
+
+.vidoplay-bg .left .left-content {
+    padding: 10px 28px;
+    font-size: 14px;
+    text-align: left;
+    color: #979797;
+    cursor: default;
+}
+
+.vidoplay-bg .left .more-btn {
+    position: absolute;
+    left: 50%;
+    margin: 200px 0 0 -172px;
+    width: 344px;
+    height: 58px;
+    border-radius: 10px;
+    background-color: #b28850;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+.vidoplay-bg .middle {
+    margin-top: 40px;
+    width: 1108px;
+}
+
+.vidoplay-bg .right {
+    width: 400px;
+}
+
+.vidoplay-bg .right .titel {
+    
+}
+/* 装修视频播放页样式结束 */
