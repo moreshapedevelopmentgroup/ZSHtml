@@ -4250,6 +4250,11 @@ body {
     width: 780px;
 }
 
+.members-order-top-box {
+    width: 1040px;
+    margin: 0 auto;
+}
+
 .br-0 {
     border-right: 0 !important;
 }
@@ -6613,4 +6618,119 @@ body {
     font-size: 14px;
     color: #707070;
 }
+
+.members-content-list .input {
+    margin-top: 10px;
+    margin-left: 100px;
+    padding: 0 20px;
+    width: 568px;
+    height: 44px;
+    border-radius: 16px;
+    background-color: #f0f0f0;
+    font-size: 14px;
+    outline: none;
+}
+
+.members-content-list .members-box>.important {
+    margin-right: 60px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.members-content-list .titel .password {
+    margin-left: 308px;
+    font-size: 14px;
+}
+
+.members-content-list .select {
+    margin-left: 30px;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #ededed;
+    border-radius: 16px;
+    outline: none;
+}
+
+.members-content-list .select-start {
+    margin-left: 100px;
+}
+
+.members-content-list .save {
+    display: block;
+    margin: 40px auto;
+    width: 281px;
+    height: 52px;
+    background-color: #4eb1ea;
+    border-radius: 16px;
+    font-size: 18px;
+    line-height: 52px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
 /* 个人中心样式结束 */
+
+/* 个人中心订单详情页 */
+.members-order-top-box .top-titel {
+    padding: 52px 2px;
+    font-size: 24px;
+    cursor: default;
+}
+
+.members-order-top-box .order-img {
+    width: 352px;
+    height: 190px;
+}
+
+.members-order-top-box .order-info {
+    position: relative;
+    margin-left: 48px;
+    width: 350px;
+    height: 190px;
+    text-align: left;
+}
+
+.members-order-top-box .order-titel span {
+    font-size: 16px;
+    cursor: default;
+}
+
+.members-order-top-box .order-info>p {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #979797;
+    cursor: default;
+}
+
+.members-order-top-box .order-info .bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.members-order-top-box .order-info .bottom .state {
+    font-size: 14px;
+    color: #797979;
+    cursor: default;
+}
+
+.members-order-top-box .order-info .bottom .state .red {
+    color: #ff0000;
+}
+
+.members-order-top-box .order-info .bottom a {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #797979;
+}
+
+.members-order-top-box .order-info .bottom a:hover {
+    color: #ff0000;
+}
+
+.members-order-top-box .course {
+    margin-top: 46px;
+    font-size: 18px;
+    cursor: default;
+}
+/* 个人中心订单详情页结束 */
