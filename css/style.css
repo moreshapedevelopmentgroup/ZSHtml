@@ -4246,6 +4246,10 @@ body {
     width: 1920px;
 }
 
+.members-box {
+    width: 780px;
+}
+
 .br-0 {
     border-right: 0 !important;
 }
@@ -6113,6 +6117,7 @@ body {
 .vido-bg .vido-content .vido-list li .shade .play {
     margin-left: 24px;
 }
+
 /* 装修视频样式结束 */
 
 /* 装修视频播放页样式 */
@@ -6195,10 +6200,417 @@ body {
 }
 
 .vidoplay-bg .right {
+    position: relative;
     width: 400px;
+    text-align: left;
 }
 
-.vidoplay-bg .right .titel {
-    
+.vidoplay-bg .right>.titel {
+    margin-top: 40px;
+    margin-left: 44px;
+    font-size: 18px;
+    color: #fff;
+    cursor: default;
 }
+
+.vidoplay-bg .right .right-content {
+    margin: 34px auto 0 auto;
+    width: 321px;
+    height: 678px;
+    background-color: #131313;
+}
+
+.vidoplay-bg .right .right-content ul li a {
+    display: block;
+    padding: 18px 14px;
+    color: #fff;
+}
+
+.vidoplay-bg .right .right-content ul li a .badge {
+    margin-right: 4px;
+    padding: 0;
+    width: 30px;
+    height: 16px;
+    background-color: #737373;
+    text-align: center;
+    line-height: 16px;
+    font-size: 12px;
+    color: #131313;
+}
+
+.vidoplay-bg .right .right-content ul li a .titel {
+    height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #c4c4c4;
+}
+
+.vidoplay-bg .right .right-content ul li a .time {
+    margin-top: 6px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #737373;
+}
+
+.vidoplay-bg .right .right-content ul li a:hover .badge {
+    background-color: #21b7ff;
+}
+
+.vidoplay-bg .right .right-content ul li a:hover .titel {
+    color: #21b7ff;
+}
+
+.vidoplay-bg .right .right-content ul li a:hover .time {
+    color: #21b7ff;
+}
+
+.vidoplay-bg .right .right-content ul li hr {
+    margin: 0 auto;
+    width: 293px;
+    border-color: #2c2c2c;
+}
+
+.vidoplay-bg .right .right-content .login-look {
+    position: absolute;
+    left: 160px;
+    bottom: 34px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.vidoplay-bg .right .right-content .login-look:hover {
+    color: #21b7ff;
+}
+
+.vidoplay-list-bg {
+    background-color: #fff;
+}
+
+.vidoplay-list-bg .relevant {
+    padding-top: 58px;
+    padding-left: 6px;
+    font-size: 24px;
+    text-align: left;
+    color: #4c4c4c;
+    cursor: default;
+}
+
+.vidoplay-list-bg .vido-list {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+.vidoplay-list-bg .vido-list li {
+    position: relative;
+    margin-top: 32px;
+    margin-right: 28px;
+    float: left;
+}
+
+.vidoplay-list-bg .vido-list li .shade {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -92px 0 0 -180px;
+    width: 360px;
+    height: 184px;
+    background-color: #fff;
+    opacity: 0.8;
+    text-align: center;
+    line-height: 184px;
+    cursor: pointer;
+}
+
+.vidoplay-list-bg .vido-list li .shade .play {
+    margin-left: 24px;
+}
+
 /* 装修视频播放页样式结束 */
+
+/* 以图找材样式 */
+.find-bg {
+    padding-top: 8px;
+    background-color: #fff;
+}
+
+.find-bg .find-top {
+    height: 700px;
+    border: 1px solid #e5e3dd;
+    box-sizing: content-box;
+}
+
+.find-bg .find-top .find-up-img {
+    position: relative;
+    width: 948px;
+    height: 700px;
+}
+
+.find-bg .find-top .find-up-img .up-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -77px;
+    margin-left: -90px;
+    width: 180px;
+    height: 154px;
+    border: 1px solid #ebebeb;
+    background-color: #f7f7f7;
+    font-size: 72px;
+    line-height: 154px;
+    color: #878787;
+    cursor: pointer;
+}
+
+.find-bg .find-top .find-list {
+    width: 282px;
+    height: 700px;
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.find-bg .find-top .find-list .titel {
+    margin-top: 28px;
+    margin-left: 64px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    cursor: default;
+}
+
+.find-bg .find-top .find-list {
+    overflow: auto;
+}
+
+.find-bg .find-top .find-list::-webkit-scrollbar {
+    width: 6px;
+    background: #f1f1f1;
+}
+
+.find-bg .find-top .find-list::-webkit-scrollbar-thumb {
+    width: 4px;
+    border-radius: 6px;
+    background: #c1c1c1;
+}
+
+.find-bg .find-top .find-list ul {
+    margin-bottom: 32px;
+}
+
+.find-bg .find-top .find-list ul li {
+    margin-top: 32px;
+    margin-left: 64px;
+    font-size: 18px;
+    color: #000;
+    cursor: default;
+}
+
+.find-bg .find-top .find-list ul li input {
+    margin-right: 40px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #dcdcdc;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.find-bg .find-top .find-list ul li input:checked {
+    background-color: #ffd119;
+}
+
+.find-bg .info {
+    margin-top: 14px;
+    margin-left: 6px;
+    height: 38px;
+    font-size: 24px;
+    line-height: 38px;
+    cursor: default;
+}
+
+.find-bg .info input {
+    padding: 0 6px;
+    width: 204px;
+    height: 38px;
+    border: 1px solid #dadada;
+    background-color: #fafafa;
+    font-size: 20px;
+    line-height: 38px;
+    outline: none;
+}
+
+.find-bg .info>.name {
+    margin-left: 56px;
+}
+
+.find-bg .info>.agreed {
+    margin-left: 146px;
+}
+
+.find-bg .info>.agreed input {
+    margin-right: 28px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #dcdcdc;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.find-bg .info>.agreed input:checked {
+    background-color: #ffd119;
+}
+
+.find-bg .demand {
+    margin-top: 26px;
+    margin-left: 6px;
+    font-size: 24px;
+    text-align: left;
+    cursor: default;
+}
+
+.find-bg .demand textarea {
+    margin-left: 24px;
+    padding: 10px;
+    width: 1065px;
+    height: 78px;
+    border: 1px solid #dcdcdc;
+    background-color: #fafafa;
+    font-size: 14px;
+    vertical-align: top;
+    color: #606266;
+    outline: none;
+}
+
+.find-bg .up-btn {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 717px;
+    height: 52px;
+    border-radius: 4px;
+    background-color: #ffd418;
+    font-size: 24px;
+    line-height: 52px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* 以图找材样式结束 */
+
+/* 个人中心样式 */
+.members-nav {
+    width: 204px;
+    background-color: #ebebeb;
+    text-align: left;
+}
+
+.members-nav>.titel {
+    margin-top: 40px;
+    margin-left: 36px;
+    font-size: 18px;
+    color: #010101;
+    cursor: default;
+}
+
+.members-nav>img {
+    margin-top: 30px;
+    margin-left: 68px;
+    text-align: center;
+}
+
+.members-nav>.name {
+    margin-top: 10px;
+    margin-left: 82px;
+    font-size: 14px;
+    color: #000;
+    cursor: default;
+}
+
+.members-nav .left-nav-list {
+    margin-top: 42px;
+}
+
+.members-nav .left-nav-list li a {
+    padding-left: 36px;
+    color: #5e626a;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.members-nav .left-nav-list li a:hover {
+    background-color: #bdc1c8;
+    color: #5e626a;
+}
+
+.members-nav .members-nav-topbtn {
+    margin-top: 100px;
+}
+
+.members-nav button {
+    display:block;
+    margin:11px auto;
+    width: 155px;
+    height: 38px;
+    border-radius: 16px;
+    background-color: #b72e22;
+    line-height: 38px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.members-content-list {
+    left: 204px;
+    background-color: #fff;
+    text-align: left;
+}
+
+.members-content-list .personal {
+    margin-top: 76px;
+    font-size: 24px;
+    text-align: center;
+    cursor: default;
+}
+
+.members-content-list .titel {
+    margin-top: 62px;
+    margin-left: 100px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 18px;
+    cursor: default;
+}
+
+.members-content-list .titel>.id {
+    margin-left: 90px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #9d9d9d;
+}
+
+.members-content-list .titel>.important {
+    margin-right: 60px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.members-content-list .up-img {
+    margin-top: 24px;
+    margin-left: 254px;
+    width: 178px;
+    height: 178px;
+    background-color: #e8e8e8;
+    font-size: 72px;
+    line-height: 178px;
+    text-align: center;
+    color: #a2a2a2;
+    cursor: pointer;
+}
+
+.members-content-list .tips {
+    margin-top: 184px;
+    margin-left: 68px;
+    font-size: 14px;
+    color: #707070;
+}
+/* 个人中心样式结束 */

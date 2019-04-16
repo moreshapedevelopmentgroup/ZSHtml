@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>样板家</title>
+    <title>以图找材</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -51,51 +51,44 @@
         </div>
     </header>
     <section>
-        <div class="common-box">
-            <div>佛山明星工厂进驻峡江   零利润征集样板房<input type="button" value="立即报名"></div>
+        <div class="find-bg">
+            <div class="common-box">
+                <form>
+                    <div class="clearfix find-top">
+                        <div class="find-up-img float-left">
+                            <div class="up-btn">+</div>
+                        </div>
+                        <div class="find-list float-left">
+                            <div class="titel">您想要找的</div>
+                            <ul>
+                                <li><input type="checkbox">瓷砖</li>
+                                <li><input type="checkbox">木地板</li>
+                                <li><input type="checkbox">橱柜定制</li>
+                                <li><input type="checkbox">金属和线条</li>
+                                <li><input type="checkbox">卫浴</li>
+                                <li><input type="checkbox">灯具</li>
+                                <li><input type="checkbox">墙布墙纸</li>
+                                <li><input type="checkbox">硅藻泥</li>
+                                <li><input type="checkbox">扇灰</li>
+                                <li><input type="checkbox">吊顶</li>
+                                <li><input type="checkbox">装饰画</li>
+                                <li><input type="checkbox">窗帘</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info clearfix">
+                        <div class="float-left">姓名：<input type="text"></div>
+                        <div class="name float-left">电话：<input type="tel"></div>
+                        <div class="agreed float-left"><input type="checkbox">我接受推荐类似产品</div>
+                    </div>
+                    <div class="demand">需求描述：<textarea>例如，预算100平米，每平米60元以下</textarea></div>
+                    <button class="up-btn">提交需求</button>
+                </form>
+            </div>
         </div>
     </section>
     <!-- 尾部 -->
     <footer>
-        <div class="certification">
-            <ul class="certification-list common-box clearfix">
-                <li class="clearfix">
-                    <img class="float-left" src="../images/certification (1).jpg">
-                    <div class="float-left">
-                        <h3>绝对正品</h3>
-                        <h4>假冒伪劣&nbsp;&nbsp;双倍赔偿</h4>
-                    </div>
-                </li>
-                <li class="clearfix">
-                    <img class="float-left" src="../images/certification (2).jpg">
-                    <div class="float-left">
-                        <h3>权威认证</h3>
-                        <h4>国标质检&nbsp;&nbsp;严控质量</h4>
-                    </div>
-                </li>
-                <li class="clearfix">
-                    <img class="float-left" src="../images/certification (3).jpg">
-                    <div class="float-left">
-                        <h3>退换无忧</h3>
-                        <h4>15天无理由退换货</h4>
-                    </div>
-                </li>
-                <li class="clearfix">
-                    <img class="float-left" src="../images/certification (4).jpg">
-                    <div class="float-left">
-                        <h3>买贵速赔</h3>
-                        <h4>买贵补差&nbsp;&nbsp;急速返还</h4>
-                    </div>
-                </li>
-                <li class="clearfix">
-                    <img class="float-left" src="../images/certification (5).jpg">
-                    <div class="float-left">
-                        <h3>先行赔付</h3>
-                        <h4>服务纠纷&nbsp;&nbsp;先行赔付</h4>
-                    </div>
-                </li>
-            </ul>
-        </div>
         <div class="link">
             <div class="link-list common-box clearfix">
                 <ul>
@@ -147,6 +140,9 @@
     <script src="../js/jquery.flexslider-min.js"></script>
     <script src="../js/jqslider.js"></script>
     <script src="../js/common.js"></script>
+    <script>
+        textDisplay('.find-bg .demand textarea', '例如，预算100平米，每平米60元以下')
+    </script>
 </body>
 
 </html>
