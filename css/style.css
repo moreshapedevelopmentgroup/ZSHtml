@@ -6553,8 +6553,8 @@ body {
 }
 
 .members-nav button {
-    display:block;
-    margin:11px auto;
+    display: block;
+    margin: 11px auto;
     width: 155px;
     height: 38px;
     border-radius: 16px;
@@ -6668,6 +6668,7 @@ body {
     cursor: pointer;
     outline: none;
 }
+
 /* 个人中心样式结束 */
 
 /* 个人中心订单详情页 */
@@ -6732,5 +6733,223 @@ body {
     margin-top: 46px;
     font-size: 18px;
     cursor: default;
+}
+
+.members-order-top-box .order-course li {
+    float: left;
+    margin: 48px 15px 18px 15px;
+    width: 100px;
+    cursor: default;
+}
+
+.members-order-top-box .order-course li>div {
+    font-size: 14px;
+    text-align: center;
+    color: #545454;
+}
+
+.members-order-top-box .order-course li>.num {
+    font-size: 24px;
+    text-align: center;
+    color: #545454;
+}
+
+.members-order-top-box .bar {
+    width: 1008px;
+    height: 8px;
+    border-radius: 6px;
+    background-color: #333c37;
+}
+
+.members-order-top-box .bar .bar00 {
+    width: 0;
+    height: 8px;
+    border-radius: 6px;
+    background-color: #ffd019;
+}
+
+.members-order-top-box .bar .bar01 {
+    width: 130px;
+    height: 8px;
+    border-radius: 6px;
+    background-color: #ffd019;
+}
+
+.members-order-top-box .bar .bar02 {
+    width: 260px;
+    height: 8px;
+    border-radius: 6px;
+    background-color: #ffd019;
+}
+
+.members-order-top-box .bar .bar03 {
+    width: 390px;
+    height: 8px;
+    border-radius: 6px;
+    background-color: #ffd019;
+}
+
+.members-order-top-box .bar .bar04 {
+    width: 520px;
+    height: 8px;
+    border-radius: 6px;
+    background-color: #ffd019;
+}
+
+.members-order-top-box .bar .bar05 {
+    width: 650px;
+    height: 8px;
+    border-radius: 6px;
+    background-color: #ffd019;
+}
+
+.members-order-top-box .bar .bar06 {
+    width: 780px;
+    height: 8px;
+    border-radius: 6px;
+    background-color: #ffd019;
+}
+
+.members-order-top-box .bar .bar07 {
+    width: 910px;
+    height: 8px;
+    border-radius: 6px;
+    background-color: #ffd019;
+}
+
+.members-order-top-box .bar .bar08 {
+    width: 1040px;
+    height: 8px;
+    border-radius: 6px;
+    background-color: #ffd019;
+}
+
+.members-order-top-box .pay-bg {
+    margin-top: 26px;
+    padding: 26px 90px;
+    width: 838px;
+    border-radius: 16px;
+    background-color: #f3f3f3;
+    box-sizing: content-box;
+    cursor: default;
+}
+
+.members-order-top-box .pay-bg .pay_bb {
+    margin-top: 22px;
+    font-size: 18px;
+    color: #000;
+}
+
+.members-order-top-box .pay-bg .pay_gb {
+    margin-top: 22px;
+    font-size: 18px;
+    color: #626262;
+}
+
+.members-order-top-box .pay-bg ul li {
+    margin-top: 14px;
+    margin-left: 18px;
+    font-size: 14px;
+    color: #626262;
+}
+
+.members-order-h2 {
+    margin: 100px 0;
+    font-size: 30px;
+    color: #000;
+    cursor: default;
+}
+
+.buy-box>li {
+    float: left;
+    margin-bottom: 100px;
+    width: 410px;
+    border: 1px solid #dadada;
+}
+
+.buy-box>li .top {
+    width: 410px;
+    height: 442px;
+    border-bottom: 1px solid #dadada;
+}
+
+.buy-box>li .top>img {
+    display: block;
+    margin: 30px auto;
+}
+
+.buy-box>li .top>.titel {
+    margin: 0 auto;
+    width: 151px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #ff0000;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    cursor: default;
+}
+
+.buy-box>li .top>.info {
+    margin-top: 34px;
+    font-size: 14px;
+    text-align: center;
+    color: #c5c5c5;
+    cursor: default;
+}
+
+.buy-box>li .top>.price {
+    margin-top: 34px;
+    font-size: 14px;
+    text-align: center;
+    cursor: default;
+}
+
+.buy-box>li .bottom {
+    height: 430px;
+}
+
+.buy-box>li .bottom>.bottom-titel {
+    margin-top: 16px;
+    margin-left: 32px;
+    font-size: 14px;
+    color: #2b2b2b;
+}
+
+.buy-box>li .bottom>.logistics {
+    height: 280px;
+    overflow: auto;
+}
+
+.buy-box>li .bottom>.logistics::-webkit-scrollbar {
+    width: 6px;
+    background: #f1f1f1;
+}
+
+.buy-box>li .bottom>.logistics::-webkit-scrollbar-thumb {
+    width: 4px;
+    border-radius: 6px;
+    background: #c1c1c1;
+}
+
+.buy-box>li .bottom>.logistics li {
+    margin-left: 16px;
+    margin-top: 34px;
+    color: #828282;
+}
+
+.buy-box>li .bottom>.bottom-btn {
+    display: block;
+    margin: 60px auto 0 auto;
+    width: 142px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #ff0000;
+    line-height: 30px;
+    font-size: 14px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
 }
 /* 个人中心订单详情页结束 */
