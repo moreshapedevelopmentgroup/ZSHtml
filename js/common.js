@@ -734,3 +734,13 @@ function clientWidth(dom, num) {
 		}
 	})
 }
+
+// 给 ul 的宽度设置为所有 li 的宽度之和
+function ulWidth(dom){
+	var children = $(dom).children()
+	var num = 0
+	for(var i=0;i<children.length;i++){
+		num=num+children.eq(i).outerWidth(true)
+	}
+	$(dom).width(num)
+}
