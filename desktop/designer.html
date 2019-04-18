@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>设计师发布套餐</title>
+    <title>设计师基本信息</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -77,30 +77,44 @@
                 <button class="members-nav-topbtn">上传套餐</button>
             </div>
             <div class="package-content-list members-content-list">
-                <div class="designer-upload-box">
-                    <div class="personal">发布套餐</div>
-                    <ul class="designer-nav clearfix">
-                        <li class="ml-0 active">1、基本信息</li>
-                        <li>2、商品搭配</li>
-                        <li>3、套餐大图</li>
-                    </ul>
-                    <div class="titel">套餐名称&nbsp;&nbsp;|<span class="important">*</span></div>
-                    <input class="input" type="text">
-                    <div class="titel">标题&nbsp;&nbsp;|<span class="important">*</span></div>
-                    <input class="input" type="text">
-                    <div class="titel">简要描述&nbsp;&nbsp;|<span class="important">*</span></div>
-                    <textarea class="textarea"></textarea>
-                    <div class="titel">主图&nbsp;&nbsp;|<span class="tips float-right">请输入不少于3幅主图      宽高比16:9   宽=500PX</span><span class="important">*</span></div>
-                    <ul class="img clearfix">
-                        <li class="ml-0"><img src="../images/up-img (1).jpg"></li>
-                        <li><img src="../images/up-img (2).jpg"></li>
-                        <!-- <li class="ml-0"><img src="../images/up-img (1).jpg"></li> -->
-                        <li class="dup-img">+</li>
-                    </ul>
-                    <div class="titel">设计意图&nbsp;&nbsp;|<span class="important">*</span></div>
-                    <textarea class="textarea"></textarea>
-                    <div class="titel clearfix">套餐价格&nbsp;&nbsp;|<span class="tips float-right">按照设计以套内面积100平米估算</span><span class="important">*</span></div>
-                    <input class="input" type="text">
+                <div class="members-box">
+                    <div class="personal">个人基本信息</div>
+                    <div class="titel">我的头像&nbsp;&nbsp;|
+                        <span class="id">ID:25898754</span>
+                        <span class="important float-right">*</span>
+                    </div>
+                    <div class="clearfix">
+                        <div class="up-img float-left">+</div>
+                        <div class="tips float-left">150*150&nbsp;px</div>
+                    </div>
+                    <div class="titel">昵称&nbsp;&nbsp;|</div>
+                    <input class="input" type="text"><span class="important float-right">*</span>
+                    <div class="titel">密码&nbsp;&nbsp;|<span class="password">8-12位英文和字母组合</span></div>
+                    <input class="input" type="password"><span class="important float-right">*</span>
+                    <div class="titel">姓名&nbsp;&nbsp;|</div>
+                    <input class="input" type="text"><span class="important float-right">*</span>
+                    <div class="titel">英文名&nbsp;&nbsp;|</div>
+                    <input class="input" type="text"><span class="important float-right">*</span>
+                    <div class="titel">所在城市&nbsp;&nbsp;|</div>
+                    <select class="select ml-0">
+                        <option value="0">广东省</option>
+                        <option value="1">广西壮族自治区</option>
+                    </select>
+                    <select class="select">
+                        <option value="0">佛山市</option>
+                        <option value="1">南宁市</option>
+                    </select>
+                    <select class="select">
+                        <option value="0">顺德区</option>
+                        <option value="1">青秀区</option>
+                    </select>
+                    <span class="important float-right">*</span>
+                    <div class="titel">公司名称&nbsp;&nbsp;|</div>
+                    <input class="input" type="text"><span class="important float-right">*</span>
+                    <div class="titel">身份证号&nbsp;&nbsp;|</div>
+                    <input class="input" type="text"><span class="important float-right">*</span>
+                    <div class="titel">支付宝账号&nbsp;&nbsp;|</div>
+                    <input class="input zfb-input" type="text" value="用于佣金结算，请务必准确填写"><span class="important float-right">*</span>
                     <button class="save">保存</button>
                 </div>
             </div>
@@ -115,7 +129,7 @@
         clientHeight('.left-nav', '-123')
         clientHeight('.package-content-list', '-123')
         clientWidth('.members-content-list', '-204')
-        ulWidth('.designer-upload-box>.designer-nav')
+        valueDisplay('.zfb-input','用于佣金结算，请务必准确填写')
     </script>
 </body>
 

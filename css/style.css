@@ -6576,6 +6576,10 @@ body {
     cursor: pointer;
 }
 
+.members-nav button:hover {
+    background-color: #394866;
+}
+
 .members-content-list {
     left: 204px;
     background-color: #fff;
@@ -7392,5 +7396,283 @@ body {
 /* 设计师登录结束 */
 
 /* 设计师发布套餐 */
+.designer-upload-box {
+    margin-left: 82px;
+    width: 908px;
+}
+
+.designer-upload-box>.designer-nav {
+    margin-top: 40px;
+}
+
+.designer-upload-box>.designer-nav li {
+    float: left;
+    margin-left: 1px;
+    width: 193px;
+    height: 35px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background-color: #565656;
+    font-size: 14px;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    cursor: default;
+}
+
+.designer-upload-box>.designer-nav>.active {
+    background-color: #b72e22;
+}
+
+.designer-upload-box>.titel {
+    position: relative;
+    margin-top: 62px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 18px;
+    cursor: default;
+}
+
+.designer-upload-box>.titel>.important {
+    position: absolute;
+    top: 4px;
+    right: 280px;
+    font-size: 18px;
+    cursor: default;
+}
+
+.designer-upload-box>.textarea {
+    margin-top: 10px;
+    padding: 20px 20px;
+    width: 571px;
+    height: 248px;
+    border-radius: 16px;
+    background-color: #f0f0f0;
+    font-size: 14px;
+    outline: none;
+}
+
+.designer-upload-box>.titel>.tips {
+    margin: 0 382px 0 0;
+    font-size: 14px;
+    color: #707070;
+}
+
+.designer-upload-box>.img {
+    margin-top: 50px;
+}
+
+.designer-upload-box>.img>li {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.designer-upload-box>.img>.dup-img {
+    margin-top: 0;
+    margin-right: 0;
+    width: 188px;
+    height: 188px;
+    background-color: #e8e8e8;
+    font-size: 72px;
+    line-height: 188px;
+    text-align: center;
+    color: #a2a2a2;
+    cursor: pointer;
+}
 
 /* 设计师发布套餐结束 */
+
+/* 设计师个人佣金 */
+.designer-commission-box {
+    margin-left: 86px;
+    width: 1264px;
+}
+
+.designer-commission-box>.top-titel {
+    margin-top: 105px;
+    margin-left: 8px;
+    font-size: 24px;
+    cursor: default;
+}
+
+.designer-commission-box>.designer-commission {
+    padding: 0 96px;
+    margin-top: 48px;
+    width: 826px;
+    height: 300px;
+    border-radius: 30px;
+    background-color: #f3f3f3;
+    box-sizing: content-box;
+}
+
+.designer-commission-box>.designer-commission>.commission>.bb {
+    margin-top: 22px;
+    font-size: 18px;
+    cursor: default;
+}
+
+.designer-commission-box>.designer-commission>.commission>.bg {
+    margin-top: 22px;
+    font-size: 18px;
+    color: #626262;
+    cursor: default;
+}
+
+.designer-commission-box>.designer-commission>.commission>.sg {
+    margin-top: 18px;
+    margin-left: 16px;
+    font-size: 14px;
+    color: #626262;
+    cursor: default;
+}
+
+.designer-commission-box>.designer-commission>.commission>.sg {
+    margin-top: 18px;
+    margin-left: 16px;
+    font-size: 14px;
+    color: #626262;
+    cursor: default;
+}
+
+.designer-commission-box>.designer-commission>.commission>.btn {
+    margin-top: 16px;
+    width: 155px;
+    height: 38px;
+    border-radius: 16px;
+    background-color: #ffdc13;
+    font-size: 14px;
+    color: #c87979;
+    outline: none;
+}
+
+.designer-commission-box>.designer-commission>.withdrawal {
+    margin-left: 180px;
+}
+
+.designer-commission-box>.designer-commission>.withdrawal>div {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #7c7c7c;
+    cursor: default;
+}
+
+.designer-commission-box>.designer-commission>.withdrawal>ul {
+    width: 430px;
+    height: 217px;
+    overflow: auto;
+}
+
+.designer-commission-box>.designer-commission>.withdrawal>ul::-webkit-scrollbar {
+    width: 6px;
+    background: #f1f1f1;
+}
+
+.designer-commission-box>.designer-commission>.withdrawal>ul::-webkit-scrollbar-thumb {
+    width: 4px;
+    border-radius: 6px;
+    background: #c1c1c1;
+}
+
+.designer-commission-box>.designer-commission>.withdrawal>ul>li {
+    margin-top: 16px;
+    font-size: 14px;
+    color: #7c7c7c;
+    cursor: default;
+}
+
+.designer-commission-box>.bottom-titel {
+    margin-top: 40px;
+    margin-left: 32px;
+    font-size: 24px;
+    cursor: default;
+}
+
+.designer-commission-box>.commission-details {
+    margin-top: 30px;
+    box-sizing: content-box;
+}
+
+.designer-commission-box>.commission-details>li {
+    float: left;
+    padding: 0 35px;
+    width: 419px;
+    height: 522px;
+    border: 1px solid #cfcfcf;
+}
+
+.designer-commission-box>.commission-details>li>input {
+    margin-top: 12px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #dcdcdc;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.designer-commission-box>.commission-details>li>input:checked {
+    background-color: #ffd119;
+}
+
+.designer-commission-box>.commission-details>li>.state {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #797979;
+    cursor: default;
+}
+
+.designer-commission-box>.commission-details>li>.state .red {
+    color: #f00;
+}
+
+.designer-commission-box>.commission-details>li>img {
+    display: block;
+    margin: 18px auto 0 auto;
+}
+
+.designer-commission-box>.commission-details>li>.titel {
+    margin-top: 22px;
+    font-size: 16px;
+}
+
+.designer-commission-box>.commission-details>li>p {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #979797;
+    cursor: default;
+}
+
+.designer-commission-box>.commission-details>li .info {
+    margin: 28px auto 0 auto;
+    width: 160px;
+    height: 42px;
+    border: 1px solid #000;
+    background-color: #fff;
+    font-size: 13px;
+    line-height: 42px;
+    text-align: center;
+    color: #979797;
+    cursor: default;
+}
+/* 设计师个人佣金结束 */
+
+/* 设计师基本信息 */
+.zfb-input {
+    color: #606266;
+}
+/* 设计师基本信息结束 */
+
+/* 设计师已发布套餐 */
+.commission-details .editor {
+    display: block;
+    margin: 28px auto 0 auto;
+    width: 160px;
+    height: 42px;
+    border: 1px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+/* 设计师已发布套餐结束 */
