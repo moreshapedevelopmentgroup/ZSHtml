@@ -4274,6 +4274,10 @@ body {
     overflow: hidden;
 }
 
+.displaynone {
+    display: none;
+}
+
 /* 全局结束 */
 
 /* 首页样式 */
@@ -6531,9 +6535,9 @@ body {
 }
 
 .members-nav>.name {
-    margin-top: 10px;
-    margin-left: 82px;
+    margin: 10px 0 0 0;
     font-size: 14px;
+    text-align: center;
     color: #000;
     cursor: default;
 }
@@ -6638,6 +6642,7 @@ body {
 }
 
 .members-content-list .members-box>.important {
+    margin-top: 20px;
     margin-right: 60px;
     font-size: 18px;
     line-height: 28px;
@@ -7060,15 +7065,332 @@ body {
 .members-myorder-box>.members-myorder-top {
     margin-top: 26px;
     width: 100%;
-    height: 542px;
+    height: 580px;
     overflow: auto;
+}
+
+.members-myorder-box>.members-myorder-top::-webkit-scrollbar {
+    height: 6px;
+    background: #f1f1f1;
+}
+
+.members-myorder-box>.members-myorder-top::-webkit-scrollbar-thumb {
+    height: 4px;
+    border-radius: 6px;
+    background: #c1c1c1;
+}
+
+.members-myorder-box>.members-myorder-top ul {
+    margin: 0;
 }
 
 .members-myorder-box>.members-myorder-top li {
     float: left;
     margin-left: 20px;
+    padding: 0 35px;
     width: 422px;
     height: 522px;
     border: 1px solid #cfcfcf;
 }
+
+.members-myorder-box>.members-myorder-top li>input {
+    margin-top: 12px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #dcdcdc;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.members-myorder-box>.members-myorder-top li>input:checked {
+    background-color: #ffd119;
+}
+
+.members-myorder-box>.members-myorder-top .state {
+    margin-top: 24px;
+    font-size: 14px;
+    color: #797979;
+    cursor: default;
+}
+
+.members-myorder-box>.members-myorder-top .state .red {
+    color: #f00;
+}
+
+.members-myorder-box>.members-myorder-top .state>a {
+    font-size: 14px;
+    color: #797979;
+}
+
+.members-myorder-box>.members-myorder-top .state>a:hover {
+    color: #f00;
+}
+
+.members-myorder-box>.members-myorder-top li>img {
+    display: block;
+    margin: 18px auto 0 auto;
+}
+
+.members-myorder-box>.members-myorder-top .titel {
+    margin-top: 22px;
+    font-size: 16px;
+}
+
+.members-myorder-box>.members-myorder-top>p {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #979797;
+    cursor: default;
+}
+
+.members-myorder-box>.members-myorder-top .look-order {
+    display: block;
+    margin: 28px auto 0 auto;
+    width: 160px;
+    height: 42px;
+    border: 1px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+.members-myorder-box>.members-myorder-top .appointment {
+    margin-top: 24px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.members-myorder-box>.members-myorder-top .appointment>a:hover {
+    color: #f00
+}
+
+.members-myorder-box>.members-myorder-list {
+    margin: 38px 0 0 0;
+}
+
+.members-myorder-box>.members-myorder-list>li {
+    float: left;
+    margin: 0 0 0 51px;
+    padding: 0 12px;
+    width: 350px;
+    height: 618px;
+    border: 1px solid #d8d8d8;
+}
+
+.members-myorder-box>.members-myorder-list>li>input {
+    margin-top: 12px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #dcdcdc;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.members-myorder-box>.members-myorder-list>li>input:checked {
+    background-color: #ffd119;
+}
+
+.members-myorder-box>.members-myorder-list .state {
+    margin-top: 24px;
+    font-size: 14px;
+    color: #797979;
+    cursor: default;
+}
+
+.members-myorder-box>.members-myorder-list .state .red {
+    color: #f00;
+}
+
+.members-myorder-box>.members-myorder-list .state>a {
+    font-size: 14px;
+    color: #797979;
+}
+
+.members-myorder-box>.members-myorder-list .state>a:hover {
+    color: #f00;
+}
+
+.members-myorder-box>.members-myorder-list li>img {
+    display: block;
+    margin: 18px auto 0 auto;
+}
+
+.members-myorder-box>.members-myorder-list .myorder-product {
+    margin-top: 18px;
+    font-size: 14px;
+    color: #707070;
+    cursor: default;
+}
+
+.members-myorder-box>.members-myorder-list .total {
+    margin-top: 18px;
+    font-size: 18px;
+}
+
+.members-myorder-box>.members-myorder-list .look-order {
+    display: block;
+    margin: 28px auto 0 auto;
+    width: 160px;
+    height: 42px;
+    border: 1px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+.members-myorder-box>.members-myorder-list .appointment {
+    margin-top: 16px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.members-myorder-box>.members-myorder-list .appointment>a:hover {
+    color: #f00
+}
+
 /* 我的订单结束 */
+
+/* 设计师登录 */
+.designer-login {
+    padding: 78px 0;
+    background-color: #000;
+}
+
+.designer-login-box {
+    width: 1232px;
+    height: 615px;
+    border-radius: 30px;
+    background-color: #fff;
+}
+
+.designer-login .login-form {
+    margin-left: 80px;
+    width: 420px;
+    text-align: left;
+}
+
+.designer-login .login-form>.login-titel {
+    margin-top: 72px;
+    margin-left: 16px;
+    font-size: 24px;
+}
+
+.designer-login .login-form>.login-nav {
+    margin-top: 52px;
+    width: 420px;
+    height: 55px;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+}
+
+.designer-login .login-form>.login-nav li {
+    margin: 4px 5px;
+    float: left;
+    width: 200px;
+    height: 47px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 47px;
+    color: #000;
+    cursor: pointer;
+}
+
+.designer-login .login-form>.login-nav>.active {
+    background-color: #fff;
+}
+
+.designer-login .login-form>.login-nav li:hover {
+    background-color: #fff;
+}
+
+.designer-login .login-form>.login-input {
+    margin-top: 42px;
+}
+
+.designer-login .login-form>.login-input>.tel {
+    padding: 10px;
+    width: 300px;
+    font-size: 14px;
+    outline: none;
+}
+
+.designer-login .login-form>.login-input>.input {
+    padding: 10px;
+    width: 420px;
+    font-size: 14px;
+    outline: none;
+}
+
+.designer-login .login-form>.login-input>.get {
+    width: 106px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    outline: none;
+}
+
+.designer-login .login-form>.logoin-btn {
+    margin-top: 30px;
+    width: 100%;
+    height: 58px;
+    border-radius: 6px;
+    background-color: #000;
+    font-size: 24px;
+    color: #ffdf11;
+    outline: none;
+    cursor: pointer;
+}
+
+.designer-login .login-form>.noaccount {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #878787;
+    cursor: default;
+}
+
+.designer-login .login-form>.noaccount>a {
+    color: #63a6dd;
+}
+
+.designer-login .login-form>.noaccount>a:hover {
+    color: #f00;
+}
+
+.designer-login .designer-list {
+    margin-left: 72px;
+    width: 602px;
+    cursor: default;
+}
+
+.designer-login .designer-list>h2 {
+    margin-top: 170px;
+    font-size: 28px;
+    color: #394866;
+}
+
+.designer-login .designer-list>h3 {
+    margin-top: 16px;
+    font-size: 18px;
+    color: #000;
+}
+
+.designer-login .designer-list>ul {
+    margin-top: 24px;
+}
+
+.designer-login .designer-list>ul>li {
+    float: left;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+/* 设计师登录结束 */
+
+/* 设计师发布套餐 */
+
+/* 设计师发布套餐结束 */
