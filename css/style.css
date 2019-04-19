@@ -4270,8 +4270,8 @@ body {
 }
 
 .noscroll {
-    width: 100%;
     overflow: hidden;
+    -ms-overflow-style:none;
 }
 
 .displaynone {
@@ -7265,23 +7265,24 @@ body {
 .designer-login-box {
     width: 1232px;
     height: 615px;
+    border: 1px solid #ccc;
     border-radius: 30px;
     background-color: #fff;
 }
 
-.designer-login .login-form {
+.designer-login-box .login-form {
     margin-left: 80px;
     width: 420px;
     text-align: left;
 }
 
-.designer-login .login-form>.login-titel {
+.designer-login-box .login-form>.login-titel {
     margin-top: 72px;
     margin-left: 16px;
     font-size: 24px;
 }
 
-.designer-login .login-form>.login-nav {
+.designer-login-box .login-form>.login-nav {
     margin-top: 52px;
     width: 420px;
     height: 55px;
@@ -7289,7 +7290,7 @@ body {
     background-color: #f0f0f0;
 }
 
-.designer-login .login-form>.login-nav li {
+.designer-login-box .login-form>.login-nav li {
     margin: 4px 5px;
     float: left;
     width: 200px;
@@ -7302,33 +7303,33 @@ body {
     cursor: pointer;
 }
 
-.designer-login .login-form>.login-nav>.active {
+.designer-login-box .login-form>.login-nav>.active {
     background-color: #fff;
 }
 
-.designer-login .login-form>.login-nav li:hover {
+.designer-login-box .login-form>.login-nav li:hover {
     background-color: #fff;
 }
 
-.designer-login .login-form>.login-input {
+.designer-login-box .login-form>.login-input {
     margin-top: 42px;
 }
 
-.designer-login .login-form>.login-input>.tel {
+.designer-login-box .login-form>.login-input>.tel {
     padding: 10px;
     width: 300px;
     font-size: 14px;
     outline: none;
 }
 
-.designer-login .login-form>.login-input>.input {
+.designer-login-box .login-form>.login-input>.input {
     padding: 10px;
     width: 420px;
     font-size: 14px;
     outline: none;
 }
 
-.designer-login .login-form>.login-input>.get {
+.designer-login-box .login-form>.login-input>.get {
     width: 106px;
     height: 40px;
     border-radius: 6px;
@@ -7337,7 +7338,7 @@ body {
     outline: none;
 }
 
-.designer-login .login-form>.logoin-btn {
+.designer-login-box .login-form>.logoin-btn {
     margin-top: 30px;
     width: 100%;
     height: 58px;
@@ -7349,7 +7350,7 @@ body {
     cursor: pointer;
 }
 
-.designer-login .login-form>.noaccount {
+.designer-login-box .login-form>.noaccount {
     margin-top: 20px;
     font-size: 16px;
     text-align: center;
@@ -7357,37 +7358,37 @@ body {
     cursor: default;
 }
 
-.designer-login .login-form>.noaccount>a {
+.designer-login-box .login-form>.noaccount>a {
     color: #63a6dd;
 }
 
-.designer-login .login-form>.noaccount>a:hover {
+.designer-login-box .login-form>.noaccount>a:hover {
     color: #f00;
 }
 
-.designer-login .designer-list {
+.designer-login-box .designer-list {
     margin-left: 72px;
     width: 602px;
     cursor: default;
 }
 
-.designer-login .designer-list>h2 {
+.designer-login-box .designer-list>h2 {
     margin-top: 170px;
     font-size: 28px;
     color: #394866;
 }
 
-.designer-login .designer-list>h3 {
+.designer-login-box .designer-list>h3 {
     margin-top: 16px;
     font-size: 18px;
     color: #000;
 }
 
-.designer-login .designer-list>ul {
+.designer-login-box .designer-list>.designer-login-img {
     margin-top: 24px;
 }
 
-.designer-login .designer-list>ul>li {
+.designer-login-box .designer-list>.designer-login-img>li {
     float: left;
     margin-top: 15px;
     margin-left: 15px;
@@ -7655,12 +7656,14 @@ body {
     color: #979797;
     cursor: default;
 }
+
 /* 设计师个人佣金结束 */
 
 /* 设计师基本信息 */
 .zfb-input {
     color: #606266;
 }
+
 /* 设计师基本信息结束 */
 
 /* 设计师已发布套餐 */
@@ -7675,4 +7678,412 @@ body {
     outline: none;
 }
 
+.designer-commission-box>.mt {
+    margin-top: 64px;
+}
+
+.designer-commission-box>.mt>.operation {
+    margin-left: 40px;
+    font-size: 18px;
+    cursor: default;
+}
+
+.designer-commission-box>.mt>.operation>.op-btn {
+    margin-left: 20px;
+    color: #394866;
+}
+
+.designer-commission-box>.mt>.operation>.op-btn:hover {
+    color: #f00;
+}
+
+.designer-commission-box>.mt>.paging>.paging-box {
+    width: 160px;
+    height: 43px;
+    border: 1px solid #000;
+    background-color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.designer-commission-box>.mt>.paging>.paging-list {
+    margin-top: 16px;
+    margin-right: 20px;
+}
+
+.designer-commission-box>.mt>.paging>.paging-list>li {
+    float: left;
+    margin-left: 20px;
+    cursor: default;
+}
+
+.designer-commission-box>.mt>.paging>.paging-list>li>a {
+    font-size: 18px;
+    color: #888888;
+}
+
+.designer-commission-box>.mt>.paging>.paging-list>li>.active {
+    color: #394866;
+}
+
+.designer-commission-box>.mt>.paging>.paging-list>li>a:hover {
+    color: #394866;
+}
 /* 设计师已发布套餐结束 */
+
+/* 设计师展示页 */
+.designer-show-box {
+    margin-left: 200px;
+    width: 100%;
+    cursor: default;
+}
+
+.designer-show-box>.top-titel {
+    margin-top: 50px;
+    margin-left: 170px;
+    font-size: 24px;
+}
+
+.designer-show-box>.subtitle {
+    position: relative;
+    margin-top: 30px;
+    margin-left: 26px;
+    font-size: 18px;
+}
+
+.designer-show-box>.subtitle>.important {
+    position: absolute;
+    top: 5px;
+    left: 630px;
+    font-size: 18px;
+}
+
+.designer-show-box>.textarea {
+    margin-top: 20px;
+    padding: 20px;
+    width: 576px;
+    height: 177px;
+    border-radius: 16px;
+    background-color: #f0f0f0;
+    font-size: 14px;
+    color: #606266;
+    outline: none;
+}
+
+.designer-show-box>.works-list {
+    margin-top: 36px;
+}
+
+.designer-show-box>.works-list>.works-list-titel {
+    margin-left: 26px;
+    font-size: 16px;
+}
+
+.designer-show-box>.works-list>.works-img-list {
+    margin-left: 26px;
+}
+
+.designer-show-box>.works-list>.works-img-list>li {
+    margin-top: 20px;
+    margin-right: 9px;
+    float: left;
+}
+
+.designer-show-box>.works-list>p {
+    margin-top: 24px;
+    margin-left: 26px;
+    width: 830px;
+    font-size: 14px;
+    text-indent: 2em;
+    color: #565656;
+}
+
+.designer-show-box>.works-list>button {
+    margin-top: 24px;
+    margin-left: 26px;
+    width: 129px;
+    height: 33px;
+    border-radius: 33px;
+    background-color: #404e6b;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+.designer-show-box>.show-btn {
+    margin-top: 12px;
+    margin-left: 590px;
+    margin-bottom: 20px;
+    width: 281px;
+    height: 52px;
+    border-radius: 16px;
+    background-color: #4eb1ea;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+/* 设计师展示页结束 */
+
+/* 设计师注册 */
+.registered-box {
+    position: relative;
+    margin: 90px auto;
+    width: 520px;
+    height: 640px;
+    border: 1px solid #e4e4e4;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 0 0 20px #ccc;
+    cursor: default;
+}
+
+.registered-box>.top-titel {
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.registered-box>.subtitle {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #c7c7c7;
+}
+
+.registered-box>.input>.tel {
+    margin: 26px auto;
+    width: 422px;
+    height: 50px;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+}
+
+.registered-box>.input>.tel>.countries {
+    width: 100px;
+    height: 100%;
+    background-color: #f6f5fb;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    outline: none;
+}
+
+.registered-box>.input>.tel>input {
+    padding: 0 10px;
+    width: 200px;
+    height: 100%;
+    color: #606266;
+    outline: none;
+}
+
+.registered-box>.input>.tel>button {
+    margin-top: 4px;
+    margin-left: 6px;
+    width: 105px;
+    height: 40px;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+}
+
+.registered-box>.bottom {
+    position: absolute;
+    top: 350px;
+    width: 100%;
+}
+
+.registered-box>.bottom>.login-nav {
+    width: 420px;
+    height: 55px;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+}
+
+.registered-box>.bottom>.login-nav li {
+    margin: 4px 5px;
+    float: left;
+    width: 200px;
+    height: 47px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 47px;
+    color: #000;
+    cursor: pointer;
+}
+
+.registered-box>.bottom>.login-nav>.active {
+    background-color: #fff;
+}
+
+.registered-box>.bottom>.login-nav li:hover {
+    background-color: #fff;
+}
+
+.registered-box>.bottom>.tips {
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+.registered-box>.bottom>.tips>a {
+    color: #a1bccf;
+}
+
+.registered-box>.bottom>.tips>a:hover {
+    color: #f00;
+}
+
+.registered-box>.bottom>.rbtn {
+    margin-top: 20px;
+    width: 420px;
+    height: 58px;
+    border-radius: 6px;
+    background-color: #e71329;
+    font-size: 16px;
+    color: #fff;
+}
+/* 设计师注册结束 */
+
+/* 设计师已发布套餐列表 */
+.designer-issue-list-box {
+    margin: 0 auto;
+    width: 1324px;
+    cursor: default;
+}
+
+.designer-issue-list-box>.top-titel {
+    margin-top: 56px;
+    font-size: 24px;
+}
+
+.designer-issue-list-box>.top-titel>.btn {
+    margin-right: 24px;
+    width: 129px;
+    height: 33px;
+    border-radius: 33px;
+    background-color: #404e6b;
+    font-size: 14px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+.designer-issue-list-box .subtitle {
+    margin-top: 24px;
+    width: 100%;
+    height: 56px;
+    background-color: #f0f0f0;
+}
+
+.designer-issue-list-box .subtitle>span {
+    margin: 0 40px;
+    font-size: 14px;
+    line-height: 56px;
+    color: #313131;
+}
+
+.designer-issue-list-box ul {
+    box-sizing: content-box;
+}
+
+.designer-issue-list-box ul>li {
+    margin-top: 10px;
+    margin-left: 71px;
+    float: left;
+    width: 394px;
+}
+
+.designer-issue-list-box ul>li>.list-titel {
+    margin: 16px;
+    text-align: center;
+    font-size: 14px;
+    color: #313131;
+}
+
+.designer-issue-list-box ul>li>.list-titel>a {
+    margin-left: 36px;
+    color: #404e6b;
+}
+
+.designer-issue-list-box ul>li>.list-titel>a:hover {
+    color: #f00;
+}
+
+.designer-issue-list-box ul>li>.list-content {
+    margin-top: -1px;
+    padding: 0 15px;
+    width: 100%;
+    height: 36px;
+    border: 1px solid #dedede;
+    font-size: 14px;
+    line-height: 36px;
+}
+
+.designer-issue-list-box ul>li>.list-content>.red {
+    color: #f00;
+}
+/* 设计师已发布套餐列表结束 */
+
+/* 用户登录 */
+.members-login {
+    padding: 78px 0;
+    background-color: #fff;
+}
+
+.members-login .login-form>.logoin-btn {
+    margin-top: 30px;
+    width: 100%;
+    height: 58px;
+    border-radius: 6px;
+    background-color: #ffdc13;
+    font-size: 24px;
+    color: #000;
+    outline: none;
+    cursor: pointer;
+}
+
+.box-shadow {
+    box-shadow: 0 0 20px #ccc;
+}
+
+.members-login-img {
+    margin-top: 90px;
+}
+
+.members-login-img>li {
+    float: left;
+    margin-top: 15px;
+}
+/* 用户登录结束 */
+
+/* 用户注册 */
+.designer-login-box .login-form>.top-mt {
+    margin-top: 66px;
+    font-size: 12px;
+    cursor: default;
+}
+
+.designer-login-box .login-form>.registered-titel {
+    margin-top: 14px;
+    font-size: 12px;
+    cursor: default;
+}
+
+.designer-login-box .login-form>.registered-input {
+    margin-top: 12px;
+    padding: 0 12px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #dedede;
+}
+
+.designer-login-box .login-form>.registered-btn {
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+    background-color: #f19108;
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+/* 用户注册结束 */

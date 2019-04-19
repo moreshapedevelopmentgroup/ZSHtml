@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>设计师展示页</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/flexslider.css">
+    <link rel="stylesheet" href="../css/viewer.min.css">
+    <link rel="stylesheet" href="../css/icon/iconfont.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="noscroll">
+    <!-- 头部 -->
+    <header>
+        <div class="header-top header-fixed clearfix">
+            <ul class="top-info float-left clearfix">
+                <li><a href="#">招聘本地推广员</a></li>
+                <li><a href="#">申请本地代理</a></li>
+            </ul>
+            <div class="top-btn float-right">
+                <a href="#">注册</a>
+                <a href="#">登录</a>
+            </div>
+        </div>
+        <div class="header-nav header-fixed clearfix">
+            <img class="float-left" src="../images/header-logo.png">
+            <ul class="nav-list nav-fixed float-left clearfix">
+                <li><a href="#">主材套餐</a>
+                    <div class="nav-list-badge">HOT</div>
+                </li>
+                <li><a href="#">局部套餐</a></li>
+                <li><a href="#">以图找材</a>
+                    <div class="nav-list-badge">NEW</div>
+                </li>
+                <li><a href="#">特价单品</a></li>
+                <li><a href="#">我的清单</a></li>
+                <li><a href="#">商品库</a></li>
+                <li><a href="#">装修视频</a></li>
+                <li><a href="#">个人中心</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- 内容 -->
+    <section>
+        <div class="package-content">
+            <div class="left-nav members-nav">
+                <img src="../images/designer.png">
+                <div class="name">lasei 意&nbsp;|&nbsp;一木设计</div>
+                <ul class="left-nav-list members-nav-list">
+                    <li>
+                        <a href="#">基本信息</a>
+                    </li>
+                    <li>
+                        <a href="#">我的展示页</a>
+                    </li>
+                    <li>
+                        <a href="#">已发布套餐</a>
+                    </li>
+                    <li>
+                        <a href="#">已发布局部套餐</a>
+                    </li>
+                    <li>
+                        <a href="#">个人佣金</a>
+                    </li>
+                    <li>
+                        <a href="#">我的收藏</a>
+                    </li>
+                    <li>
+                        <a class="mb-0" href="#">未发布的设计</a>
+                    </li>
+                </ul>
+                <button class="members-nav-topbtn">上传套餐</button>
+            </div>
+            <div class="package-content-list members-content-list">
+                <div class="designer-show-box">
+                    <div class="top-titel">设计师个人展示页</div>
+                    <div class="subtitle">个人概述&nbsp;&nbsp;|<span class="important">*</span></div>
+                    <textarea class="textarea">请输入个人亮点介绍，不超过1000字</textarea>
+                    <div class="subtitle">我的作品集&nbsp;&nbsp;|<span class="important">*</span></div>
+                    <!-- 作品集列表 -->
+                    <div class="works-list">
+                        <div class="works-list-titel">作品集1：广东佛山顺德万科新城翡翠湾 样板房</div>
+                        <ul class="works-img-list clearfix">
+                            <li><img src="../images/designer-show (1).jpg"></li>
+                            <li><img src="../images/designer-show (2).jpg"></li>
+                            <li><img src="../images/designer-show (3).jpg"></li>
+                            <li><img src="../images/designer-show (4).jpg"></li>
+                            <li><img src="../images/designer-show (5).jpg"></li>
+                            <li><img src="../images/designer-show (6).jpg"></li>
+                        </ul>
+                        <p>杭州陌上设计事务所成立于2012年。专注酒店、样板房、售楼处、民宿等设计项目。目前项目遍及北京、深圳、上海、浙江、江苏、江西等地。多个作品受到国内外专业杂志约稿登刊。短短几年内设计作品在业内广受追捧，树立了良好的设计口碑。精益求精的设计意识也不断得到了设计委托方的高度评价。 设计理念：设计体现生活、设计服务于生活。源于生活的设计灵感赋予空间艺术气息。</p>
+                        <button>新增作品集</button>
+                    </div>
+                    <!-- 作品集列表 -->
+                    <button class="show-btn">发布个人展示页</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../js/jquery-1.11.2.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/jquery.flexslider-min.js"></script>
+    <script src="../js/jqslider.js"></script>
+    <script src="../js/common.js"></script>
+    <script>
+        clientHeight('.left-nav', '-123')
+        clientHeight('.package-content-list', '-123')
+        clientWidth('.members-content-list', '-204')
+        textDisplay('.textarea','请输入个人亮点介绍，不超过1000字')
+    </script>
+</body>
+
+</html>
