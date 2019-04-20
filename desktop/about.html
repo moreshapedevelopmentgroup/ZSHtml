@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>用户登录</title>
+    <title>了解我们</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
+<body class="gray">
     <!-- 头部 -->
     <header>
         <div class="header-top">
@@ -52,48 +52,50 @@
     </header>
     <!-- 内容 -->
     <section>
-        <div class="members-login">
-            <div class="common-box">
-                <div class="designer-login-box box-shadow clearfix">
-                    <form class="login-form float-left">
-                        <div class="login-titel">用户登录</div>
-                        <ul class="login-nav clearfix">
-                            <li class="active">验证码登录</li>
-                            <li>密码登录</li>
-                        </ul>
-                        <div class="login-input">
-                            <input class="tel i01" type="tel" value="手机号">
-                            <button class="get">获取验证码</button>
-                            <hr>
-                            <input class="input i02" type="text" value="输入4位短信验证码">
-                            <hr>
-                        </div>
-                        <div class="login-input displaynone">
-                            <input class="input i01" type="tel" value="手机号">
-                            <hr>
-                            <input class="input i03" type="text" value="密码">
-                            <hr>
-                        </div>
-                        <button class="logoin-btn">登录</button>
-                        <div class="noaccount">还没有账号？<a href="#">立即注册</a></div>
-                    </form>
-                    <div class="designer-list float-left">
-                        <h2>2019全网销量最大的建材网站</h2>
-                        <h3>专业设计师严格筛选的材料，全网性价比之王</h3>
-                        <ul class="members-login-img clearfix">
-                            <li><img src="../images/members-login (1).jpg"></li>
-                            <li><img src="../images/members-login (2).jpg"></li>
-                            <li><img src="../images/members-login (3).jpg"></li>
-                            <li><img src="../images/members-login (4).jpg"></li>
-                            <li><img src="../images/members-login (5).jpg"></li>
-                            <li><img src="../images/members-login (6).jpg"></li>
-                            <li><img src="../images/members-login (7).jpg"></li>
-                            <li><img src="../images/members-login (8).jpg"></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="about-top-box">
+            <img src="../images/about (1).jpg">
+            <img class="about-play" src="../images/about-play.png">
         </div>
+        <div class="about-bg-box">
+            <div class="top-titel">美家材配&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;放心直配</div>
+            <p class="top-content">广州美家材配网络科技有限公司，总部坐落于广东省佛山市，是一个全屋装修主材一站式配送平台。<br>
+                “<span class="red">让我们的设计作品走进千家万户，让普通家庭也能住上大师设计的文艺宅</span>”，是我们的最终目的。<br>
+                我们不仅仅是卖装修材料的网站，<br>
+                我们不仅仅是生产厂家的搬运工。</p>
+            <p class="top-content">这里有大批设计师为您搭配选材，这里有引领装修潮流的商品。<br>
+                这里每一款套餐搭配都是艺术品，<br>
+                把艺术品搬回家，自己的家自己来装，不用再找装修公司，不再有猫腻。</p>
+            <p class="top-content">我们为您推荐最具性价比，又能符合您要求的商品，<br>
+                在这里，不需要考虑价格，不需要考虑是否有劣质品，<br>
+                因为，我们敢承诺，我们只赚不超过10%，<br>
+                因为，我们敢承诺所有的商品都是品牌正品，绝无网络专供品，发现免费送。</p>
+        </div>
+        <div class="about-join-box">
+            <div class="top-titel">您可以通过以下方式加入我们</div>
+            <ul class="join-list clearfix">
+                <li class="ml-0">
+                    <div class="join-titel">申请实体加盟</div>
+                </li>
+                <li>
+                    <div class="join-titel">申请样板房</div>
+                </li>
+                <li>
+                    <div class="join-titel">个人推广员</div>
+                </li>
+            </ul>
+        </div>
+        <div class="about-bottom-titel">合作品牌</div>
+        <div class="about-bottom-subtitle">Cooperative brand</div>
+        <ul class="about-logo-list clearfix">
+            <li><img src="../images/members-login (1).jpg"></li>
+            <li><img src="../images/members-login (2).jpg"></li>
+            <li><img src="../images/members-login (3).jpg"></li>
+            <li><img src="../images/members-login (4).jpg"></li>
+            <li><img src="../images/members-login (5).jpg"></li>
+            <li><img src="../images/members-login (6).jpg"></li>
+            <li><img src="../images/members-login (7).jpg"></li>
+            <li><img src="../images/members-login (8).jpg"></li>
+        </ul>
     </section>
     <!-- 尾部 -->
     <footer>
@@ -182,11 +184,45 @@
         </div>
     </footer>
     <!-- 尾部end -->
+    <!-- 登录弹窗 -->
+    <div class="shadow displaynone"></div>
+    <div class="login-window clearfix displaynone">
+        <div class="float-left"><img src="../images/login-window.png"></div>
+        <form class="login-form float-left">
+            <div class="login-titel">美家材配</div>
+            <ul class="login-nav clearfix">
+                <li class="active">验证码登录</li>
+                <li>密码登录</li>
+            </ul>
+            <div class="login-input">
+                <input class="tel i01" type="tel" value="手机号">
+                <button class="get">获取验证码</button>
+                <hr>
+                <input class="input i02" type="text" value="输入4位短信验证码">
+                <hr>
+            </div>
+            <div class="login-input displaynone">
+                <input class="input i01" type="tel" value="手机号">
+                <hr>
+                <input class="input i03" type="text" value="密码">
+                <hr>
+            </div>
+            <div class="clearfix remember-me"><input type="checkbox">记住我<a class="float-right" href="#">忘记密码</a></div>
+            <button class="logoin-btn">登录</button>
+            <div class="noaccount">还没有账号？<a href="#">立即注册</a></div>
+        </form>
+    </div>
+    <!-- 登录弹窗end -->
     <script src="../js/jquery-1.11.2.min.js"></script>
     <script src="../js/bootstrap.js"></script>
     <script src="../js/jquery.flexslider-min.js"></script>
     <script src="../js/jqslider.js"></script>
     <script src="../js/common.js"></script>
+    <script>
+        valueDisplay('.panel-align .panel-search input', '请输入商品号')
+        textDisplay('.panel-align .panel-form textarea', '请补充您的需求')
+        valueDisplay('.panel-align .panel-form .panel-phone input', '电话')
+    </script>
 </body>
 
 </html>

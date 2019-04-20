@@ -650,37 +650,6 @@ function textDisplay(element, text) {
 	})
 }
 
-// 横向滚动
-$('.product-dot ul').append(dot());
-
-function dot() {
-	dot = '<a><li class="active"></li></a>'
-	var uil = $('.product-ul li').length;
-
-	if (uil > 3) {
-		if (uil % 3 == 0) {
-			dotl = parseInt(uil / 3) - 1;
-		} else {
-			dotl = parseInt(uil / 3);
-		}
-	} else {
-		dotl = 0;
-		$('.product-dot ul').hide();
-	}
-	for (var i = 0; i < dotl; i++) {
-		dot += '<a><li></li></a>'
-	}
-	return dot
-}
-$('.product-ul').width((dotl + 1) * 1149)
-$('.product-dot a').click(function () {
-	$(this).children().addClass('active')
-	$(this).siblings().children().removeClass('active');
-	$('.product-list').stop().animate({
-		scrollLeft: $(this).index() * 1149
-	}, 800);
-});
-
 // 给元素添加可视区域高度并随窗口大小改变而改变
 function clientHeight(dom, num) {
 	var hh = document.documentElement.clientHeight
@@ -736,11 +705,74 @@ function clientWidth(dom, num) {
 }
 
 // 给 ul 的宽度设置为所有 li 的宽度之和
-function ulWidth(dom){
+function ulWidth(dom) {
 	var children = $(dom).children()
 	var num = 0
-	for(var i=0;i<children.length;i++){
-		num=num+children.eq(i).outerWidth(true)
+	for (var i = 0; i < children.length; i++) {
+		num = num + children.eq(i).outerWidth(true)
 	}
 	$(dom).width(num)
 }
+
+// 横向滚动
+$('.product-dot ul').append(dot());
+
+function dot() {
+	dot = '<a><li class="active"></li></a>'
+	var uil = $('.product-ul li').length;
+
+	if (uil > 3) {
+		if (uil % 3 == 0) {
+			dotl = parseInt(uil / 3) - 1;
+		} else {
+			dotl = parseInt(uil / 3);
+		}
+	} else {
+		dotl = 0;
+		$('.product-dot ul').hide();
+	}
+	for (var i = 0; i < dotl; i++) {
+		dot += '<a><li></li></a>'
+	}
+	return dot
+}
+$('.product-ul').width((dotl + 1) * 1149)
+$('.product-dot a').click(function () {
+	$(this).children().addClass('active')
+	$(this).siblings().children().removeClass('active');
+	$('.product-list').stop().animate({
+		scrollLeft: $(this).index() * 1149
+	}, 800);
+});
+
+// 登录界面头顶导航切换以点击登录操作
+$('.login-nav>li').click(function () {
+	$(this).addClass('active').siblings().removeClass('active')
+	console.log($(this).parent().siblings('.login-input'))
+	$('.login-input').eq($(this).index()).removeClass('displaynone').siblings('.login-input').addClass(
+		'displaynone')
+})
+$('.i03').focusin(function () {
+	if ($(this).attr('type') === 'text') {
+		$(this).attr('type', 'password')
+	}
+})
+$('.i03').focusout(function () {
+	if ($(this).val() === '') {
+		$(this).attr('type', 'text')
+	}
+})
+
+valueDisplay('.i01', '手机号')
+valueDisplay('.i02', '输入4位短信验证码')
+valueDisplay('.i03', '密码')
+
+$('#login').click(function(){
+	$('.shadow').show()
+	$('.login-window').show()
+})
+
+$('.shadow').click(function(){
+	$('.shadow').hide()
+	$('.login-window').hide()
+})

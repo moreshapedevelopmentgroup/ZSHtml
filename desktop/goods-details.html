@@ -24,7 +24,7 @@
             </ul>
             <div class="top-btn float-right">
                 <a href="#">注册</a>
-                <a href="#">登录</a>
+                <a id="login" href="#">登录</a>
             </div>
         </div>
         <div class="header-nav header-fixed clearfix">
@@ -65,6 +65,35 @@
             </div>
         </div>
     </section>
+    <!-- 登录弹窗 -->
+    <div class="shadow displaynone"></div>
+    <div class="login-window clearfix displaynone">
+        <div class="float-left"><img src="../images/login-window.png"></div>
+        <form class="login-form float-left">
+            <div class="login-titel">美家材配</div>
+            <ul class="login-nav clearfix">
+                <li class="active">验证码登录</li>
+                <li>密码登录</li>
+            </ul>
+            <div class="login-input">
+                <input class="tel i01" type="tel" value="手机号">
+                <button class="get">获取验证码</button>
+                <hr>
+                <input class="input i02" type="text" value="输入4位短信验证码">
+                <hr>
+            </div>
+            <div class="login-input displaynone">
+                <input class="input i01" type="tel" value="手机号">
+                <hr>
+                <input class="input i03" type="text" value="密码">
+                <hr>
+            </div>
+            <div class="clearfix remember-me"><input type="checkbox">记住我<a class="float-right" href="#">忘记密码</a></div>
+            <button class="logoin-btn">登录</button>
+            <div class="noaccount">还没有账号？<a href="#">立即注册</a></div>
+        </form>
+    </div>
+    <!-- 登录弹窗end -->
     <script src="../js/jquery-1.11.2.min.js"></script>
     <script src="../js/bootstrap.js"></script>
     <script src="../js/jquery.flexslider-min.js"></script>

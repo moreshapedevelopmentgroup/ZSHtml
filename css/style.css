@@ -4271,11 +4271,171 @@ body {
 
 .noscroll {
     overflow: hidden;
-    -ms-overflow-style:none;
+    -ms-overflow-style: none;
 }
 
 .displaynone {
     display: none;
+}
+
+.shadow {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #999;
+    opacity: 0.6;
+}
+
+.login-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -295px;
+    margin-left: -445px;
+    width: 890px;
+    height: 590px;
+    border-radius: 6px;
+    background-color: #fff;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.login-window>.login-form {
+    margin-left: 22px;
+    width: 450px;
+    height: 100%;
+    text-align: left;
+}
+
+.login-window>.login-form>.login-titel {
+    margin-top: 46px;
+    font-size: 36px;
+    text-align: center;
+    cursor: default;
+}
+
+.login-window>.login-form>.login-nav {
+    margin-top: 52px;
+    width: 420px;
+    height: 55px;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+}
+
+.login-window>.login-form>.login-nav li {
+    margin: 4px 5px;
+    float: left;
+    width: 200px;
+    height: 47px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 47px;
+    color: #000;
+    cursor: pointer;
+}
+
+.login-window>.login-form>.login-nav>.active {
+    background-color: #fff;
+}
+
+.login-window>.login-form>.login-nav li:hover {
+    background-color: #fff;
+}
+
+.login-window>.login-form>.login-input {
+    margin-top: 42px;
+}
+
+.login-window>.login-form>.login-input>.tel {
+    padding: 10px;
+    width: 300px;
+    font-size: 14px;
+    outline: none;
+}
+
+.login-window>.login-form>.login-input>.input {
+    padding: 10px;
+    width: 420px;
+    font-size: 14px;
+    outline: none;
+}
+
+.login-window>.login-form>.login-input>.get {
+    width: 106px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    outline: none;
+}
+
+.login-window>.login-form>.remember-me {
+    color: #63a6dd;
+    cursor: default;
+}
+
+.login-window>.login-form>.remember-me>input {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.login-window>.login-form>.remember-me>a {
+    color: #63a6dd;
+}
+
+.login-window>.login-form>.remember-me>a:hover {
+    color: #f00;
+}
+
+.login-window>.login-form>.logoin-btn {
+    margin-top: 30px;
+    width: 100%;
+    height: 58px;
+    border-radius: 6px;
+    background-color: #55cb8f;
+    font-size: 24px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+.login-window>.login-form>.noaccount {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #878787;
+    cursor: default;
+}
+
+.login-window>.login-form>.noaccount>a {
+    color: #63a6dd;
+}
+
+.login-window>.login-form>.noaccount>a:hover {
+    color: #f00;
 }
 
 /* 全局结束 */
@@ -4539,7 +4699,6 @@ body {
     height: 160px;
     border: 1px solid #dcdfe6;
     border-radius: 6px;
-    box-sizing: content-box;
 }
 
 .panel-align .panel-form .panel-textarea textarea {
@@ -4559,7 +4718,6 @@ body {
     border: 1px solid #dcdfe6;
     border-radius: 6px;
     text-align: left;
-    box-sizing: content-box;
 }
 
 .panel-align .panel-form .panel-phone img {
@@ -4636,7 +4794,6 @@ body {
     width: 100%;
     height: 152px;
     background: url(../images/column-bg.png);
-    box-sizing: content-box;
 }
 
 .column-box .column .main-nva li {
@@ -5104,7 +5261,6 @@ body {
     padding: 10px;
     overflow: hidden;
     cursor: pointer;
-    box-sizing: content-box;
 }
 
 .product-ul>li:hover .titel {
@@ -5143,7 +5299,6 @@ body {
 .product-dot ul {
     width: auto;
     margin: 0 auto;
-    box-sizing: content-box;
 }
 
 .product .product-dot a {
@@ -5189,7 +5344,7 @@ body {
 }
 
 .certification .certification-list {
-    margin-top: 40px;
+    padding-top: 30px;
 }
 
 .certification .certification-list li {
@@ -5214,8 +5369,13 @@ body {
     cursor: default;
 }
 
+.link {
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
 .link .link-list {
-    margin-top: 28px;
+    padding-top: 28px;
     padding-left: 49px;
 }
 
@@ -5332,7 +5492,6 @@ body {
     left: 310px;
     background-color: #7d7d7d;
     overflow: auto;
-    box-sizing: content-box;
 }
 
 .package-content-list::-webkit-scrollbar {
@@ -5490,7 +5649,6 @@ body {
     left: 220px;
     background-color: #7d7d7d;
     overflow: auto;
-    box-sizing: content-box;
 }
 
 .package-content-list-details::-webkit-scrollbar {
@@ -5842,7 +6000,6 @@ body {
     font-size: 18px;
     text-align: left;
     color: #fff;
-    box-sizing: content-box;
     cursor: default;
 }
 
@@ -6170,7 +6327,6 @@ body {
     text-align: left;
     line-height: 50px;
     color: #fff;
-    box-sizing: content-box;
     cursor: default;
 }
 
@@ -6353,7 +6509,6 @@ body {
 .find-bg .find-top {
     height: 700px;
     border: 1px solid #e5e3dd;
-    box-sizing: content-box;
 }
 
 .find-bg .find-top .find-up-img {
@@ -6843,7 +6998,6 @@ body {
     width: 838px;
     border-radius: 16px;
     background-color: #f3f3f3;
-    box-sizing: content-box;
     cursor: default;
 }
 
@@ -7058,10 +7212,6 @@ body {
 /* 地址管理结束 */
 
 /* 我的订单 */
-.members-myorder-box {
-    box-sizing: content-box;
-}
-
 .members-myorder-box>.titel {
     font-size: 24px;
 }
@@ -7504,7 +7654,6 @@ body {
     height: 300px;
     border-radius: 30px;
     background-color: #f3f3f3;
-    box-sizing: content-box;
 }
 
 .designer-commission-box>.designer-commission>.commission>.bb {
@@ -7591,7 +7740,6 @@ body {
 
 .designer-commission-box>.commission-details {
     margin-top: 30px;
-    box-sizing: content-box;
 }
 
 .designer-commission-box>.commission-details>li {
@@ -7729,6 +7877,7 @@ body {
 .designer-commission-box>.mt>.paging>.paging-list>li>a:hover {
     color: #394866;
 }
+
 /* 设计师已发布套餐结束 */
 
 /* 设计师展示页 */
@@ -7824,6 +7973,7 @@ body {
     cursor: pointer;
     outline: none;
 }
+
 /* 设计师展示页结束 */
 
 /* 设计师注册 */
@@ -7941,6 +8091,7 @@ body {
     font-size: 16px;
     color: #fff;
 }
+
 /* 设计师注册结束 */
 
 /* 设计师已发布套餐列表 */
@@ -7981,10 +8132,6 @@ body {
     color: #313131;
 }
 
-.designer-issue-list-box ul {
-    box-sizing: content-box;
-}
-
 .designer-issue-list-box ul>li {
     margin-top: 10px;
     margin-left: 71px;
@@ -8021,6 +8168,7 @@ body {
 .designer-issue-list-box ul>li>.list-content>.red {
     color: #f00;
 }
+
 /* 设计师已发布套餐列表结束 */
 
 /* 用户登录 */
@@ -8053,6 +8201,7 @@ body {
     float: left;
     margin-top: 15px;
 }
+
 /* 用户登录结束 */
 
 /* 用户注册 */
@@ -8086,4 +8235,294 @@ body {
     outline: none;
     cursor: pointer;
 }
+
 /* 用户注册结束 */
+
+/* 了解我们 */
+.about-top-box {
+    position: relative;
+    width: 100%;
+    height: 706px;
+    background-color: #000;
+}
+
+.about-top-box>.about-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -26px;
+    margin-left: -26px;
+    cursor: pointer;
+}
+
+.about-bg-box {
+    width: 100%;
+    height: 760px;
+    background: url(../images/about\ \(2\).jpg) no-repeat;
+    background-position: center;
+    background-color: #ebebeb;
+    cursor: default;
+}
+
+.about-bg-box>.top-titel {
+    padding-top: 30px;
+    font-size: 30px;
+    letter-spacing: 12px;
+}
+
+.about-bg-box>.top-content {
+    margin-top: 46px;
+    font-size: 16px;
+    line-height: 48px;
+}
+
+.about-bg-box>.top-content>.red {
+    color: #900000;
+    text-decoration: underline;
+}
+
+.about-join-box {
+    width: 100%;
+    height: 471px;
+    background-color: #394866;
+    cursor: default;
+}
+
+.about-join-box>.top-titel {
+    padding-top: 70px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.about-join-box>.join-list {
+    margin: 100px auto 0 auto;
+    width: 1206px;
+}
+
+.about-join-box>.join-list>li {
+    float: left;
+    margin-left: 84px;
+    width: 346px;
+    height: 290px;
+    border-radius: 6px;
+    background-color: #e0ddd6;
+}
+
+.about-join-box>.join-list>li>.join-titel {
+    width: 100%;
+    height: 52px;
+    font-size: 18px;
+    line-height: 52px;
+    border-radius: 6px;
+    background-color: #ffd119;
+}
+
+.about-bottom-titel {
+    margin-top: 164px;
+    font-size: 36px;
+    color: #394866;
+}
+
+.about-bottom-subtitle {
+    margin-top: 18px;
+    font-size: 14px;
+    color: #c4c4c4;
+    cursor: default;
+}
+
+.about-logo-list {
+    margin: 54px auto;
+    width: 1200px;
+    background-color: #fff;
+}
+
+.about-logo-list>li {
+    margin: 55px 0;
+    float: left;
+}
+
+.gray {
+    background-color: #ebebeb;
+}
+/* 了解我们结束 */
+
+/* 购物车 */
+.shopping-cart-box {
+    margin: 10px auto;
+    width: 1380px;
+    background-color: #fff;
+    border-radius: 16px;
+    cursor: default;
+}
+
+.shopping-cart-box>.top-titel {
+    padding-top: 22px;
+    font-size: 30px;
+}
+
+.shopping-cart-box>.mylist-list {
+    margin: 24px auto;
+    width: 1230px;
+}
+
+.shopping-cart-box>.mylist-list li {
+    float: left;
+    width: 410px;
+    height: 440px;
+    border: 1px solid #dadada;
+    background-color: #fff;
+}
+
+.shopping-cart-box>.mylist-list li .need {
+    margin-top: 40px;
+    margin-left: 16px;
+}
+
+.shopping-cart-box>.mylist-list input {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #dadada;
+    border-radius: 6px;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.shopping-cart-box>.mylist-list input:checked {
+    background-color: #ffd119;
+}
+
+.shopping-cart-box>.mylist-list .badge {
+    margin-top: 40px;
+    margin-right: 56px;
+    padding: 8px 32px;
+    border-radius: 30px;
+    background-color: #ff0000;
+    font-size: 14px;
+    color: #fff;
+}
+
+.shopping-cart-box>.mylist-list .style {
+    height: 22px;
+    line-height: 22px;
+}
+
+.shopping-cart-box>.mylist-list .style span {
+    font-size: 14px;
+    color: #c5c5c5;
+    cursor: default;
+}
+
+.shopping-cart-box>.mylist-list .style .ml {
+    margin-left: 80px;
+}
+
+.shopping-cart-box>.mylist-list .style .mr {
+    margin-right: 80px;
+}
+
+.shopping-cart-box>.mylist-list .price {
+    margin-top: 22px;
+    font-size: 18px;
+    cursor: default;
+}
+
+.shopping-cart-box>.mylist-list .price .price-red {
+    color: #ff0000;
+}
+
+.shopping-cart-box>.mylist-list .price .price-gray {
+    padding-left: 20px;
+    color: #909090;
+    text-decoration: line-through;
+}
+
+.shopping-cart-box>.shopping-cart-bottom {
+    padding: 36px 96px;
+    font-size: 18px;
+}
+
+.shopping-cart-box>.shopping-cart-bottom a {
+    margin-left: 34px;
+}
+
+.shopping-cart-box>.shopping-cart-bottom>button {
+    margin-left: 366px;
+    width: 264px;
+    height: 44px;
+    background-color: #ffd019;
+    border-radius: 16px;
+    cursor: pointer;
+    outline: none;
+}
+/* 购物车结束 */
+
+/* 设计师详情 */
+.designer-list-box {
+    margin: 0 auto;
+    width: 1240px;
+}
+
+.designer-list-box>.top-btn {
+    margin: 16px 0;
+    width: 100%;
+    height: 42px;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+}
+
+.designer-list-box>.top-btn>.left-btn>li {
+    float: left;
+    width: 98px;
+    height: 42px;
+    font-size: 12px;
+    line-height: 42px;
+    text-align: center;
+    color: #bababa;
+    border-right: 1px solid #eaeaea;
+    cursor: pointer;
+}
+
+.designer-list-box>.top-btn>.left-btn>.active {
+    color: #f00;
+}
+
+.designer-list-box>.top-btn>.left-btn>li>img {
+    margin-left: 8px;
+}
+
+.designer-list-box>.top-btn>.right-btn {
+    height: 42px;
+    font-size: 12px;
+    line-height: 42px;
+    color: #bababa;
+}
+
+.designer-list-box>.top-btn>.right-btn>.lr {
+    padding: 0 18px;
+    cursor: pointer;
+}
+
+.designer-list-box>.designer-top-list {
+    width: 100%;
+    height: 224px;
+    background-color: #fff;
+}
+
+.designer-list-box>.designer-top-list>.top-titel {
+    padding: 18px;
+    font-size: 24px;
+    text-align: left;
+    cursor: default;
+}
+
+.designer-list-box>.designer-top-list>.top-titel>a {
+    font-size: 12px;
+    line-height: 36px;
+    color: #26588a;
+}
+
+.designer-list-box>.designer-top-list>.top-titel>a:hover {
+    color: #f00;
+}
+/* 设计师详情结束 */
