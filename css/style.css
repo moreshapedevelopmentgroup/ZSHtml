@@ -8457,7 +8457,7 @@ body {
 }
 /* 购物车结束 */
 
-/* 设计师详情 */
+/* 设计师列表 */
 .designer-list-box {
     margin: 0 auto;
     width: 1240px;
@@ -8525,4 +8525,189 @@ body {
 .designer-list-box>.designer-top-list>.top-titel>a:hover {
     color: #f00;
 }
-/* 设计师详情结束 */
+
+.designer-list-box>.designer-top-list>.top-list>.button {
+    padding: 0 20px;
+    font-size: 72px;
+    color: #cbcbcb;
+    cursor: pointer;
+}
+
+.designer-list-box>.designer-top-list>.top-list>.list-img>li {
+    margin-left: 27px;
+    float: left;
+    cursor: pointer;
+}
+
+.designer-list-box>.designer-top-list>.top-list>.list-img>li>div {
+    margin-top: 10px;
+   font-size: 12px;
+}
+
+.designer-list-list>li {
+    margin: 20px 0;
+    padding-bottom: 40px;
+    width: 100%;
+    background-color: #fff;
+    text-align: left;
+    cursor: default;
+}
+
+.designer-list-list>li>.list-content>img {
+    margin: 48px 0 0 20px;
+}
+
+.designer-list-list>li>.list-content .list-titel {
+    margin-top: 18px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.designer-list-list>li>.list-content .list-titel>img {
+    margin-left: 14px;
+}
+
+.designer-list-list>li>.list-content .key {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 12px;
+    color: #999999;
+}
+
+.designer-list-list>li>.list-content .value {
+    margin-top: 10px;
+    margin-left: 4px;
+    font-size: 12px;
+    color: #666666;
+}
+
+.designer-list-list>li>.list-content>.num {
+    margin-top: 70px;
+    margin-right: 44px;
+    font-size: 14px;
+    color: #636363;
+}
+
+.designer-list-list>li>.list-content>.num>.big-num {
+    font-size: 24px;
+    color: #636363;
+}
+
+.designer-list-list>li>.list-img {
+    margin-top: 60px;
+}
+
+.designer-list-list>li>.list-img>li {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    float: left;
+}
+
+.designer-list-list>li>.bottom-titel>span {
+    font-size: 18px;
+    color: #000;
+}
+
+.designer-list-list>li>.bottom-titel {
+    margin-left: 30px;
+    font-size: 14px;
+    color: #979797;
+}
+
+.designer-list-list>li>.button {
+    display: block;
+    margin: 40px auto 0 auto;
+    width: 373px;
+    height: 42px;
+    border-radius: 21px;
+    background-color: #ffde00;
+}
+/* 设计师列表结束 */
+
+/* 设计师详情页 */
+.banner {
+    margin-top: 10px;
+    width: 100%;
+    height: 140px;
+    background-color: #fff;
+}
+
+.designer-details {
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+.designer-details .designer-img {
+    margin-top: 160px;
+    width: 432px;
+    vertical-align: middle;
+}
+
+.designer-details .designer-text {
+    width: 800px;
+    text-align: left;
+}
+
+.designer-details .designer-text>h3 {
+    margin-top: 16px;
+    font-size: 14px;
+    color: #000;
+}
+
+.designer-details .designer-text>p {
+    margin-top: 16px;
+    font-size: 14px;
+    color: #636363;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.designer-details-list>li {
+    width: 100%;
+    background-color: #fff;
+    text-align: left;
+    cursor: default;
+}
+
+.designer-details-list>li>.list-content>.num {
+    margin-top: 28px;
+    margin-right: 44px;
+    font-size: 14px;
+    color: #636363;
+}
+
+.designer-details-list>li>.list-content>.num>.big-num {
+    font-size: 24px;
+    color: #636363;
+}
+.designer-details-list>li>.list-img {
+    margin-top: 16px;
+}
+
+.designer-details-list>li>.list-img>li {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    float: left;
+}
+
+.designer-details-list>li>.bottom-titel>span {
+    font-size: 18px;
+    color: #000;
+}
+
+.designer-details-list>li>.bottom-titel {
+    margin-left: 30px;
+    font-size: 14px;
+    color: #979797;
+}
+/* 设计师详情页结束 */
