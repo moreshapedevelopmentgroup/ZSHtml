@@ -12,24 +12,46 @@
     <link rel="stylesheet" href="../css/viewer.min.css">
     <link rel="stylesheet" href="../css/icon/iconfont.css">
     <link rel="stylesheet" href="../css/style.css">
-</head>
+    <style>
+        .slide-box {
+            width: 1310px;
+            height: 874px;
+        }
 
-<body>
-    <!-- 头部 -->
+        .slide-box .speed-btn {
+            display: none;
+        }
+
+        .slide-box .prev-btn {
+            width: 33px;
+            height: 72px;
+            background: url(../images/prev-btn.png);
+            opacity: 1;
+        }
+
+        .slide-box .next-btn {
+            width: 33px;
+            height: 72px;
+            background: url(../images/next-btn.png);
+            opacity: 1;
+        }
+    </style>
+</head>
+<!-- 头部 -->
+<body class="gray">
     <header>
-        <div class="header-top header-fixed clearfix">
-            <ul class="top-info float-left clearfix">
-                <li><a href="#">招聘本地推广员</a></li>
-                <li><a href="#">申请本地代理</a></li>
-            </ul>
+        <div class="header-top clearfix">
+            <div class="top-info float-left clearfix">
+                <img src="../images/logo-top.jpg">
+            </div>
             <div class="top-btn float-right">
                 <a href="#">注册</a>
                 <a id="login" href="#">登录</a>
             </div>
         </div>
-        <div class="header-nav header-fixed clearfix">
-            <img class="float-left" src="../images/header-logo.png">
-            <ul class="nav-list nav-fixed float-left clearfix">
+        <div class="header-nav clearfix">
+            <div class="logo-text float-left">美&nbsp;&nbsp;家&nbsp;&nbsp;材&nbsp;&nbsp;配</div>
+            <ul class="nav-list float-left clearfix">
                 <li><a href="#">主材套餐</a>
                     <div class="nav-list-badge">HOT</div>
                 </li>
@@ -43,37 +65,37 @@
                 <li><a href="#">装修视频</a></li>
                 <li><a href="#">个人中心</a></li>
             </ul>
+            <ul class="header-info float-right clearfix">
+                <li><a href="#">加入品牌推广</a></li>
+                <li><a href="#">申请本地代理</a></li>
+            </ul>
         </div>
     </header>
     <!-- 内容 -->
     <section>
-        <div class="blue-line"></div>
-        <div class="package-content">
-            <div class="left-nav-details">
-                <div class="left-nav-titel">主材套餐<img src="../images/Burger-menu.png"></div>
-                <ul class="left-nav-list">
-                    <li><a href="#">一、图片展示</a></li>
-                    <li><a href="#">二、设计意图</a></li>
-                    <li><a href="#">三、客厅</a></li>
-                    <li><a href="#">四、卧室</a></li>
-                    <li><a href="#">五、厨房</a></li>
-                    <li><a href="#">六、卫生间</a></li>
-                    <li><a href="#">七、天花材料</a></li>
-                    <li><a href="#">八、线条和装饰画</a></li>
-                    <li><a href="#">九、全屋灯饰</a></li>
-                    <li><a class="mb-0" href="#">十、全屋窗帘</a></li>
+        <div class="details-package-bg clearfix">
+            <!-- 轮播图 -->
+            <div id="slide-box" class="slide-box float-left">
+                <ul class="list-box">
+                    <li>
+                        <a href="#">
+                            <img src="../images/details-package.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/details-package.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/details-package.jpg" />
+                        </a>
+                    </li>
                 </ul>
-                <button class="service-btn">咨询客服</button>
-                <div class="tips">
-                    全屋套餐折后再折<br>
-                    2018-12-1日起满3000返200
-                </div>
-                <div class="buy">已选13个商品</div>
-                <button class="buy-btn">一键加入装修清单</button>
             </div>
-            <div class="package-content-list-details">
-                <div class="common-box"></div>
-            </div>
+            <!-- 轮播图结束 -->
+            <div class="float-left"></div>
         </div>
     </section>
     <!-- 尾部 -->
@@ -199,10 +221,9 @@
     <script src="../js/jqslider.js"></script>
     <script src="../js/common.js"></script>
     <script>
-        clientHeight('.left-nav-details', '-137')
-        clientHeight('.package-content-list-details', '-137')
-        clientHeight('.package-content', '-137')
-        clientWidth('.package-content-list-details', '-220')
+        $(function () {
+            $("#slide-box").jqslider()
+        });
     </script>
 </body>
 
