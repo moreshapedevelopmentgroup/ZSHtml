@@ -4278,6 +4278,10 @@ body {
     background-color: #ebebeb;
 }
 
+.white {
+    background-color: #fff;
+}
+
 .displaynone {
     display: none;
 }
@@ -8848,6 +8852,7 @@ body {
 .index-package-page>li:hover a {
     color: #fff;
 }
+
 /* 套餐主页结束 */
 
 /* 套餐详情 */
@@ -8870,6 +8875,7 @@ body {
     color: #010101;
     line-height: 81px;
 }
+
 .header-nav>.header-info>li>a:hover {
     color: #f00;
 }
@@ -8880,5 +8886,158 @@ body {
     background-color: #394866;
 }
 
+.details-package-box {
+    margin: 0 auto;
+    width: 1900px;
+}
 
+.details-package-bg .left-titel {
+    margin-left: 1310px;
+    background-color: #505d77;
+    cursor: default;
+}
+
+.details-package-bg .left-titel>h3 {
+    padding-top: 58px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.details-package-bg .left-titel>h3>span {
+    font-size: 30px;
+}
+
+.details-package-bg .left-titel>h4 {
+    padding: 22px 0;
+    font-size: 18px;
+    color: #ffd119;
+}
+
+.details-package-bg .element {
+    margin-left: 1310px;
+    padding: 50px 40px 0 40px;
+    text-align: left;
+    cursor: default;
+}
+
+.details-package-bg .element>h3 {
+    margin-bottom: 28px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.details-package-bg .element>p {
+    font-size: 14px;
+    color: #fff;
+    text-indent: 2em;
+}
+
+.details-package-bg .host-talk {
+    margin-top: 86px;
+    margin-left: 1310px;
+    padding: 28px 40px 78px 40px;
+    background-color: #505d77;
+    text-align: left;
+    cursor: default;
+}
+
+.details-package-bg .host-talk>h3 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.details-package-bg .host-talk>p {
+    margin-top: 28px;
+    font-size: 14px;
+    color: #fff;
+    text-indent: 2em;
+}
+
+.details-package-bg .select {
+    margin-top: 26px;
+    font-size: 18px;
+    color: #fff;
+    cursor: default;
+}
+
+.details-package-bg .btn {
+    margin-top: 30px;
+    width: 295px;
+    height: 57px;
+    background-color: #ffd119;
+    border-radius: 6px;
+    font-size: 18px;
+    color: #000;
+}
+
+.details-package-bg>.bottom-titel {
+    margin-top: 34px;
+    font-size: 24px;
+    color: #fff;
+    cursor: default;
+}
+
+.details-package-bg>.triangle {
+    margin-top: 2px;
+}
+
+.details-package-sale {
+    margin-top: 40px;
+    font-size: 18px;
+    color: #000;
+    cursor: default;
+}
+
+.details-package-list>li {
+    float: left;
+    margin-top: 70px;
+    margin-left: 86px;
+    width: 350px;
+}
+
+.details-package-list>li>.img {
+    display: block;
+    margin: 0 auto;
+}
+
+.details-package-list>li>.badge {
+    padding: 6px 20px;
+    background-color: #f00;
+    font-size: 14px;
+    color: #fff;
+    cursor: default;
+}
+
+.details-package-list>li>.titel {
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 340px;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: default;
+}
+
+.details-package-list>li>.price {
+    margin-top: 16px;
+    font-size: 18px;
+    cursor: default;
+}
+
+.details-package-btn {
+    margin-top: 86px;
+    width: 566px;
+    height: 59px;
+    background-color: #ffd119;
+    border-radius: 0;
+    font-size: 18px;
+}
+
+.details-package-tips {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    font-size: 14px;
+    cursor: default;
+}
 /* 套餐详情结束 */
