@@ -9049,6 +9049,7 @@ body {
     height: 72px;
     background-color: #fff;
     text-align: left;
+    min-width: max-content;
 }
 
 .new_header-img {
@@ -9083,7 +9084,7 @@ body {
     color: #010101;
 }
 
-.new_header-badge{
+.new_header-badge {
     position: absolute;
     top: 8px;
     left: 50%;
@@ -9120,6 +9121,128 @@ body {
     padding: 0;
     background-color: #3f6ad8;
     color: #fff;
+}
+
+.slide-box {
+    position: relative;
+    height: 856px;
+}
+
+.slide-box .prev-btn {
+    background: url(../images/previous.png) no-repeat;
+}
+
+.slide-box .next-btn {
+    background: url(../images/next.png) no-repeat;
+}
+
+.slide-box .prev-btn,
+.slide-box .next-btn {
+    display: block;
+}
+
+.slide-box .prev-btn {
+    left: 31px;
+    background-position: 0 0;
+}
+
+.slide-box .speed-box {
+    display: none;
+}
+
+.new_carouser {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    cursor: default;
+    z-index: 99;
+}
+
+.new_carouser-width {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.new_carouser-width h2 {
+    font-size: 36px;
+    color: #fff;
+}
+
+.new_carouser-search {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    height: 64px;
+    border: 1px solid #000;
+    border-radius: 18px;
+    background-color: #fff;
+    opacity: 0.8;
+}
+
+.new_carouser-search input {
+    width: 90%;
+    height: 60px;
+    font-size: 18px;
+    color: #000;
+    outline: none;
+}
+
+.new_carouser-search img {
+    position: absolute;
+    top: 16px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.new_carouser-search input::-webkit-input-placeholder {
+    color: #6a644c;
+}
+
+.new_carouser-hot li {
+    float: left;
+    margin-top: 20px;
+    margin-left: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffd119;
+}
+
+.new_carouser-hot li a {
+    font-size: 16px;
+    color: #fff;
+}
+
+.new_carouser-link {
+    margin-left: 10%;
+}
+
+.new_carouser-link li {
+    float: left;
+    margin-top: 30px;
+    margin-right: 15px;
+}
+
+.new_carouser-link li a {
+    display: block;
+    width: 206px;
+    height: 38px;
+    border-radius: 10px;
+    padding-left: 66px;
+    background-color: #f1c824;
+    text-align: left;
+    font-size: 16px;
+    color: #000;
+    line-height: 38px;
+}
+
+.new_carouser-link li a:hover {
+    background-color: #4d5b76;
+    color: #fff;
+}
+
+.new_carouser-link li a span {
+    float: right;
+    padding-right: 20px;
 }
 
 /* 新版主页 */
