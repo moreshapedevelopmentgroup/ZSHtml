@@ -20,7 +20,7 @@
 <body class="new_bg">
     <header>
         <div class="new_header clearfix p-0">
-            <img class="new_header-img float-left" src="../images/new_logo.png">
+            <img class="new_header-logo float-left" src="../images/new_logo.png">
             <ul class="new_header-nav float-left clearfix">
                 <li>
                     <a href="#">首页</a>
@@ -32,8 +32,67 @@
                 <li>
                     <a href="#">局部套餐</a>
                 </li>
-                <li>
-                    <a href="#">商品库</a>
+                <li class="more-list">
+                    <a href="#">商品库<img class="new_header-img" src="../images/down-btn.png"></a>
+                    <div class="new_header-menu">
+                        <img src="../images/up.jpg">
+                        <div class="new_header-menu-nav">
+                            <ul>
+                                <li class="deep-blue">功能区</li>
+                                <li><a class="f-f00" href="#">限时特卖</a></li>
+                                <li><a href="#">客厅</a></li>
+                                <li><a href="#">卧室</a></li>
+                                <li><a href="#">儿童房</a></li>
+                                <li><a href="#">书房</a></li>
+                                <li><a href="#">卫生间</a></li>
+                                <li><a href="#">厨房</a></li>
+                                <li><a href="#">走廊</a></li>
+                                <li><a href="#">玄关</a></li>
+                                <li><a href="#">阳台</a></li>
+                            </ul>
+                            <hr class="new_header-menu-hr">
+                            <ul>
+                                <li class="light-blue">基础类</li>
+                                <li><a href="#">瓷砖</a></li>
+                                <li><a href="#">木地板</a></li>
+                                <li><a href="#">地脚线</a></li>
+                                <li><a href="#">门</a></li>
+                                <li><a href="#">集成吊顶</a></li>
+                                <li><a href="#">色彩漆</a></li>
+                                <li><a href="#">灯具</a></li>
+                                <li><a href="#">窗帘</a></li>
+                                <li><a href="#">背景墙</a></li>
+                                <li><a href="#">卫浴</a></li>
+                            </ul>
+                            <hr class="new_header-menu-hr">
+                            <ul>
+                                <li class="light-blue">升级类</li>
+                                <li><a href="#">墙板</a></li>
+                                <li><a href="#">卫浴隔断</a></li>
+                                <li><a href="#">隔断吧台</a></li>
+                                <li><a href="#">线条</a></li>
+                                <li><a href="#">装饰画</a></li>
+                                <li><a href="#">墙布/涂料</a></li>
+                                <li><a href="#">置物墙板</a></li>
+                                <li><a href="#">不锈钢门</a></li>
+                                <li><a href="#">软包/硬包</a></li>
+                            </ul>
+                            <hr class="new_header-menu-hr">
+                            <ul>
+                                <li class="black">定制类</li>
+                                <li><a href="#">全屋整装</a></li>
+                                <li><a href="#">橱柜定制</a></li>
+                                <li><a href="#">阳台定制</a></li>
+                                <li><a href="#">飘窗定制</a></li>
+                                <li><a href="#">门定制</a></li>
+                                <li><a href="#">软硬包定制</a></li>
+                                <li><a href="#">护墙板定制</a></li>
+                                <li><a href="#">瓷砖定制</a></li>
+                                <li><a href="#">大理石定制</a></li>
+                                <li><a href="#">全屋窗帘</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </li>
                 <li>
                     <a href="#">以图找材</a>
@@ -151,8 +210,8 @@
     </section>
 
     <section>
-        <div class="yellow-link"></div>
-        <div class="new_nav-bg">
+        <div id="fixnva" class="new_nav-bg">
+            <div class="yellow-link"></div>
             <div class="new_nav-box">
                 <ul class="new_nav clearfix">
                     <li>
@@ -228,7 +287,7 @@
                         <img class="new_content-designer" src="../images/designer.png">
                         <span class="new_content-enname">Lusside&nbsp;/&nbsp;</span>
                         <span class="new_content-zhname">木道设计</span>
-                        <span class="new_content-type float-right">中档型</span>
+                        <span class="new_content-type f-f00 float-right">特价</span>
                         <div class="new_content-img-box">
                             <img class="new_content-img" src="../images/package (1).jpg">
                         </div>
@@ -425,7 +484,7 @@
         // 轮播图
         $(function () {
             $("#slide-box").jqslider();
-            $('.slide-box').mouseout(function () {
+            $('#slide-box').mouseout(function () {
                 $('.slide-box .prev-btn,.slide-box .next-btn').show()
             })
         });
@@ -447,6 +506,27 @@
                 bottom: '0px'
             }, 500)
         })
+    </script>
+    <script type="text/javascript">
+        // 导航触顶固定
+        window.onload =
+            function () {
+                var oDiv = document.getElementById("fixnva"),
+                    H = 0,
+                    Y = oDiv
+                while (Y) {
+                    H += Y.offsetTop;
+                    Y = Y.offsetParent;
+                }
+                window.onscroll = function () {
+                    var s = document.body.scrollTop || document.documentElement.scrollTop
+                    if (s > H) {
+                        oDiv.style = "position:fixed;top:0;"
+                    } else {
+                        oDiv.style = ""
+                    }
+                }
+            }
     </script>
 </body>
 

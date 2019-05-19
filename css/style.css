@@ -9056,7 +9056,7 @@ body {
     min-width: max-content;
 }
 
-.new_header-img {
+.new_header-logo {
     margin-top: 20px;
     margin-left: 76px;
 }
@@ -9073,6 +9073,10 @@ body {
     height: 72px;
 }
 
+.new_header-nav .more-list:hover .new_header-menu {
+    display: block;
+}
+
 .new_header-nav li a {
     display: block;
     margin-top: 26px;
@@ -9080,6 +9084,10 @@ body {
     padding: 0 8px;
     font-size: 16px;
     color: #595959;
+}
+
+.new_header-nav li .f-f00 {
+    color: #f00;
 }
 
 .new_header-nav li a:hover {
@@ -9101,6 +9109,94 @@ body {
     text-align: center;
     color: #fff;
     cursor: default;
+}
+
+.new_header-img {
+    margin-left: 6px;
+    width: 10px;
+    height: 6px;
+}
+
+.new_header-menu {
+    position: relative;
+    display: none;
+}
+
+.new_header-menu img {
+    display: block;
+    margin: 0 auto;
+}
+
+.new_header-menu-nav {
+    position: absolute;
+    top: 8px;
+    left: -500px;
+    border-radius: 20px;
+    padding: 30px;
+    width: 1340px;
+    border: 1px solid #7e7e7e;
+    background-color: #fff;
+    z-index: 999;
+    box-sizing: content-box;
+}
+
+.new_header-menu-nav ul {
+    width: 100%;
+    height: 24px;
+}
+
+.new_header-menu-nav ul li {
+    width: 124px;
+    height: auto;
+}
+
+.new_header-menu-hr {
+    margin: 10px 0;
+}
+
+.new_header-menu-nav ul .deep-blue {
+    width: 96px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: #394866;
+    font-size: 14px;
+    text-align: center;
+    line-height: 24px;
+    color: #fff;
+}
+
+.new_header-menu-nav ul .light-blue {
+    width: 96px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: #3f6ad8;
+    font-size: 14px;
+    text-align: center;
+    line-height: 24px;
+    color: #fff;
+}
+
+.new_header-menu-nav ul .black {
+    width: 96px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: #000;
+    font-size: 14px;
+    text-align: center;
+    line-height: 24px;
+    color: #fff;
+}
+
+.new_header-menu-nav ul li a {
+    margin: 0 22px;
+    padding: 0;
+    border: 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+.new_header-menu-nav ul li a:hover {
+    border: 0;
 }
 
 .new_header-btn {
@@ -9342,7 +9438,9 @@ body {
 }
 
 .new_nav-bg {
+    width:100%;
     background-color: #4d5b76;
+    z-index: 999;
 }
 
 .new_nav-box {
@@ -9457,6 +9555,10 @@ body {
 
 .f-red {
     color: #900216;
+}
+
+.f-f00 {
+    color: #f00;
 }
 
 .new_content-info {
