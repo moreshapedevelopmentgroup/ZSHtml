@@ -9693,4 +9693,53 @@ body {
     color: #ffd119;
 }
 
+.new_left-content{
+    position: fixed;
+    left: 280px;
+    padding: 0 50px;
+    height: 100%;
+    overflow: auto;
+}
+
+.new_content-top {
+    margin-top: 46px;
+    text-align: left;
+}
+
+.new_content-top a {
+    font-size: 14px;
+    color: #727272;
+}
+
+.new_content-top a:hover {
+    color: #000;
+}
+
+.new_content-order{
+    margin-top: 32px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #fff;
+    line-height: 20px;
+}
+
+.new_content-order-list {
+    float: left;
+    margin-top: 10px;
+    margin-left: 42px;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+}
+
+.new_content-order-list>img {
+    margin-left: 4px;
+}
+
+.new_content-total {
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 42px;
+    cursor: default;
+}
 /* 新版局部套餐 */
