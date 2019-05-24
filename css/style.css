@@ -9696,7 +9696,6 @@ body {
     position: fixed;
     left: 280px;
     padding: 0 50px;
-    height: 100%;
     overflow: auto;
 }
 
@@ -9743,12 +9742,13 @@ body {
 }
 
 .new_content-goods {
-    position: relative;
+    /* position: relative; */
 }
 
 .new_content-goods li {
-    position: absolute;
-    margin: 20px 12px;
+    /* position: absolute; */
+    float: left;
+    margin: 10px 12px;
     transition: all .4s;
 }
 
@@ -9873,11 +9873,16 @@ body {
     width: 88px;
     height: 28px;
     border-radius: 14px;
-    background-color: #394866;
+    background-color: transparent;
     font-size: 14px;
-    color: #fff;
+    color: #000;
     line-height: 28px;
     text-align: center;
+}
+
+.new_content-goods li a .bottom .btn-look:hover {
+    background-color: #394866;
+    color: #fff;
 }
 
 /* 新版局部套餐 */

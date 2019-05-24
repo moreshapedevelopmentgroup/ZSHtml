@@ -184,6 +184,74 @@
                             </div>
                         </a>
                     </li>
+                    <li>
+                        <a href="#">
+                            <div class="clearfix">
+                                <input class="input float-left" type="checkbox">
+                                <span class="add float-left">加入备选清单</span>
+                                <div class="category float-right">客厅地面瓷砖</div>
+                            </div>
+                            <div class="new_content-goods-img-box">
+                                <img class="new_content-goods-img" src="../images/mylist-list (1).jpg">
+                            </div>
+                            <div class="bottom clearfix">
+                                <span class="price float-left">38</span>
+                                <span class="unit float-left">元/片</span>
+                                <button class="btn btn-look float-right">查看详情</button>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="clearfix">
+                                <input class="input float-left" type="checkbox">
+                                <span class="add float-left">加入备选清单</span>
+                                <div class="category float-right">客厅地面瓷砖</div>
+                            </div>
+                            <div class="new_content-goods-img-box">
+                                <img class="new_content-goods-img" src="../images/mylist-list (1).jpg">
+                            </div>
+                            <div class="bottom clearfix">
+                                <span class="price float-left">38</span>
+                                <span class="unit float-left">元/片</span>
+                                <button class="btn btn-look float-right">查看详情</button>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="clearfix">
+                                <input class="input float-left" type="checkbox">
+                                <span class="add float-left">加入备选清单</span>
+                                <div class="category float-right">客厅地面瓷砖</div>
+                            </div>
+                            <div class="new_content-goods-img-box">
+                                <img class="new_content-goods-img" src="../images/mylist-list (1).jpg">
+                            </div>
+                            <div class="bottom clearfix">
+                                <span class="price float-left">38</span>
+                                <span class="unit float-left">元/片</span>
+                                <button class="btn btn-look float-right">查看详情</button>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="clearfix">
+                                <input class="input float-left" type="checkbox">
+                                <span class="add float-left">加入备选清单</span>
+                                <div class="category float-right">客厅地面瓷砖</div>
+                            </div>
+                            <div class="new_content-goods-img-box">
+                                <img class="new_content-goods-img" src="../images/mylist-list (1).jpg">
+                            </div>
+                            <div class="bottom clearfix">
+                                <span class="price float-left">38</span>
+                                <span class="unit float-left">元/片</span>
+                                <button class="btn btn-look float-right">查看详情</button>
+                            </div>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -201,60 +269,6 @@
 
 
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
-    <script>
-        // 排列
-        var colCount
-        var colHeightArry = []
-        var imgWidth = $('.new_content-goods li').outerWidth(true)
-        colCount = parseInt($('.new_content-goods').width() / imgWidth)
-        for (var i = 0; i < colCount; i++) {
-            colHeightArry[i] = 0
-        }
-        $('.new_content-goods li').on('load', function () {
-            var minValue = colHeightArry[0]
-            var minIndex = 0
-            for (var i = 0; i < colCount; i++) {
-                if (colHeightArry[i] < minValue) {
-                    minValue = colHeightArry[i]
-                    minIndex = i
-                }
-            }
-            $(this).css({
-                left: minIndex * imgWidth,
-                top: minValue
-            })
-            colHeightArry[minIndex] += $(this).outerHeight(true)
-        })
-
-        function reset() {
-            var colHeightArry = []
-            colCount = parseInt($('.new_content-goods').width() / imgWidth)
-            for (var i = 0; i < colCount; i++) {
-                colHeightArry[i] = 0
-            }
-            $('.new_content-goods li').each(function () {
-                var minValue = colHeightArry[0]
-                var minIndex = 0
-                for (var i = 0; i < colCount; i++) {
-                    if (colHeightArry[i] < minValue) {
-                        minValue = colHeightArry[i]
-                        minIndex = i
-                    }
-                }
-                $(this).css({
-                    left: minIndex * imgWidth,
-                    top: minValue
-                })
-                colHeightArry[minIndex] += $(this).outerHeight(true)
-            })
-        }
-        $(window).resize(function () {
-            reset()
-        })
-        $(window).ready(function () {
-            reset()
-        })
-    </script>
     <script>
         // 划过图片放大
         $('.new_content-goods li').mouseenter(function () {
@@ -279,6 +293,7 @@
     <script>
         clientHeight('.new_left-list', '-480')
         clientWidth('.new_left-content', '-380')
+        clientHeight('.new_left-content', '-72')
     </script>
     <script>
         // 点击排序修改样式
