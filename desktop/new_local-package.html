@@ -169,87 +169,19 @@
                 <ul class="new_content-goods clearfix">
                     <li>
                         <a href="#">
-                            <img class="new_content-designer" src="../images/designer.png">
-                            <span class="new_content-enname">Lusside&nbsp;/&nbsp;</span>
-                            <span class="new_content-zhname">木道设计</span>
-                            <span class="new_content-type float-right">中档型</span>
-                            <div class="new_content-img-box">
-                                <img class="new_content-img" src="../images/package (1).jpg">
+                            <div class="clearfix">
+                                <input class="input float-left" type="checkbox">
+                                <span class="add float-left">加入备选清单</span>
+                                <div class="category float-right">客厅地面瓷砖</div>
                             </div>
-                            <div class="new_content-titel clearfix">
-                                <span class="f-bule float-left">主材套餐&nbsp;&nbsp;|</span>
-                                <span class="float-right">风&nbsp;&nbsp;&nbsp;&nbsp;格：新中式</span>
+                            <div class="new_content-goods-img-box">
+                                <img class="new_content-goods-img" src="../images/mylist-list (1).jpg">
                             </div>
-                            <p class="new_content-info">清新的北欧风，有客户安装完后现场体验还原度达90%，材料基本上使用的是中档，三房两厅100方全屋套餐内主材花费约25000元。
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img class="new_content-designer" src="../images/designer.png">
-                            <span class="new_content-enname">Lusside&nbsp;/&nbsp;</span>
-                            <span class="new_content-zhname">木道设计</span>
-                            <span class="new_content-type float-right">中档型</span>
-                            <div class="new_content-img-box">
-                                <img class="new_content-img" src="../images/package (1).jpg">
+                            <div class="bottom clearfix">
+                                <span class="price float-left">38</span>
+                                <span class="unit float-left">元/片</span>
+                                <button class="btn btn-look float-right">查看详情</button>
                             </div>
-                            <div class="new_content-titel clearfix">
-                                <span class="f-yellow float-left">主材套餐&nbsp;&nbsp;|</span>
-                                <span class="float-right">风&nbsp;&nbsp;&nbsp;&nbsp;格：新中式</span>
-                            </div>
-                            <p class="new_content-info">清新的北欧风，有客户安装完后现场体验还原度达90%，材料基本上使用的是中档，三房两厅100方全屋套餐内主材花费约25000元。
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img class="new_content-designer" src="../images/designer.png">
-                            <span class="new_content-enname">Lusside&nbsp;/&nbsp;</span>
-                            <span class="new_content-zhname">木道设计</span>
-                            <span class="new_content-type f-f00 float-right">特价</span>
-                            <div class="new_content-img-box">
-                                <img class="new_content-img" src="../images/package (1).jpg">
-                            </div>
-                            <div class="new_content-titel clearfix">
-                                <span class="f-red float-left">主材套餐&nbsp;&nbsp;|</span>
-                                <span class="float-right">风&nbsp;&nbsp;&nbsp;&nbsp;格：新中式</span>
-                            </div>
-                            <p class="new_content-info">清新的北欧风，有客户安装完后现场体验还原度达90%，材料基本上使用的是中档，三房两厅100方全屋套餐内主材花费约25000元。
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img class="new_content-designer" src="../images/designer.png">
-                            <span class="new_content-enname">Lusside&nbsp;/&nbsp;</span>
-                            <span class="new_content-zhname">木道设计</span>
-                            <span class="new_content-type float-right">中档型</span>
-                            <div class="new_content-img-box">
-                                <img class="new_content-img" src="../images/package (1).jpg">
-                            </div>
-                            <div class="new_content-titel clearfix">
-                                <span class="float-left">主材套餐&nbsp;&nbsp;|</span>
-                                <span class="float-right">风&nbsp;&nbsp;&nbsp;&nbsp;格：新中式</span>
-                            </div>
-                            <p class="new_content-info">清新的北欧风，有客户安装完后现场体验还原度达90%，材料基本上使用的是中档，三房两厅100方全屋套餐内主材花费约25000元。
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img class="new_content-designer" src="../images/designer.png">
-                            <span class="new_content-enname">Lusside&nbsp;/&nbsp;</span>
-                            <span class="new_content-zhname">木道设计</span>
-                            <span class="new_content-type float-right">中档型</span>
-                            <div class="new_content-img-box">
-                                <img class="new_content-img" src="../images/package (1).jpg">
-                            </div>
-                            <div class="new_content-titel clearfix">
-                                <span class="float-left">主材套餐&nbsp;&nbsp;|</span>
-                                <span class="float-right">风&nbsp;&nbsp;&nbsp;&nbsp;格：新中式</span>
-                            </div>
-                            <p class="new_content-info">清新的北欧风，有客户安装完后现场体验还原度达90%，材料基本上使用的是中档，三房两厅100方全屋套餐内主材花费约25000元。
-                            </p>
                         </a>
                     </li>
                 </ul>
@@ -270,27 +202,23 @@
 
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
     <script>
-        var colCount //定义列数
-        var colHeightArry = [] //定义列高度数组
-        var imgWidth = $('.new_content-goods li').outerWidth(true) //单张图片的宽度
-
-        colCount = parseInt($('.new_content-goods').width() / imgWidth) //计算出列数
+        // 排列
+        var colCount
+        var colHeightArry = []
+        var imgWidth = $('.new_content-goods li').outerWidth(true)
+        colCount = parseInt($('.new_content-goods').width() / imgWidth)
         for (var i = 0; i < colCount; i++) {
             colHeightArry[i] = 0
         }
-       
-
         $('.new_content-goods li').on('load', function () {
-
-            var minValue = colHeightArry[0] //定义最小的高度
-            var minIndex = 0 //定义最小高度的下标
+            var minValue = colHeightArry[0]
+            var minIndex = 0
             for (var i = 0; i < colCount; i++) {
-                if (colHeightArry[i] < minValue) { //如果最小高度组数中的值小于最小值
-                    minValue = colHeightArry[i] //那么认为最小高度数组中的值是真正的最小值
-                    minIndex = i //最小下标为当前下标
+                if (colHeightArry[i] < minValue) {
+                    minValue = colHeightArry[i]
+                    minIndex = i
                 }
             }
-
             $(this).css({
                 left: minIndex * imgWidth,
                 top: minValue
@@ -298,19 +226,6 @@
             colHeightArry[minIndex] += $(this).outerHeight(true)
         })
 
-
-        //当窗口大小重置之后，重新执行
-        $(window).on('resize', function () {
-            reset()
-        })
-
-
-        //当窗口加载完毕，执行瀑布流
-        $(window).on('load', function () {
-            reset()
-        })
-
-        //定义reset函数
         function reset() {
             var colHeightArry = []
             colCount = parseInt($('.new_content-goods').width() / imgWidth)
@@ -326,7 +241,6 @@
                         minIndex = i
                     }
                 }
-
                 $(this).css({
                     left: minIndex * imgWidth,
                     top: minValue
@@ -334,12 +248,31 @@
                 colHeightArry[minIndex] += $(this).outerHeight(true)
             })
         }
-
         $(window).resize(function () {
             reset()
         })
+        $(window).ready(function () {
+            reset()
+        })
     </script>
+    <script>
+        // 划过图片放大
+        $('.new_content-goods li').mouseenter(function () {
+            $(this).find('.new_content-goods-img').stop().animate({
+                width: '294px',
+                right: '20px',
+                bottom: '20px'
+            }, 500)
+        })
 
+        $('.new_content-goods li').mouseleave(function () {
+            $(this).find('.new_content-goods-img').stop().animate({
+                width: '254px',
+                right: '0px',
+                bottom: '0px'
+            }, 500)
+        })
+    </script>
 
 
 
