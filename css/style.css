@@ -9582,6 +9582,18 @@ body {
     background-color: #303c53;
 }
 
+.blue-bg li a:hover {
+    background-color: #394866;
+}
+
+.purple-bg {
+    background-color: #5a4b5e;
+}
+
+.purple-bg li a:hover {
+    background-color: #2b1332;
+}
+
 .new_left-titel {
     margin-left: 46px;
     text-align: left;
@@ -9632,10 +9644,6 @@ body {
 
 .new_left-list li a:hover img {
     display: block;
-}
-
-.new_left-list li a:hover {
-    background-color: #394866;
 }
 
 .new_left-list::-webkit-scrollbar {
@@ -9919,5 +9927,51 @@ body {
 }
 
 .new_details-info .designer-info {
+    margin-bottom: 30px;
     height: 60px;
 }
+
+.new_details-info .designer-info .enname {
+    margin-left: 18px;
+    color: #000;
+}
+
+.new_details-info .designer-info .zhname {
+    color: #a6a6a6;
+}
+
+.new_details-info .designer-info .type {
+    margin-left: 60px;
+    color: #000;
+}
+
+.new_details-info .designer-info .style {
+    line-height: 59px;
+    color: #000;
+}
+
+.new_details-info .designer-p {
+    text-indent: 2em;
+    color: #626262;
+}
+
+.new_left-content>img{
+    margin-top: 20px;
+}
+/* 新版局部套餐详情 */
+
+/* 新版商品库 */
+.new_left-nav .left-info{
+    margin-top: 20px;
+    cursor: default;
+}
+
+.new_left-nav .yellow-titel {
+    color: #ffd119;
+}
+
+.new_left-nav .left-line {
+    margin: 16px;
+    border-top: 1px solid #3a3a3a;
+}
+/* 新版商品库 */
