@@ -9886,3 +9886,38 @@ body {
 }
 
 /* 新版局部套餐 */
+
+/* 新版局部套餐详情 */
+.new_details-titel {
+    margin-top: 36px;
+    margin-left: 118px;
+    font-size: 24px;
+    color: #010101;
+    text-align: left;
+    cursor: default;
+}
+
+.new_details-lookbtn {
+    font-size: 14px;
+    color: #3f6ad8;
+    margin-top: 48px;
+    margin-right: 118px;
+    text-align: right;
+}
+
+.new_details-lookbtn:hover {
+    color: #f00;
+}
+
+.new_details-info{
+    margin-top: 36px;
+    padding: 16px 26px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.new_details-info .designer-info {
+    height: 60px;
+}
