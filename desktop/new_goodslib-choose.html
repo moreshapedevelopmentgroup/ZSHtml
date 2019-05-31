@@ -130,15 +130,15 @@
                 <ul class="new_left-list">
                     <li>
                         <a href="#"><img src="../images/new_left-list.png">图片详情</a>
-                        <div class="choose-specifications">
-                            <ul class="left-specifications">
-                                <li>800*800MM</li>
-                                <li>高级黑</li>
-                            </ul>
+                    </li>
+                    <li class="active">
+                        <a href="#"><img src="../images/new_left-list.png">选择规格</a>
+                        <div class="choose-specifications displaynone">
+                            <ul class="left-specifications"></ul>
                         </div>
                     </li>
-                    <li><a href="#"><img src="../images/new_left-list.png">选择规格</a></li>
-                    <li><a href="#"><img src="../images/new_left-list.png">评价<span class="float-right mr-4">6</span></a></li>
+                    <li><a href="#"><img src="../images/new_left-list.png">评价<span class="float-right mr-4">6</span></a>
+                    </li>
                     <li><a href="#"><img src="../images/new_left-list.png">安装与物流</a></li>
                     <li><a href="#"><img src="../images/new_left-list.png">案例与晒图</a></li>
                 </ul>
@@ -146,7 +146,7 @@
                     套餐价格：<span class="price">50</span>元/片
                 </div>
                 <a class="new_left-btn yellow-btn" href="#">加入清单</a>
-                <div class="new_left-bottom mt-5"><a href="#">咨询客服</a></div>
+                <div class="new_left-bottom mt-2"><a href="#">咨询客服</a></div>
                 <div class="new_left-bottom"><a href="#">本地销售</a></div>
                 <div class="new_left-bottom"><a href="#">找设计师</a></div>
                 <div class="new_left-bottom"><a href="#">找装修工人</a></div>
@@ -154,7 +154,7 @@
 
 
             <!-- 内容 -->
-            <div class="new_left-content float-left">
+            <div class="new_left-content float-left clearfix">
                 <div class="new_content-top">
                     <a href="#">首页</a><a href="#">&gt;主材套餐</a><a href="#">&gt;梦想家北欧系列</a>
                 </div>
@@ -162,7 +162,40 @@
                     <span class="new_details-titel float-left">嘉宾大理石纹理瓷砖</span>
                     <a class="new_details-lookbtn float-right" href="#">查看套餐定制流程</a>
                 </div>
-                <div class="new_goodslib-choose-content"></div>
+                <div class="new_goodslib-choose-content">
+                    <span>编号&nbsp;&nbsp;|&nbsp;&nbsp;CZ211084</span>
+                    <span>品牌&nbsp;&nbsp;|&nbsp;&nbsp;嘉宾瓷砖</span>
+                    <span>产地&nbsp;&nbsp;|&nbsp;&nbsp;佛山</span>
+                </div>
+                <div class="new_goodslib-choose-content clearfix">
+                    <span>价格&nbsp;&nbsp;|&nbsp;&nbsp;套餐价：<span class="f-f00">50</span>元/片</span>
+                    <span class="original-price">原价256元</span>
+                    <button class="float-right btn join-list">加入清单</button>
+                </div>
+                <p class="instructions">说明：只需加入装修清单，无需选择数量，客服后续会和您联系上门量尺后确定数量。</p>
+                <div class="new_goodslib-choose-content clearfix">
+                    <span class="specifications-box">规格&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                    <div>
+                        <ul class="specifications-choose clearfix">
+                            <li>300*300MM</li>
+                            <li>600*600MM</li>
+                            <li>800*800MM</li>
+                            <li>1600*1600MM</li>
+                        </ul>
+                        <ul class="specifications-choose clearfix">
+                            <li>卡拉拉白</li>
+                            <li>魅力灰</li>
+                            <li>高级黑</li>
+                            <li>美丽多彩</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="new_goodslib-choose-img">
+                    <img src="../images/case.png">
+                </div>
+                <div class="new_goodslib-choose-img">
+                    <img src="../images/case.png">
+                </div>
             </div>
         </div>
     </section>
@@ -175,9 +208,24 @@
     <script src="../js/jqslider.js"></script>
     <script src="../js/common.js"></script>
     <script>
-        clientHeight('.new_left-list', '-480')
+        clientHeight('.new_left-list', '-520')
         clientWidth('.new_left-content', '-380')
         clientHeight('.new_left-content', '-72')
+    </script>
+    <script>
+        // 点击规格
+        var arr = new Object
+        $('.specifications-choose>li').click(function () {
+            $(this).addClass('active').siblings().removeClass('active')
+            arr[$(this).parent('.specifications-choose').index()] = $(this).text()
+            $('.choose-specifications').show()
+            $('.left-specifications>li').remove()
+            $('.specifications-box>.specifications').remove()
+            for (var i in arr) {
+                $('.left-specifications').append('<li>' + arr[i] + '</li>')
+                $('.specifications-box').append('<span class="specifications">' + arr[i] + '</span>')
+            }
+        })
     </script>
 </body>
 
