@@ -457,7 +457,7 @@
         var fimg = $('.new_index-package-img-list>li>img').eq(0).attr('src')
         $('.new_index-package-img-box>img').attr('src', fimg)
         $('.new_index-package-img-list>li').click(function () {
-            $('.new_index-package-img-box>img').attr('src', $(this).children('img').attr('src'))
+            $(this).parent().siblings('.new_index-package-img-box').children().attr('src', $(this).children('img').attr('src'))
         })
     </script>
 </body>

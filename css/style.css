@@ -10332,4 +10332,75 @@ body {
     color: #fff;
 }
 
+.new_content-top a.new_details-lookbtn {
+    margin-top: 0;
+    font-size: 14px;
+    color: #3f6ad8;
+    margin-right: 118px;
+}
+
+.new_content-top a.new_details-lookbtn:hover {
+    color: #f00;
+}
+
+.new_goodslib-topnav {
+    position: relative;
+}
+
+.new_goodslib-topnav>.new_goodslib-topnav-titel {
+    position: absolute;
+    height: 100%;
+}
+
+.new_goodslib-topnav>.new_goodslib-topnav-titel>.light-blue {
+    width: 96px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: #3f6ad8;
+    font-size: 14px;
+    text-align: center;
+    line-height: 24px;
+    color: #fff;
+}
+
+.new_goodslib-topnav-list {
+    margin-left: 100px;
+}
+
+.new_goodslib-topnav-list>li {
+    float: left;
+    margin-bottom: 10px;
+}
+
+.new_goodslib-topnav-list>li>a.active {
+    border: 1px solid #000;
+    color: #f00;
+}
+
+.new_goodslib-topnav-list>li>a.active img {
+    display: block;
+}
+
+.new_goodslib-topnav-list>li>a {
+    display: block;
+    width: 130px;
+    height: 24px;
+    border-radius: 12px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+}
+
+.new_goodslib-topnav-list>li>a>img {
+    display: none;
+    float: right;
+    margin-top: 7px;
+    margin-right: 5px;
+}
+
+.new_goodslib-topnav-list>li>a:hover {
+    border: 1px solid #000;
+    color: #f00;
+}
 /* 新版商品库 */
