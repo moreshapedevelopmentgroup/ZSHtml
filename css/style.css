@@ -10403,4 +10403,35 @@ body {
     border: 1px solid #000;
     color: #f00;
 }
+
+.new_goodslib-choose-content>.price-range .titel{
+    margin-left: 32px;
+    font-size: 14px;
+    color: #000;
+    cursor: default;
+}
+
+.new_goodslib-choose-content>.price-range .price-box{
+    margin-top: 3px;
+    margin-left: 30px;
+    width: 404px;
+    height: 16px;
+    background-color: #d4d4d4;
+}
+
+.new_goodslib-choose-content>.price-range .price-box>.choose{
+    margin-top: 2px;
+    margin-left: 2px;
+    width: 200px;
+    height: 12px;
+    background-color: #ffd119;
+}
+
+.new_goodslib-choose-content>.price-range .min{
+    margin-left: 78px;
+}
+
+.new_goodslib-choose-content>.price-range .max{
+    margin-left: 356px;
+}
 /* 新版商品库 */
