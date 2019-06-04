@@ -10404,6 +10404,10 @@ body {
     color: #f00;
 }
 
+.new_goodslib-choose-content>.price-range>.price-range-box {
+    margin-top: 34px;
+}
+
 .new_goodslib-choose-content>.price-range .titel{
     margin-left: 32px;
     font-size: 14px;
@@ -10433,5 +10437,75 @@ body {
 
 .new_goodslib-choose-content>.price-range .max{
     margin-left: 356px;
+}
+
+.new_goodslib-choose-content>.price-range .color-box {
+    margin-top: 2px;
+    margin-left: 30px;
+}
+
+.new_goodslib-choose-content>.price-range .color-box>li {
+    position: relative;
+    float: left;
+    cursor: pointer;
+}
+
+.new_goodslib-choose-content>.price-range .color-box>li>.tick-active {
+    display: none;
+    position: absolute;
+    top: 4px;
+    margin-left: 50%;
+    left: -6px;
+}
+
+.new_goodslib-choose-content>.price-range .color-box>li>div {
+    margin: 0 1px;
+    width: 80px;
+    height: 16px;
+}
+
+.new_goodslib-choose-content>.price-range .color-box>li>.colorful {
+    margin: 0 1px;
+    width: 80px;
+    height: 16px;
+    vertical-align: top;
+}
+
+.new_goodslib-choose-content>.price-range .color-box>li>div.brown{
+    background-color: #6f4e13;
+}
+
+.new_goodslib-choose-content>.price-range .color-box>li>div.yellow{
+    background-color: #ffea03;
+}
+
+.new_goodslib-choose-content>.price-range .color-box>li>div.red{
+    background-color: #e71f19;
+}
+
+.new_goodslib-choose-content>.price-range .color-box>li>div.black{
+    background-color: #000;
+}
+
+.new_goodslib-choose-content>.price-range .color-box>li>div.grey{
+    background-color: #aaaaaa;
+}
+
+.new_goodslib-choose-content>.price-range .color-box>li>div.white{
+    background-color: #fff;
+}
+
+.new_goodslib-choose-content>.price-range .color-box>li>div.green{
+    background-color: #42b51a;
+}
+
+.new_goodslib-choose-content>.price-range .color-box>li>div.blue{
+    background-color: #0099ff;
+}
+
+.new_goodslib-choose-content>.price-range .color-box>li>h4{
+    font-size: 14px;
+    text-align: center;
+    color: #4f4f4f;
 }
 /* 新版商品库 */

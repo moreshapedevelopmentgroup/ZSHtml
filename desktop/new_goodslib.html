@@ -197,7 +197,7 @@
                     </div>
                     <hr>
                     <div class="price-range">
-                        <div class="clearfix">
+                        <div class="price-range-box clearfix">
                             <span class="titel float-left">价格</span>
                             <div class="float-left price-box">
                                 <div class="choose"></div>
@@ -206,6 +206,56 @@
                         <div>
                             <span class="min">￥0</span>
                             <span class="max">￥3000</span>
+                        </div>
+                        <div class="price-range-box clearfix">
+                            <span class="titel float-left">价格</span>
+                            <ul class="float-left color-box clearfix">
+                                <li>
+                                    <img class="tick-active" src="../images/tick-w.png">
+                                    <div class="brown"></div>
+                                    <h4>棕</h4>
+                                </li>
+                                <li>
+                                    <img class="tick-active" src="../images/tick.png">
+                                    <div class="yellow"></div>
+                                    <h4>黄</h4>
+                                </li>
+                                <li>
+                                    <img class="tick-active" src="../images/tick-w.png">
+                                    <div class="red"></div>
+                                    <h4>红</h4>
+                                </li>
+                                <li>
+                                    <img class="tick-active" src="../images/tick-w.png">
+                                    <div class="black"></div>
+                                    <h4>黑</h4>
+                                </li>
+                                <li>
+                                    <img class="tick-active" src="../images/tick-w.png">
+                                    <div class="grey"></div>
+                                    <h4>灰</h4>
+                                </li>
+                                <li>
+                                    <img class="tick-active" src="../images/tick.png">
+                                    <div class="white"></div>
+                                    <h4>白</h4>
+                                </li>
+                                <li>
+                                    <img class="tick-active" src="../images/tick-w.png">
+                                    <div class="green"></div>
+                                    <h4>绿</h4>
+                                </li>
+                                <li>
+                                    <img class="tick-active" src="../images/tick-w.png">
+                                    <div class="blue"></div>
+                                    <h4>蓝</h4>
+                                </li>
+                                <li>
+                                    <img class="tick-active" src="../images/tick-w.png">
+                                    <img class="colorful" src="../images/colorful.jpg">
+                                    <h4>撞色</h4>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -356,6 +406,14 @@
             }
             $(this).siblings().children('img').attr('src', '../images/order.png')
             $(this).siblings().css('color', '#000')
+        })
+    </script>
+
+    <script>
+        // 点击选择颜色
+        $('.color-box>li').click(function () {
+            $(this).children('.tick-active').show()
+            $(this).siblings().children('.tick-active').hide()
         })
     </script>
 
