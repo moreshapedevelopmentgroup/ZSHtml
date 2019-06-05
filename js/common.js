@@ -688,9 +688,6 @@ function clientWidth(dom, num) {
 	if (num === undefined) {
 		div.width(ww)
 	} else if (typeof num === 'number') {
-		console.log(ww)
-		console.log(num)
-		console.log(ww + num)
 		div.height(ww + num)
 	} else if (num.indexOf('-')) {
 		div.width(ww - parseFloat(num))
