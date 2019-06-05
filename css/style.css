@@ -10716,3 +10716,44 @@ body {
         height: 78px;
     }
 }
+
+/* 1440分辨率 */
+
+/* 移动端样式 */
+.m_top {
+    display: flex;
+    width: 100%;
+    height: 1rem;
+    background-color: #000;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.m_top .iconfont {
+    margin: 0 .3rem;
+    font-size: .3rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.m_top>.m_logo {
+    width: 2.4rem;
+}
+
+.m_top>.search-submit {
+    background-color: #000;
+    outline: none;
+}
+
+.sw-next {
+    display: none;
+}
+
+.sw-prev {
+    display: none;
+}
+
+.sw-bullet li.active {
+    background-color: #f1cb38;
+}
+/* 移动端样式 */
