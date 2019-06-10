@@ -10720,6 +10720,11 @@ body {
 /* 1440分辨率 */
 
 /* 移动端样式 */
+a {
+    /* ios系统点击a连接出现半透明背景去除 */
+    -webkit-tap-highlight-color: transparent;
+}
+
 .m_top {
     display: flex;
     position: fixed;
@@ -10731,6 +10736,11 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 999;
+}
+
+.m_top-bottom {
+    width: 100%;
+    height: 1rem;
 }
 
 .m_top .iconfont {
@@ -10754,7 +10764,7 @@ body {
 }
 
 .swipslider {
-    margin: 1rem 0 0 0;
+    margin: 0;
     padding-top: 0;
     height: 5rem;
 }
@@ -10805,8 +10815,6 @@ body {
 }
 
 .m_content-top {
-    display: flex;
-    align-items: center;
     margin-top: .18rem;
     width: 100%;
     height: 1.4rem;
@@ -10814,21 +10822,30 @@ body {
 }
 
 .m_content-top>.black-block {
+    margin-top: .45rem;
     width: .1rem;
     height: .4rem;
     background-color: #000;
 }
 
 .m_content-top>.titel {
-    margin-left: .3rem;
+    margin-top: .45rem;
+    margin-left: .28rem;
     font-size: .36rem;
     color: #000;
 }
 
 .m_content-top>.info {
-    margin-left: .55rem;
+    margin-top: .45rem;
+    margin-left: .56rem;
     font-size: .24rem;
     color: #777777;
+}
+
+.m_content-top>.right {
+    margin-top: .45rem;
+    display: block;
+    height: .4rem;
 }
 
 .m_content-box {
@@ -10954,11 +10971,6 @@ body {
     color: #a9a9a9;
 }
 
-
-
-
-
-
 .m_video {
     margin: .16rem 0;
     width: 7.5rem;
@@ -11062,9 +11074,8 @@ body {
 
 .m_footer>li>a {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
-    width: 1.5rem;
 }
 
 .m_footer>li>a>.iconfont {
@@ -11080,4 +11091,254 @@ body {
 .m_footer>li.active>a>.iconfont {
     color: #ffde01;
 }
+
+.m_titel-top {
+    width: 100%;
+    height: 1rem;
+    border: .01rem solid #e5e5e5;
+    font-size: .36rem;
+    line-height: 1rem;
+}
+
+.m_classify-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 7.5rem;
+
+}
+
+.m_classify-list>li {
+    margin-left: .03rem;
+    margin-bottom: .03rem;
+}
+
+.m_classify-list>li>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.48rem;
+    height: 1.26rem;
+    background-color: #fff;
+}
+
+.m_classify-list>li>a>span {
+    font-size: .3rem;
+    color: #000;
+}
+
+.m_classify-list>li>a>span.f-gray {
+    margin-left: .18rem;
+    color: #9f9f9f;
+}
+
+.m_top-nav {
+    width: 7.5rem;
+    height: .76rem;
+    background-color: #fff;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.m_top-nav>ul {
+    display: flex;
+    align-items: center;
+}
+
+.m_top-nav>ul>li>a {
+    display: block;
+    width: 1rem;
+    height: .76rem;
+    font-size: .2rem;
+    text-align: center;
+    line-height: .76rem;
+}
+
+.m_content-top>.designer {
+    margin-top: .34rem;
+    margin-left: .4rem;
+    width: .7rem;
+}
+
+.m_content-top>.titel-two {
+    margin-top: .45rem;
+    margin-left: 1.84rem;
+    font-size: .36rem;
+    color: #000;
+}
+
+.m_nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .18rem;
+    height: .68rem;
+    background-color: #fff;
+}
+
+.m_nav-list>li>a {
+    display: block;
+    height: .68rem;
+    font-size: .24rem;
+    line-height: .68rem;
+}
+
+.m_nav-list>li.active>a {
+    border-bottom: .06rem solid #ffca05;
+}
+
+.m_preferential-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: .68rem;
+    background-color: #fe0000;
+}
+
+.m_preferential-info>.left {
+    padding: .1rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    font-size: .18rem;
+    color: #fe0000;
+}
+
+.m_preferential-info>.center {
+    font-size: .24rem;
+    color: #fdd901;
+}
+
+.m_preferential-info>.right {
+    font-size: .2rem;
+    color: #fff;
+}
+
+.m_goods-choose>li {
+    margin-bottom: .03rem;
+    width: 100%;
+    height: 5.5rem;
+    background-color: #fff;
+}
+
+.m_goods-choose>li>.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: .7rem;
+}
+
+.m_goods-choose>li>.top>.choose {
+    display: flex;
+    align-items: center;
+    margin-left: .5rem;
+    font-size: .24rem;
+}
+
+.m_goods-choose>li>.top>.choose>input {
+    margin-right: .2rem;
+    -webkit-appearance: none;
+    width: .22rem;
+    height: .22rem;
+    border-radius: .03rem;
+    border: .01rem solid #c5c5c5;
+    background-color: #c5c5c5;
+    outline: none;
+}
+
+.m_goods-choose>li>.top>.choose>input:checked {
+    position: relative;
+    background: #ffd119;
+    border: .01rem solid #000;
+}
+
+.m_goods-choose>li>.top>.choose>input:checked::before,
+.m_goods-choose>li>.top>.choose>input:checked::after {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    color: #000;
+    border: .02rem solid;
+    background-color: #000;
+}
+
+.m_goods-choose>li>.top>.choose>input:checked::before {
+    width: .02rem;
+    height: .01rem;
+    left: 24%;
+    top: 49%;
+    transform: skew(0deg, 50deg);
+}
+
+.m_goods-choose>li>.top>.choose>input:checked::after {
+    width: .06rem;
+    height: .01rem;
+    left: 46%;
+    top: 40%;
+    transform: skew(0deg, -50deg);
+}
+
+.m_goods-choose>li>.top>.badge {
+    margin-right: .5rem;
+    padding: 0;
+    width: .9rem;
+    height: .34rem;
+    background-color: #f00;
+    font-size: .2rem;
+    text-align: center;
+    line-height: .34rem;
+    color: #fff;
+}
+
+.m_goods-choose>li>img {
+    margin-top: .2rem;
+    height: 2.5rem;
+}
+
+.m_goods-choose>li>.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .6rem;
+}
+
+.m_goods-choose>li>.bottom>.text {
+    margin: 0 .5rem;
+    font-size: .24rem;
+    color: #c6c6c6;
+}
+
+.m_goods-choose>li>.bottom>.price {
+    font-size: .24rem;
+    color: #000;
+}
+
+.m_goods-choose>li>.bottom>.price>.original-price {
+    margin-left: .26rem;
+    color: #959595;
+    text-decoration: line-through;
+}
+
+.m_choose-num {
+    width: 100%;
+    height: .86rem;
+    background-color: #394867;
+}
+
+.m_choose-num>div {
+    margin: 0 .4rem;
+    font-size: .3rem;
+    line-height: .86rem;
+    color: #fff;
+}
+
+.m_join-list {
+    margin: .06rem 0;
+    width: 100%;
+    height: .9rem;
+    background-color: #ffd119;
+    outline: none;
+    font-size: .36rem;
+    line-height: .9rem;
+}
+
 /* 移动端样式 */

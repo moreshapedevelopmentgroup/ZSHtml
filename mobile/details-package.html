@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>套餐详情</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/flexslider.css">
+    <link rel="stylesheet" href="../css/viewer.min.css">
+    <link rel="stylesheet" href="../css/icon/iconfont.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/swipeslider.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script>
+        (function (e, h) {
+            var g = document,
+                d = window;
+            var b = g.documentElement;
+            var c;
+            var i, a;
+
+            function f() {
+                var j = b.getBoundingClientRect().width;
+                var k = window.devicePixelRatio || 1;
+                b.setAttribute("data-dpr", k);
+                if (!h) {
+                    h = 750
+                }
+                if (j > h) {
+                    j = h
+                }
+                var m = j * 100 / e;
+                a = "html{font-size:" + m + "px !important}";
+                i = document.getElementById("rootsize") || document.createElement("style");
+                if (!document.getElementById("rootsize")) {
+                    document.getElementsByTagName("head")[0].appendChild(i);
+                    i.id = "rootsize"
+                }
+                if (i.styleSheet) {
+                    i.styleSheet.disabled || (i.styleSheet.cssText = a)
+                } else {
+                    try {
+                        i.innerHTML = a
+                    } catch (l) {
+                        i.innerText = a
+                    }
+                }
+                b.style.fontSize = m + "px"
+            }
+            f();
+            d.addEventListener("resize", function () {
+                clearTimeout(c);
+                c = setTimeout(f, 300)
+            }, false);
+            d.addEventListener("pageshow", function (j) {
+                if (j.persisted) {
+                    clearTimeout(c);
+                    c = setTimeout(f, 300)
+                }
+            }, false);
+            if (g.readyState === "complete") {
+                g.body.style.fontSize = "16px"
+            } else {
+                g.addEventListener("DOMContentLoaded", function (j) {
+                    g.body.style.fontSize = "16px"
+                }, false)
+            }
+        })(750, 768);
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="m_top">
+            <i class="iconfont icon-caidan"></i>
+            <img class="m_logo" src="../images/m_logo.jpg">
+            <form class="search-input displaynone">
+                <input type="search">
+                <i class="search-exit iconfont icon-cuo"></i>
+            </form>
+            <i class="search-btn iconfont icon-xiazai17"></i>
+            <button class="search-submit displaynone"><i class="iconfont icon-xiazai17"></i></button>
+        </div>
+        <div class="m_top-bottom"></div>
+    </header>
+    <section>
+        <div class="m_content-top clearfix">
+            <div class="black-block float-left"></div>
+            <img class="designer float-left" src="../images/designer.png">
+            <h2 class="titel-two float-left">全屋套餐</h2>
+            <img class="right float-right" src="../images/m_content-top.jpg">
+        </div>
+        <ul class="m_nav-list">
+            <li>
+                <a href="#">图片详情</a>
+            </li>
+            <li class="active">
+                <a href="#">材料搭配</a>
+            </li>
+            <li>
+                <a href="#">评价</a>
+            </li>
+        </ul>
+        <div class="m_preferential-info">
+            <div class="left">超值折上折</div>
+            <div class="center">出厂价满10000在减800</div>
+            <div class="right">再送瓷板画一副</div>
+        </div>
+        <ul class="m_goods-choose">
+            <li>
+                <div class="top">
+                    <div class="choose"><input type="checkbox">加入备选清单</div>
+                    <div class="badge">瓷砖</div>
+                </div>
+                <img src="../images/sale (1).jpg">
+                <div class="bottom">
+                    <span class="text">品牌：东鹏</span>
+                    <span class="price">套餐价：<span class="f-f00">58元</span><span class="original-price">88元</span></span>
+                    <span class="text">规格：800*800</span>
+                </div>
+            </li>
+            <li>
+                <div class="top">
+                    <div class="choose"><input type="checkbox">加入备选清单</div>
+                    <div class="badge">瓷砖</div>
+                </div>
+                <img src="../images/sale (1).jpg">
+                <div class="bottom">
+                    <span class="text">品牌：东鹏</span>
+                    <span class="price">套餐价：<span class="f-f00">58元</span><span class="original-price">88元</span></span>
+                    <span class="text">规格：800*800</span>
+                </div>
+            </li>
+            <li>
+                <div class="top">
+                    <div class="choose"><input type="checkbox">加入备选清单</div>
+                    <div class="badge">瓷砖</div>
+                </div>
+                <img src="../images/sale (1).jpg">
+                <div class="bottom">
+                    <span class="text">品牌：东鹏</span>
+                    <span class="price">套餐价：<span class="f-f00">58元</span><span class="original-price">88元</span></span>
+                    <span class="text">规格：800*800</span>
+                </div>
+            </li>
+        </ul>
+        <div class="m_choose-num clearfix">
+            <div class="float-left">共有<span class="f-f00 num1"></span>款商品</div>
+            <div class="float-right">已选<span class="f-f00 num2">0</span>个商品</div>
+        </div>
+        <button class="m_join-list">加入装修清单</button>
+    </section>
+    <footer>
+        <div class="m_footer-top"></div>
+        <ul class="m_footer">
+            <li>
+                <a href="#">
+                    <i class="iconfont icon-shouye2"></i>
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="iconfont icon-kefu-tianchong"></i>
+                    <span>客服</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="iconfont icon-qingdanxinxishebeijichuxinxigongdanxinxi"></i>
+                    <span>清单</span>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="../js/jquery-1.11.2.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/jquery.flexslider-min.js"></script>
+    <script src="../js/jqslider.js"></script>
+    <script src="../js/swipeslider.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script>
+        // 点击搜索
+        $('.search-btn').click(function () {
+            $(this).hide()
+            $('.search-submit').show()
+            $('.m_logo').hide(400)
+            $('.search-input').show(400, function () {
+                $(this).css('display', 'flex')
+            })
+        })
+        // 退出搜索
+        $('.search-exit').click(function () {
+            $('.m_logo').show(400)
+            $('.search-input').hide(400)
+            $('.search-submit').hide()
+            $('.search-btn').show()
+        })
+    </script>
+    <script>
+        // 点击选取
+        $('.m_goods-choose>li').click(function () {
+            if ($(this).find('input').prop("checked") === true) {
+                $(this).find('input').prop("checked", false)
+            } else {
+                $(this).find('input').prop("checked", true)
+            }
+        })
+        // 商品数和点选数
+        var num1 = $('.m_goods-choose>li').length
+        $('.m_choose-num .num1').text(num1)
+        $('.m_goods-choose>li').click(function () {
+            var num2 = $('.m_goods-choose input:checked').length
+            $('.m_choose-num .num2').text(num2)
+        })
+    </script>
+</body>
+
+</html>
