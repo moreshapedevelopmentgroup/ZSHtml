@@ -448,33 +448,30 @@
     <script src="../js/swipeslider.min.js"></script>
     <script src="../js/common.js"></script>
     <script>
-        // 点击搜索
-        $('.search-btn').click(function () {
-            $(this).hide()
-            $('.search-submit').show()
-            $('.m_logo').hide(400)
-            $('.search-input').show(400, function () {
-                $(this).css('display', 'flex')
-            })
-        })
-        // 退出搜索
-        $('.search-exit').click(function () {
-            $('.m_logo').show(400)
-            $('.search-input').hide(400)
-            $('.search-submit').hide()
-            $('.search-btn').show()
-        })
-    </script>
-    <script>
         $(function () {
             // 轮播图插件
             $('#full_feature').swipeslider();
         });
     </script>
     <script>
-        // ul设置为所有li宽度
-        ulWidth('.m_recommend>ul')
-        ulWidth('.m_video>ul')
+        window.onload = function () {
+            document.addEventListener('touchstart', function (event) {
+                if (event.touches.length > 1) {
+                    event.preventDefault();
+                }
+            });
+            var lastTouchEnd = 0;
+            document.addEventListener('touchend', function (event) {
+                var now = (new Date()).getTime();
+                if (now - lastTouchEnd <= 300) {
+                    event.preventDefault();
+                }
+                lastTouchEnd = now;
+            }, false);
+            document.addEventListener('gesturestart', function (event) {
+                event.preventDefault();
+            });
+        }
     </script>
 </body>
 

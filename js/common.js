@@ -784,3 +784,40 @@ $('.shadow').click(function () {
 	$('.shadow').hide()
 	$('.login-window').hide()
 })
+
+
+// 移动端js
+
+// 点击搜索
+$('.search-btn').click(function () {
+	$(this).hide()
+	$('.search-submit').show()
+	$('.m_logo').hide()
+	$('.search-input').show()
+})
+// 退出搜索
+$('.search-exit').click(function () {
+	$('.m_logo').show()
+	$('.search-input').hide()
+	$('.search-submit').hide()
+	$('.search-btn').show()
+})
+// ul设置为所有li宽度
+ulWidth('.m_recommend>ul')
+ulWidth('.m_video>ul')
+ulWidth('.m_top-nav>ul')
+// 点击选取
+$('.m_goods-choose>li').click(function () {
+	if ($(this).find('input').prop("checked") === true) {
+		$(this).find('input').prop("checked", false)
+	} else {
+		$(this).find('input').prop("checked", true)
+	}
+})
+// 商品数和点选数
+var num1 = $('.m_goods-choose>li').length
+$('.m_choose-num .num1').text(num1)
+$('.m_goods-choose>li').click(function () {
+	var num2 = $('.m_goods-choose input:checked').length
+	$('.m_choose-num .num2').text(num2)
+})
