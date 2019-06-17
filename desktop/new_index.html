@@ -109,15 +109,15 @@
                 </li>
             </ul>
             <div class="new_header-btn float-right">
-                <button class="btn">登录</button>
-                <button class="btn btn-primary">注册</button>
+                <button class="new_btn">登录</button>
+                <button class="new_btn new_btn-primary">注册</button>
             </div>
         </div>
     </header>
 
     <section>
 
-        <div id="slide-box" class="slide-box">
+        <div id="slide-box" class="new_slide-box">
             <div class="new_carouser">
                 <div class="new_carouser-width">
                     <h2>美材太多&nbsp;&nbsp;&nbsp;搜他一下</h2>
@@ -214,7 +214,7 @@
             <div class="yellow-link"></div>
             <div class="new_nav-box">
                 <ul class="new_nav clearfix">
-                    <li>
+                    <li class="active">
                         <a href="#">
                             <span class="flaot-left"></span>
                             <span class="flaot-left">全部</span>
@@ -637,7 +637,94 @@
             </ul>
         </div>
     </section>
-
+    <!-- 尾部 -->
+    <footer>
+        <div class="blue-line"></div>
+        <div class="certification">
+            <ul class="certification-list common-box clearfix">
+                <li class="clearfix">
+                    <img class="float-left" src="../images/certification (1).jpg">
+                    <div class="float-left">
+                        <h3>绝对正品</h3>
+                        <h4>假冒伪劣&nbsp;&nbsp;双倍赔偿</h4>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <img class="float-left" src="../images/certification (2).jpg">
+                    <div class="float-left">
+                        <h3>权威认证</h3>
+                        <h4>国标质检&nbsp;&nbsp;严控质量</h4>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <img class="float-left" src="../images/certification (3).jpg">
+                    <div class="float-left">
+                        <h3>退换无忧</h3>
+                        <h4>15天无理由退换货</h4>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <img class="float-left" src="../images/certification (4).jpg">
+                    <div class="float-left">
+                        <h3>买贵速赔</h3>
+                        <h4>买贵补差&nbsp;&nbsp;急速返还</h4>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <img class="float-left" src="../images/certification (5).jpg">
+                    <div class="float-left">
+                        <h3>先行赔付</h3>
+                        <h4>服务纠纷&nbsp;&nbsp;先行赔付</h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="link">
+            <div class="link-list common-box clearfix">
+                <ul>
+                    <li>购物指南</li>
+                    <li><a href="#">会员制度</a></li>
+                    <li><a href="#">优惠活动</a></li>
+                    <li><a href="#">交易条款</a></li>
+                    <li><a href="#">购物流程</a></li>
+                </ul>
+                <ul>
+                    <li>配送方式</li>
+                    <li><a href="#">物流运输</a></li>
+                    <li><a href="#">上门自提</a></li>
+                </ul>
+                <ul>
+                    <li>支付方式</li>
+                    <li><a href="#">在线支付</a></li>
+                    <li><a href="#">银行柜台汇款</a></li>
+                </ul>
+                <ul>
+                    <li>售后服务</li>
+                    <li><a href="#">价格保护</a></li>
+                    <li><a href="#">退换货申请</a></li>
+                    <li><a href="#">售后服务政策</a></li>
+                    <li><a href="#">售后服务流程</a></li>
+                </ul>
+                <ul>
+                    <li>新手帮助</li>
+                    <li><a href="#">常见问题</a></li>
+                    <li><a href="#">索取发票</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">投诉建议</a></li>
+                </ul>
+                <ul>
+                    <li>招商加盟</li>
+                    <li><a href="#">加入我们</a></li>
+                </ul>
+                <ul class="mr-0">
+                    <li>关注我们</li>
+                    <li><a href="#"><img src="../images/weibo.jpg">新浪微博</a></li>
+                    <li><a href="#"><img src="../images/wechat.jpg">微信公众号</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- 尾部end -->
     <script src="../js/jquery-1.11.2.min.js"></script>
     <script src="../js/bootstrap.js"></script>
     <script src="../js/jquery.flexslider-min.js"></script>
@@ -677,7 +764,7 @@
         $(function () {
             $("#slide-box").jqslider();
             $('#slide-box').mouseout(function () {
-                $('.slide-box .prev-btn,.slide-box .next-btn').show()
+                $('#slide-box .prev-btn,#slide-box .next-btn').show()
             })
         });
     </script>
@@ -685,7 +772,7 @@
         // 划过图片放大
         $('.new_content li').mouseenter(function () {
             $(this).find('.new_content-img').stop().animate({
-                width: '354px',
+                width: '409px',
                 right: '20px',
                 bottom: '20px'
             }, 500)
@@ -693,7 +780,7 @@
 
         $('.new_content li').mouseleave(function () {
             $(this).find('.new_content-img').stop().animate({
-                width: '314px',
+                width: '369px',
                 right: '0px',
                 bottom: '0px'
             }, 500)
@@ -731,9 +818,9 @@
 
         $(window).scroll(function () {
             if ($(window).scrollTop() + $(window).height() == $(document).height()) {
-                for (var j = 0; j < 2; j++) {
+                for (var j = 0; j < 4; j++) {
                     $('.new_content>li.loading').eq(0).show(400).removeClass('loading')
-                    $(window).scrollTop($(document).height()-$(window).height()-10)
+                    $(window).scrollTop($(document).height() - $(window).height() - 10)
                 }
             }
         })
