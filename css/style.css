@@ -9048,12 +9048,19 @@ body {
     background-color: #eff2f6;
 }
 
+.new_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
 .new_header {
     width: 100%;
     height: 72px;
     background-color: #fff;
     text-align: left;
-    box-shadow: 0 10px 10px #ddd;
+    box-shadow: 0 6px 6px #ddd;
 }
 
 .new_header-logo {
@@ -9645,11 +9652,14 @@ body {
 
 /* 新版局部套餐 */
 .new_left-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: fixed;
+    top: 72px;
     width: 280px;
-    height: 100%;
-    padding-top: 54px;
     box-sizing: content-box;
+    z-index: 9998;
 }
 
 .blue-bg {
@@ -9701,6 +9711,7 @@ body {
 }
 
 .new_left-titel {
+    margin-top: 54px;
     margin-left: 46px;
     text-align: left;
     cursor: default;
@@ -9725,9 +9736,20 @@ body {
 }
 
 .new_left-list {
-    margin-top: 12px;
     width: 100%;
     overflow: auto;
+}
+
+.new_left-list::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 6px;
+    background: #f1f1f1;
+}
+
+.new_left-list::-webkit-scrollbar-thumb {
+    width: 4px;
+    border-radius: 6px;
+    background: #c1c1c1;
 }
 
 .new_left-list li a {
@@ -9755,18 +9777,6 @@ body {
 
 .new_left-list li a:hover img {
     display: block;
-}
-
-.new_left-list::-webkit-scrollbar {
-    width: 6px;
-    border-radius: 6px;
-    background: #f1f1f1;
-}
-
-.new_left-list::-webkit-scrollbar-thumb {
-    width: 4px;
-    border-radius: 6px;
-    background: #c1c1c1;
 }
 
 .new_left-btn {
@@ -9814,12 +9824,13 @@ body {
 .new_left-content {
     position: fixed;
     left: 280px;
-    padding: 0 50px;
+    padding: 72px 50px;
     overflow: auto;
+    box-sizing: content-box;
 }
 
 .new_content-top {
-    margin-top: 46px;
+    margin-top: 48px;
     text-align: left;
 }
 
@@ -9860,16 +9871,24 @@ body {
     cursor: default;
 }
 
+/* .new_content-goods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+} */
+
 .new_content-goods li {
     float: left;
-    margin: 10px 12px;
+    margin-top: 25px;
+    margin-right: 25px;
     transition: all .4s;
 }
 
 .new_content-goods li a {
     display: block;
     padding: 20px;
-    width: 314px;
+    width: 322px;
     height: 360px;
     border-radius: 10px;
     background-color: #fff;
@@ -10017,7 +10036,7 @@ body {
     padding: 16px 26px;
     width: 100%;
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: 10px;
     text-align: left;
 }
 
@@ -10147,6 +10166,7 @@ body {
     padding: 18px 36px;
     width: 100%;
     border-radius: 10px;
+    box-shadow: 0 0 6px #ccc;
     background-color: #fff;
     text-align: left;
 }
