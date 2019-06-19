@@ -19,7 +19,7 @@
 
 <body class="new_bg">
     <header>
-        <div class="new_header clearfix p-0">
+        <div class="new_header clearfix p-0 new_fixed">
             <img class="new_header-logo float-left" src="../images/new_logo.png">
             <ul class="new_header-nav float-left clearfix">
                 <li>
@@ -109,16 +109,16 @@
                 </li>
             </ul>
             <div class="new_header-btn float-right">
-                <button class="btn">登录</button>
-                <button class="btn btn-primary">注册</button>
+                <button class="new_btn">登录</button>
+                <button class="new_btn new_btn-primary">注册</button>
             </div>
         </div>
     </header>
 
     <section>
-        <div class="clearfix">
+        <div>
             <!-- 左导航 -->
-            <div class="new_left-nav purple-bg float-left">
+            <div class="new_left-nav purple-bg">
                 <div class="new_left-titel">
                     <img src="../images/Burger-menu-w.png">
                     <span class="new_left-titel-text">商品库</span>
@@ -142,15 +142,15 @@
                 </ul>
                 <a class="new_left-btn red-btn" href="#">查看已选</a>
                 <a class="new_left-btn yellow-btn" href="#">加入清单</a>
-                <div class="new_left-bottom mt-5"><a href="#">咨询客服</a></div>
+                <!-- <div class="new_left-bottom mt-5"><a href="#">咨询客服</a></div>
                 <div class="new_left-bottom"><a href="#">本地销售</a></div>
                 <div class="new_left-bottom"><a href="#">找设计师</a></div>
-                <div class="new_left-bottom"><a href="#">找装修工人</a></div>
+                <div class="new_left-bottom"><a href="#">找装修工人</a></div> -->
             </div>
 
 
             <!-- 内容 -->
-            <div class="new_left-content float-left">
+            <div class="new_left-content">
                 <div class="new_content-top clearfix">
                     <a href="#">首页</a><a href="#">&gt;商品库</a>
                     <a class="new_details-lookbtn float-right" href="#">查看套餐定制流程</a>
@@ -369,11 +369,12 @@
     <script src="../js/bootstrap.js"></script>
     <script src="../js/jquery.flexslider-min.js"></script>
     <script src="../js/jqslider.js"></script>
+    <script src="../js/masonry.pkgd.min.js"></script>
     <script src="../js/common.js"></script>
     <script>
-        clientHeight('.new_left-list', '-520')
+        clientHeight('.new_left-nav', '-72')
         clientWidth('.new_left-content', '-380')
-        clientHeight('.new_left-content', '-72')
+        clientHeight('.new_left-content', '-144')
     </script>
 
     <script>
@@ -415,6 +416,18 @@
             $(this).children('.tick-active').show()
             $(this).siblings().children('.tick-active').hide()
         })
+    </script>
+
+    <script>
+        // 瀑布流
+        $('.new_content-goods').masonry({
+            // options
+            itemSelector: '.new_content-goods>li',
+            columnWidth: 362,
+            gutter: 25,
+            horizontalOrder: true,
+            fitWidth: true
+        });
     </script>
 
     <!-- <script>

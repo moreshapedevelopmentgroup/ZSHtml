@@ -19,7 +19,7 @@
 
 <body class="new_bg">
     <header>
-        <div class="new_header clearfix p-0">
+        <div class="new_header clearfix p-0 new_fixed">
             <img class="new_header-logo float-left" src="../images/new_logo.png">
             <ul class="new_header-nav float-left clearfix">
                 <li>
@@ -109,16 +109,16 @@
                 </li>
             </ul>
             <div class="new_header-btn float-right">
-                <button class="btn">登录</button>
-                <button class="btn btn-primary">注册</button>
+                <button class="new_btn">登录</button>
+                <button class="new_btn new_btn-primary">注册</button>
             </div>
         </div>
     </header>
 
     <section>
-        <div class="clearfix">
+        <div>
             <!-- 左导航 -->
-            <div class="new_left-nav black-bg float-left">
+            <div class="new_left-nav black-bg">
                 <div class="new_left-titel">
                     <img src="../images/Burger-menu-w.png">
                     <span class="new_left-titel-text">局部套餐</span>
@@ -139,15 +139,15 @@
                     <li><a href="#"><img src="../images/new_left-list.png">其他</a></li>
                 </ul>
                 <div class="black-line"></div>
-                <div class="new_left-bottom mt-5"><a href="#">咨询客服</a></div>
+                <!-- <div class="new_left-bottom mt-5"><a href="#">咨询客服</a></div>
                 <div class="new_left-bottom"><a href="#">本地销售</a></div>
                 <div class="new_left-bottom"><a href="#">找设计师</a></div>
-                <div class="new_left-bottom"><a href="#">找装修工人</a></div>
+                <div class="new_left-bottom"><a href="#">找装修工人</a></div> -->
             </div>
 
 
             <!-- 内容 -->
-            <div class="new_left-content float-left">
+            <div class="new_left-content">
                 <div class="new_content-top">
                     <a href="#">首页</a><a href="#">&gt;主材套餐</a>
                 </div>
@@ -432,12 +432,13 @@
     <script src="../js/bootstrap.js"></script>
     <script src="../js/jquery.flexslider-min.js"></script>
     <script src="../js/jqslider.js"></script>
+    <script src="../js/masonry.pkgd.min.js"></script>
     <script src="../js/common.js"></script>
 
     <script>
-        clientHeight('.new_left-list', '-480')
+        clientHeight('.new_left-nav', '-72')
         clientWidth('.new_left-content', '-380')
-        clientHeight('.new_left-content', '-72')
+        clientHeight('.new_left-content', '-144')
     </script>
     <script>
         // 点击排序修改样式
@@ -457,8 +458,21 @@
         var fimg = $('.new_index-package-img-list>li>img').eq(0).attr('src')
         $('.new_index-package-img-box>img').attr('src', fimg)
         $('.new_index-package-img-list>li').click(function () {
-            $(this).parent().siblings('.new_index-package-img-box').children().attr('src', $(this).children('img').attr('src'))
+            $(this).parent().siblings('.new_index-package-img-box').children().attr('src', $(this).children(
+                'img').attr('src'))
         })
+    </script>
+
+    <script>
+        // 瀑布流
+        $('.new_index-package-content').masonry({
+            // options
+            itemSelector: '.new_index-package-content>li',
+            columnWidth: 362,
+            gutter: 25,
+            horizontalOrder: true,
+            fitWidth: true
+        });
     </script>
 </body>
 

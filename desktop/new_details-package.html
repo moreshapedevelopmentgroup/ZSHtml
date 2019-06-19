@@ -119,15 +119,13 @@
         <div>
             <!-- 左导航 -->
             <div class="new_left-nav black-bg">
-                <div>
-                    <div class="new_left-titel">
-                        <img src="../images/Burger-menu-w.png">
-                        <span class="new_left-titel-text">套餐详情</span>
-                    </div>
-                    <div class="left-info">
-                        <span class="yellow-titel">梦想家北欧系列</span>
-                        <div class="left-line"></div>
-                    </div>
+                <div class="new_left-titel">
+                    <img src="../images/Burger-menu-w.png">
+                    <span class="new_left-titel-text">套餐详情</span>
+                </div>
+                <div class="left-info">
+                    <span class="yellow-titel">梦想家北欧系列</span>
+                    <div class="left-line"></div>
                 </div>
                 <ul class="new_left-list">
                     <li><a href="#"><img src="../images/new_left-list.png">图片和概述</a></li>
@@ -141,10 +139,8 @@
                     <li><a href="#"><img src="../images/new_left-list.png">玄关</a></li>
                     <li><a href="#"><img src="../images/new_left-list.png">阳台</a></li>
                 </ul>
-                <div>
-                    <a class="new_left-btn red-btn" href="#">查看已选</a>
-                    <a class="new_left-btn yellow-btn" href="#">加入清单</a>
-                </div>
+                <a class="new_left-btn red-btn" href="#">查看已选</a>
+                <a class="new_left-btn yellow-btn" href="#">加入清单</a>
                 <!-- <div class="new_left-bottom mt-5"><a href="#">咨询客服</a></div>
                 <div class="new_left-bottom"><a href="#">本地销售</a></div>
                 <div class="new_left-bottom"><a href="#">找设计师</a></div>
@@ -296,6 +292,7 @@
     <script src="../js/bootstrap.js"></script>
     <script src="../js/jquery.flexslider-min.js"></script>
     <script src="../js/jqslider.js"></script>
+    <script src="../js/masonry.pkgd.min.js"></script>
     <script src="../js/common.js"></script>
     <script>
         clientHeight('.new_left-nav', '-72')
@@ -341,7 +338,15 @@
         })
     </script>
     <script>
-        ulWrap('.new_content-goods')
+        // 瀑布流
+        $('.new_content-goods').masonry({
+            // options
+            itemSelector: '.new_content-goods>li',
+            columnWidth: 362,
+            gutter: 25,
+            horizontalOrder: true,
+            fitWidth: true
+        });
     </script>
 
     <!-- <script>

@@ -19,7 +19,7 @@
 
 <body class="new_bg">
     <header>
-        <div class="new_header clearfix p-0">
+        <div class="new_header clearfix p-0 new_fixed">
             <img class="new_header-logo float-left" src="../images/new_logo.png">
             <ul class="new_header-nav float-left clearfix">
                 <li>
@@ -109,16 +109,16 @@
                 </li>
             </ul>
             <div class="new_header-btn float-right">
-                <button class="btn">登录</button>
-                <button class="btn btn-primary">注册</button>
+                <button class="new_btn">登录</button>
+                <button class="new_btn new_btn-primary">注册</button>
             </div>
         </div>
     </header>
 
     <section>
-        <div class="clearfix">
+        <div>
             <!-- 左导航 -->
-            <div class="new_left-nav purple-bg float-left">
+            <div class="new_left-nav purple-bg">
                 <div class="new_left-titel">
                     <img src="../images/Burger-menu-w.png">
                     <span class="new_left-titel-text">商品库</span>
@@ -146,15 +146,15 @@
                     套餐价格：<span class="price">39</span>元/片
                 </div>
                 <a class="new_left-btn yellow-btn" href="#">加入清单</a>
-                <div class="new_left-bottom mt-2"><a href="#">咨询客服</a></div>
+                <!-- <div class="new_left-bottom mt-2"><a href="#">咨询客服</a></div>
                 <div class="new_left-bottom"><a href="#">本地销售</a></div>
                 <div class="new_left-bottom"><a href="#">找设计师</a></div>
-                <div class="new_left-bottom"><a href="#">找装修工人</a></div>
+                <div class="new_left-bottom"><a href="#">找装修工人</a></div> -->
             </div>
 
 
             <!-- 内容 -->
-            <div class="new_left-content float-left clearfix">
+            <div class="new_left-content clearfix">
                 <div class="new_content-top">
                     <a href="#">首页</a><a href="#">&gt;主材套餐</a><a href="#">&gt;梦想家北欧系列</a>
                 </div>
@@ -163,7 +163,8 @@
                     <a class="new_details-lookbtn float-right" href="#">查看套餐定制流程</a>
                 </div>
                 <div class="new_goodslib-choose-content">
-                    <p>多元的地域文化激发了我们的灵感，我们尝试将传统的地域文化结合东方美学，以精致又国际化的设计手法，融入历史人文情怀，试图保证文化的延续性和空间氛围积极性。该项目，我们尝试以新的搭接关系，增强空间与灯光的互动效果，形成一种新的秩序和美感。</p>
+                    <p>多元的地域文化激发了我们的灵感，我们尝试将传统的地域文化结合东方美学，以精致又国际化的设计手法，融入历史人文情怀，试图保证文化的延续性和空间氛围积极性。该项目，我们尝试以新的搭接关系，增强空间与灯光的互动效果，形成一种新的秩序和美感。
+                    </p>
                     <p>以崭新的诠释尺度，结构，流线，轴线的关系，使当地域文化和东方审美相融汇，散发出现代的东方气质。空间色调以灰色，大红，米黄为主，同时结合多元的材料，大胆赋予空间时尚的气息。</p>
                 </div>
                 <img class="new_goodslib-picture" src="../images/case.png">
@@ -179,9 +180,9 @@
     <script src="../js/jqslider.js"></script>
     <script src="../js/common.js"></script>
     <script>
-        clientHeight('.new_left-list', '-520')
+        clientHeight('.new_left-nav', '-72')
         clientWidth('.new_left-content', '-380')
-        clientHeight('.new_left-content', '-72')
+        clientHeight('.new_left-content', '-144')
     </script>
     <script>
         // 点击规格

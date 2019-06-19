@@ -9725,9 +9725,7 @@ body {
 }
 
 .new_left-tips {
-    margin-top: 18px;
-    margin-left: 26px;
-    margin-right: 26px;
+    margin: 18px 26px;
     padding: 6px 0;
     background-color: #ff0000;
     font-size: 10px;
@@ -9737,6 +9735,7 @@ body {
 
 .new_left-list {
     width: 100%;
+    flex-basis: 100%;
     overflow: auto;
 }
 
@@ -9783,7 +9782,6 @@ body {
     display: block;
     margin-top: 6px;
     width: 100%;
-    height: 54px;
     line-height: 54px;
     font-size: 18px;
 }
@@ -9846,9 +9844,10 @@ body {
 .new_content-order {
     margin-top: 32px;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: #fff;
     line-height: 20px;
+    box-shadow: 0 0 6px #ccc;
 }
 
 .new_content-order-list {
@@ -9871,18 +9870,9 @@ body {
     cursor: default;
 }
 
-/* .new_content-goods {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
-} */
-
 .new_content-goods li {
     float: left;
     margin-top: 25px;
-    margin-right: 25px;
-    transition: all .4s;
 }
 
 .new_content-goods li a {
@@ -10038,6 +10028,7 @@ body {
     background-color: #fff;
     border-radius: 10px;
     text-align: left;
+    box-shadow: 0 0 6px #ccc;
 }
 
 .new_details-info .designer-info {
@@ -10072,6 +10063,7 @@ body {
 .new_left-content>img {
     margin-top: 20px;
     width: 100%;
+    border-radius: 10px;
 }
 
 /* 新版局部套餐详情 */
@@ -10232,6 +10224,11 @@ body {
     padding: 18px 36px;
     border-radius: 10px;
     background-color: #fff;
+    box-shadow: 0 0 6px #ccc;
+}
+
+.new_goodslib-choose-img>img {
+    border-radius: 10px;
 }
 
 .new_goodslib-evaluate>li {
@@ -10240,6 +10237,7 @@ body {
     background-color: #fff;
     border-radius: 10px;
     text-align: left;
+    box-shadow: 0 0 6px #ccc;
 }
 
 .new_goodslib-evaluate .img {
@@ -10291,7 +10289,7 @@ body {
     width: 30px;
     height: 30px;
     border: 1px solid #5a4b5e;
-    border-radius: 6px;
+    border-radius: 10px;
     background-color: #5a4b5e;
     color: #fff;
     line-height: 30px;
@@ -10340,15 +10338,15 @@ body {
 
 .new_index-package-content>li {
     float: left;
-    margin: 10px 12px;
-    transition: all .4s;
+    margin-top: 25px;
+    /* transition: all .4s; */
 }
 
 .new_index-package-content>li>a {
     display: block;
     padding: 20px 0;
-    width: 314px;
-    height: 360px;
+    width: 362px;
+    height: 390px;
     border-radius: 10px;
     background-color: #fff;
     text-align: left;
@@ -10380,9 +10378,9 @@ body {
 .new_index-package-img-list>li {
     position: relative;
     float: left;
-    margin-left: 6px;
-    width: 74px;
-    height: 38px;
+    margin-left: 2px;
+    width: 89px;
+    height: 44px;
     overflow: hidden;
 }
 
@@ -10659,6 +10657,7 @@ body {
     border-radius: 10px;
     background-color: #fff;
     text-align: left;
+    box-shadow: 0 0 6px #ccc;
 }
 
 .new_mylist-topinfo>.left {

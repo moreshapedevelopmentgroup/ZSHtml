@@ -722,45 +722,6 @@ function ulWidth(dom) {
 	$(dom).width(num)
 }
 
-// 给 ul 下的 li 自适应换行
-function ulWrap(dom) {
-	var li = $(dom).children()
-	var ulw = $(dom).width()
-	var liw = li.eq(0).outerWidth(true)
-	// for (var i = 0; i < li.length; i++) {
-	// 	li.eq(i).removeClass('mr-0')
-	// }
-	// for (var i = 1; i < li.length + 1; i++) {
-	// 	if (i % parseInt(ulw / liw) === 0) {
-	// 		li.eq(i).addClass('mr-0')
-	// 	}
-	// }
-	// var num = 0
-	// for (var i = 0; i < parseInt(ulw / liw) + 1; i++) {
-	// 	num = num + li.eq(i).outerWidth(true)
-	// }
-	// $(dom).width(num - 25)
-
-	$(window).resize(function () {
-		ulw = $(dom).width()
-		liw = li.eq(0).outerWidth(true)
-		console.log(parseInt(ulw / liw))
-		for (var i = 0; i < li.length; i++) {
-			li.eq(i).removeClass('mr-0')
-		}
-		for (var i = 1; i < li.length + 1; i++) {
-			if (i % parseInt(ulw / liw) === 0) {
-				li.eq(i-1).addClass('mr-0')
-			}
-		}
-		// num = 0
-		// for (var i = 0; i < parseInt(ulw / liw) + 1; i++) {
-		// 	num = num + li.eq(i).outerWidth(true)
-		// }
-		// $(dom).width(num - 25)
-	})
-}
-
 // 横向滚动
 $('.product-dot ul').append(dot());
 
