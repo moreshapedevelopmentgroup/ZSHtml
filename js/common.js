@@ -652,7 +652,8 @@ function textDisplay(element, text) {
 
 // 给元素添加可视区域高度并随窗口大小改变而改变
 function clientHeight(dom, num) {
-	var hh = document.documentElement.clientHeight
+	var hh = $(window).height()
+	// var hh = document.documentElement.clientHeight
 	var div = $(dom)
 	if (num === undefined) {
 		div.height(hh)
@@ -666,7 +667,8 @@ function clientHeight(dom, num) {
 		div.height(hh)
 	}
 	$(window).resize(function () {
-		hh = document.documentElement.clientHeight
+		hh = $(window).height()
+		// hh = document.documentElement.clientHeight
 		if (num === undefined) {
 			div.height(hh)
 		} else if (typeof num === 'number') {
@@ -683,7 +685,8 @@ function clientHeight(dom, num) {
 
 // 给元素添加可视区域宽度并随窗口大小改变而改变
 function clientWidth(dom, num) {
-	var ww = document.documentElement.clientWidth
+	// var ww = document.documentElement.clientWidth
+	var ww = $(window).width()
 	var div = $(dom)
 	if (num === undefined) {
 		div.width(ww)
@@ -697,7 +700,8 @@ function clientWidth(dom, num) {
 		div.width(ww)
 	}
 	$(window).resize(function () {
-		ww = document.documentElement.clientWidth
+		// ww = document.documentElement.clientWidth
+		ww = $(window).width()
 		if (num === undefined) {
 			div.width(ww)
 		} else if (typeof num === 'number') {

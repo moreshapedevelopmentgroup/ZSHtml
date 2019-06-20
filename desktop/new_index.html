@@ -809,7 +809,7 @@
     </script>
 
     <script>
-        // 懒加载
+        // 滚动加载
         for (var i = 0; i < $('.new_content>li').length; i++) {
             if (i > 11) {
                 $('.new_content>li').eq(i).hide().addClass('loading')
@@ -818,10 +818,14 @@
 
         $(window).scroll(function () {
             if ($(window).scrollTop() + $(window).height() == $(document).height()) {
-                for (var j = 0; j < 4; j++) {
-                    $('.new_content>li.loading').eq(0).show(400).removeClass('loading')
-                    $(window).scrollTop($(document).height() - $(window).height() - 10)
-                }
+                $('.new_content').append('<div class="new_loading"><img src="../images/new_loading.png">小美正在努力为您加载，客官您稍等</div>')
+                setTimeout(function () {
+                    $('.new_loading').remove()
+                    for (var j = 0; j < 4; j++) {
+                        $('.new_content>li.loading').eq(0).show(400).removeClass('loading')
+                        $(window).scrollTop($(document).height() - $(window).height() - 10)
+                    }
+                }, 1000)
             }
         })
     </script>
