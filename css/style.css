@@ -9046,6 +9046,7 @@ body {
 /* 新版主页 */
 .new_bg {
     background-color: #eff2f6;
+    font: normal 100 14px/1.5em Arial, 'Times New Roman', 'Microsoft YaHei', SimHei;
 }
 
 .new_fixed {
@@ -9080,9 +9081,9 @@ body {
     height: 72px;
 }
 
-.new_header-nav .more-list:hover .new_header-menu {
+/* .new_header-nav .more-list:hover .new_header-menu {
     display: block;
-}
+} */
 
 .new_header-nav>li a {
     display: block;
@@ -10748,7 +10749,7 @@ body {
     bottom: 100px;
 }
 
-.new_float-btn>li>a{
+.new_float-btn>li>a {
     display: block;
     margin: 3px 0;
     width: 60px;

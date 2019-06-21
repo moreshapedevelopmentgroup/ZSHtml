@@ -825,3 +825,12 @@ $('.m_goods-choose>li').click(function () {
 	var num2 = $('.m_goods-choose input:checked').length
 	$('.m_choose-num .num2').text(num2)
 })
+
+// 渐变
+$('.more-list').mouseenter(function(){
+	$('.new_header-menu').stop().fadeIn(500)
+})
+
+$('.more-list').mouseleave(function(){
+	$('.new_header-menu').stop().fadeOut(500)
+})
