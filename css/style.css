@@ -9047,6 +9047,7 @@ body {
 .new_bg {
     background-color: #eff2f6;
     font: normal 100 14px/1.5em Arial, 'Times New Roman', 'Microsoft YaHei', SimHei;
+    min-width: 1900px;
 }
 
 .new_fixed {
@@ -9056,12 +9057,17 @@ body {
     z-index: 9999;
 }
 
-.new_header {
+.new_header-box {
     width: 100%;
+    background-color: #fff;
+}
+
+.new_header {
+    margin: 0 auto;
+    width: 1660px;
     height: 72px;
     background-color: #fff;
     text-align: left;
-    box-shadow: 0 6px 6px #ddd;
 }
 
 .new_header-logo {
@@ -9128,6 +9134,7 @@ body {
 .new_header-menu {
     position: relative;
     display: none;
+    z-index: 999;
 }
 
 .new_header-menu img {
@@ -9517,6 +9524,7 @@ body {
 .new_nav-box {
     margin: 0 auto;
     width: 1660px;
+    height: 100px;
 }
 
 .new_nav li {
