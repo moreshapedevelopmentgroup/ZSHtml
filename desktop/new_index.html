@@ -118,7 +118,6 @@
     </header>
 
     <section>
-
         <div id="slide-box" class="new_slide-box">
             <div class="new_carouser">
                 <div class="new_carouser-width">
@@ -771,20 +770,74 @@
     </script>
     <script>
         // 划过图片放大
-        $('.new_content li').mouseenter(function () {
-            $(this).find('.new_content-img').stop().animate({
-                width: '409px',
-                right: '20px',
-                bottom: '20px'
-            }, 500)
-        })
+        if ($(window).width <= 1600) {
+            $('.new_content li').mouseenter(function () {
+                $(this).find('.new_content-img').stop().animate({
+                    width: '409px',
+                    right: '20px',
+                    bottom: '20px'
+                }, 500)
+            })
 
-        $('.new_content li').mouseleave(function () {
-            $(this).find('.new_content-img').stop().animate({
-                width: '369px',
-                right: '0px',
-                bottom: '0px'
-            }, 500)
+            $('.new_content li').mouseleave(function () {
+                $(this).find('.new_content-img').stop().animate({
+                    width: '369px',
+                    right: '0px',
+                    bottom: '0px'
+                }, 500)
+            })
+        } else {
+            $('.new_content li').mouseenter(function () {
+                $(this).find('.new_content-img').stop().animate({
+                    width: '302px',
+                    right: '20px',
+                    bottom: '20px'
+                }, 500)
+            })
+
+            $('.new_content li').mouseleave(function () {
+                $(this).find('.new_content-img').stop().animate({
+                    width: '262px',
+                    right: '0px',
+                    bottom: '0px'
+                }, 500)
+            })
+        }
+
+        $(window).resize(function () {
+            if ($(window).width <= 1600) {
+                $('.new_content li').mouseenter(function () {
+                    $(this).find('.new_content-img').stop().animate({
+                        width: '409px',
+                        right: '20px',
+                        bottom: '20px'
+                    }, 500)
+                })
+
+                $('.new_content li').mouseleave(function () {
+                    $(this).find('.new_content-img').stop().animate({
+                        width: '369px',
+                        right: '0px',
+                        bottom: '0px'
+                    }, 500)
+                })
+            } else {
+                $('.new_content li').mouseenter(function () {
+                    $(this).find('.new_content-img').stop().animate({
+                        width: '302px',
+                        right: '20px',
+                        bottom: '20px'
+                    }, 500)
+                })
+
+                $('.new_content li').mouseleave(function () {
+                    $(this).find('.new_content-img').stop().animate({
+                        width: '262px',
+                        right: '0px',
+                        bottom: '0px'
+                    }, 500)
+                })
+            }
         })
     </script>
     <script type="text/javascript">
