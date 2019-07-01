@@ -770,7 +770,8 @@
     </script>
     <script>
         // 划过图片放大
-        if ($(window).width <= 1600) {
+        console.log($(window).width() + 17)
+        if ($(window).width() + 17 > 1600) {
             $('.new_content li').mouseenter(function () {
                 $(this).find('.new_content-img').stop().animate({
                     width: '409px',
@@ -805,7 +806,7 @@
         }
 
         $(window).resize(function () {
-            if ($(window).width <= 1600) {
+            if ($(window).width() + 17 > 1600) {
                 $('.new_content li').mouseenter(function () {
                     $(this).find('.new_content-img').stop().animate({
                         width: '409px',
