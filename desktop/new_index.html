@@ -117,7 +117,7 @@
         </div>
     </header>
 
-    <section>
+    <section class="new_slide-box-bg">
         <div id="slide-box" class="new_slide-box">
             <div class="new_carouser">
                 <div class="new_carouser-width">
@@ -872,13 +872,18 @@
         }
 
         $(window).scroll(function () {
+            // 滚动到底部时
             if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+                // 添加等待标签
                 $('.new_content').append(
                     '<div class="new_loading"><img src="../images/new_loading.png">小美正在努力为您加载，客官您稍等</div>')
                 setTimeout(function () {
+                    // 移除等待标签
                     $('.new_loading').remove()
                     for (var j = 0; j < 4; j++) {
+                        // 加载4个 li 元素
                         $('.new_content>li.loading').eq(0).show(400).removeClass('loading')
+                        // 页面回弹10个像素
                         $(window).scrollTop($(document).height() - $(window).height() - 10)
                     }
                 }, 1000)

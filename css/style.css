@@ -5361,6 +5361,7 @@ body {
 
 .link {
     width: 100%;
+    padding-bottom: 100px;
     background-color: #f7f7f7;
 }
 
@@ -9244,6 +9245,10 @@ body {
     color: #fff;
 }
 
+.new_slide-box-bg {
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
 .new_slide-box {
     position: relative;
     margin: 0 auto;
@@ -11721,7 +11726,7 @@ a {
 
 @media (max-width: 1600px) {
     .new_bg {
-        min-width: 1280px;
+        min-width: 1132px;
     }
 
     .new_header {
@@ -11833,6 +11838,7 @@ a {
         width: 268px;
         height: 70px;
     }
+
     .new_carouser-shadow li a .titel {
         margin-left: 10px;
         font-size: 18px;
@@ -11850,5 +11856,22 @@ a {
 
     .new_header-menu-nav {
         width: 1000px;
+    }
+
+    .certification .certification-list {
+        width: 1132px;
+    }
+
+    .certification .certification-list li {
+        margin: 0 8px;
+    }
+
+    .link .link-list {
+        padding-left: 20px;
+        width: 1132px;
+    }
+
+    .link .link-list ul {
+        margin-right: 40px;
     }
 }
