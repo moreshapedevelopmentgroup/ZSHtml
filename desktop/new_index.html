@@ -20,7 +20,7 @@
 <body class="new_bg">
     <header>
         <div class="new_header-box">
-            <div class="new_header clearfix p-0">
+            <div class="new_header-index clearfix p-0">
                 <img class="new_header-logo float-left" src="../images/new_logo.png">
                 <ul class="new_header-nav float-left clearfix">
                     <li>
@@ -770,7 +770,6 @@
     </script>
     <script>
         // 划过图片放大
-        console.log($(window).width() + 17)
         if ($(window).width() + 17 > 1600) {
             $('.new_content li').mouseenter(function () {
                 $(this).find('.new_content-img').stop().animate({

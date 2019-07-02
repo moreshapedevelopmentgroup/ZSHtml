@@ -9061,14 +9061,25 @@ body {
 .new_header-box {
     width: 100%;
     background-color: #fff;
+    box-shadow: 0 6px 6px #ddd;
 }
 
-.new_header {
+.new_header-index {
     margin: 0 auto;
     width: 1660px;
     height: 72px;
     background-color: #fff;
     text-align: left;
+}
+
+.new_header {
+    margin: 0 auto;
+    width: 100%;
+    height: 72px;
+    background-color: #fff;
+    text-align: left;
+    box-shadow: 0 6px 6px #ddd;
+    min-width: 1132px;
 }
 
 .new_header-logo {
@@ -9087,10 +9098,6 @@ body {
     float: left;
     height: 72px;
 }
-
-/* .new_header-nav .more-list:hover .new_header-menu {
-    display: block;
-} */
 
 .new_header-nav>li a {
     display: block;
@@ -9847,8 +9854,9 @@ body {
 
 .new_left-content {
     position: fixed;
+    top: 72px;
     left: 280px;
-    padding: 72px 50px;
+    padding: 0 50px 72px 50px;
     overflow: auto;
     box-sizing: content-box;
 }
@@ -10782,86 +10790,6 @@ body {
     color: #ffd119;
 }
 
-
-/* 1440分辨率 */
-
-/* @media (max-width: 1440px) {
-    .new_carouser-shadow {
-        width: 1440px;
-    }
-
-    .new_carouser-shadow li a {
-        padding-top: 21px;
-        width: 345px;
-        height: 90px;
-    }
-
-    .new_carouser-shadow-box .bg1 {
-        background: url(../images/list-bg1-m.png);
-    }
-
-    .new_carouser-shadow-box .bg2 {
-        background: url(../images/list-bg2-m.png);
-    }
-
-    .new_carouser-shadow-box .bg3 {
-        background: url(../images/list-bg3-m.png);
-    }
-
-    .new_carouser-shadow-box .bg4 {
-        background: url(../images/list-bg4-m.png);
-    }
-
-    .new_carouser-shadow li a .titel {
-        margin-left: 30px;
-    }
-
-    .new_carouser-shadow li a .info {
-        margin-left: 30px;
-    }
-
-    .new_header-menu-nav>ul {
-        height: auto;
-    }
-
-    .new_header-menu-nav {
-        width: 1000px;
-    }
-
-    .new_header-menu-nav ul .deep-blue {
-        width: 124px;
-    }
-
-    .new_header-menu-nav ul .light-blue {
-        width: 124px;
-    }
-
-    .new_header-menu-nav ul .black {
-        width: 124px;
-    }
-
-    .new_header-menu-nav>ul>li {
-        margin-top: 20px;
-    }
-
-    .new_content-box {
-        width: 1078px;
-    }
-
-    .new_nav-box {
-        width: 1078px;
-    }
-
-    .new_nav li a {
-        padding-top: 22px;
-        padding-left: 30px;
-        width: 239px;
-        height: 78px;
-    }
-} */
-
-/* 1440分辨率 */
-
 /* 移动端样式 */
 html,
 body {
@@ -11729,7 +11657,7 @@ a {
         min-width: 1132px;
     }
 
-    .new_header {
+    .new_header-index {
         width: 1132px;
     }
 
@@ -11856,6 +11784,7 @@ a {
 
     .new_header-menu-nav {
         width: 1000px;
+        left:-400px;
     }
 
     .certification .certification-list {
