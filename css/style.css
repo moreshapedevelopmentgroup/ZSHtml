@@ -11721,7 +11721,7 @@ a {
 
 @media (max-width: 1600px) {
     .new_bg {
-        min-width: min-content;
+        min-width: 1280px;
     }
 
     .new_header {
