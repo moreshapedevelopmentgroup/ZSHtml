@@ -11837,7 +11837,6 @@ a {
 
 .add_left-nav .left-nav-list {
     margin-top: 42px;
-    height: 300px;
     overflow: auto;
 }
 
@@ -11872,7 +11871,7 @@ a {
     position: fixed;
     top: 72px;
     left: 204px;
-    padding: 0 50px 72px 50px;
+    padding: 50px 50px 72px 50px;
     overflow: auto;
     box-sizing: content-box;
     background-color: #fff;
@@ -11892,10 +11891,21 @@ a {
     background: #c1c1c1;
 }
 
-.add_myorder {
-    margin-top: 50px;
+.add_myorder-titel{
+    text-align: left;
 }
 
-.add_myorder>h2 {
-    text-align: left;
+.add_myorder-titel>h2{
+    display: inline;
+    cursor: default;
+}
+
+.add_myorder-titel>a{
+    margin-left: 24px;
+    font-size: 18px;
+    color: #b72e22;
+}
+
+.add_myorder-titel>a:hover{
+    color: #394866;
 }

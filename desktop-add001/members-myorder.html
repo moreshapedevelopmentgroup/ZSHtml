@@ -171,9 +171,13 @@
             </div>
             <!-- 内容 -->
             <div class="add_left-content">
-                <div class="add_myorder">
-                    <h2>套餐订单</h2>
+                <div class="add_myorder-titel">
+                    <h2>商品订单</h2>
+                    <a href="#">套餐订单</a>
                 </div>
+                <ul class="package-order">
+                    <li></li>
+                </ul>
             </div>
         </div>
     </section>
@@ -215,6 +219,19 @@
         clientHeight('.add_left-nav', '-72')
         clientWidth('.add_left-content', '-204')
         clientHeight('.add_left-content', '-144')
+        clientHeight('.left-nav-list', '-460')
+    </script>
+    <script>
+        // 商品和套餐订单切换
+        $('.add_myorder-titel>a').click(function () {
+            if ($(this).text() === '套餐订单') {
+                $('.add_myorder-titel>h2').text('套餐订单')
+                $(this).text('商品订单')
+            } else {
+                $('.add_myorder-titel>h2').text('商品订单')
+                $(this).text('套餐订单')
+            }
+        })
     </script>
 </body>
 
