@@ -11804,3 +11804,98 @@ a {
         margin-right: 40px;
     }
 }
+
+/* 新增页面布局 */
+.add_left-nav {
+    position: fixed;
+    top: 72px;
+    box-sizing: content-box;
+    z-index: 9998;
+}
+
+.add_left-nav .titel {
+    margin-top: 40px;
+    margin-left: 36px;
+    font-size: 18px;
+    color: #010101;
+    cursor: default;
+}
+
+.add_left-nav img {
+    margin-top: 30px;
+    margin-left: 68px;
+    text-align: center;
+}
+
+.add_left-nav .name {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    text-align: center;
+    color: #000;
+    cursor: default;
+}
+
+.add_left-nav .left-nav-list {
+    margin-top: 42px;
+    height: 300px;
+    overflow: auto;
+}
+
+.add_left-nav .left-nav-list::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 6px;
+    background: #f1f1f1;
+}
+
+.add_left-nav .left-nav-list::-webkit-scrollbar-thumb {
+    width: 4px;
+    border-radius: 6px;
+    background: #c1c1c1;
+}
+
+.add_left-nav .left-nav-list li a {
+    display: block;
+    height: 37px;
+    line-height: 37px;
+    padding-left: 36px;
+    color: #5e626a;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.add_left-nav .left-nav-list li a:hover {
+    background-color: #bdc1c8;
+    color: #5e626a;
+}
+
+.add_left-content {
+    position: fixed;
+    top: 72px;
+    left: 204px;
+    padding: 0 50px 72px 50px;
+    overflow: auto;
+    box-sizing: content-box;
+    background-color: #fff;
+}
+
+.add_left-content::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    background: #f1f1f1;
+}
+
+.add_left-content::-webkit-scrollbar-thumb {
+    width: 4px;
+    height: 4px;
+    border-radius: 6px;
+    background: #c1c1c1;
+}
+
+.add_myorder {
+    margin-top: 50px;
+}
+
+.add_myorder>h2 {
+    text-align: left;
+}
