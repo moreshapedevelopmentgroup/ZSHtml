@@ -11873,7 +11873,6 @@ a {
     left: 204px;
     padding: 50px 50px 72px 50px;
     overflow: auto;
-    box-sizing: content-box;
     background-color: #fff;
 }
 
@@ -11908,4 +11907,24 @@ a {
 
 .add_myorder-titel>a:hover{
     color: #394866;
+}
+
+.add_left-content>.goods-order>li{
+    margin-top: 30px;
+    width: 100%;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #ccc;
+}
+
+.add_left-content>.package-order{
+    display: none;
+}
+
+.add_left-content>.package-order>li{
+    margin-top: 30px;
+    width: 100%;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #ccc;
 }

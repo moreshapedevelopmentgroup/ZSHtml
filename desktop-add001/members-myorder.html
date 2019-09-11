@@ -175,8 +175,11 @@
                     <h2>商品订单</h2>
                     <a href="#">套餐订单</a>
                 </div>
+                <ul class="goods-order">
+                    <li>goods-order</li>
+                </ul>
                 <ul class="package-order">
-                    <li></li>
+                    <li>package-order</li>
                 </ul>
             </div>
         </div>
@@ -217,7 +220,7 @@
     <script src="../js/common.js"></script>
     <script>
         clientHeight('.add_left-nav', '-72')
-        clientWidth('.add_left-content', '-204')
+        clientWidth('.add_left-content', '-304')
         clientHeight('.add_left-content', '-144')
         clientHeight('.left-nav-list', '-460')
     </script>
@@ -227,9 +230,13 @@
             if ($(this).text() === '套餐订单') {
                 $('.add_myorder-titel>h2').text('套餐订单')
                 $(this).text('商品订单')
+                $('.goods-order').hide()
+                $('.package-order').show()
             } else {
                 $('.add_myorder-titel>h2').text('商品订单')
                 $(this).text('套餐订单')
+                $('.goods-order').show()
+                $('.package-order').hide()
             }
         })
     </script>
