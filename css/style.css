@@ -11784,7 +11784,7 @@ a {
 
     .new_header-menu-nav {
         width: 1000px;
-        left:-400px;
+        left: -400px;
     }
 
     .certification .certification-list {
@@ -11890,26 +11890,26 @@ a {
     background: #c1c1c1;
 }
 
-.add_myorder-titel{
+.add_myorder-titel {
     text-align: left;
 }
 
-.add_myorder-titel>h2{
+.add_myorder-titel>h2 {
     display: inline;
     cursor: default;
 }
 
-.add_myorder-titel>a{
+.add_myorder-titel>a {
     margin-left: 24px;
     font-size: 18px;
     color: #b72e22;
 }
 
-.add_myorder-titel>a:hover{
+.add_myorder-titel>a:hover {
     color: #394866;
 }
 
-.add_left-content>.goods-order>li{
+.add_left-content>.goods-order>li {
     margin-top: 30px;
     width: 100%;
     background-color: #ebebeb;
@@ -11917,14 +11917,211 @@ a {
     box-shadow: 0 0 6px #ccc;
 }
 
-.add_left-content>.package-order{
+.add_left-content>.goods-order>li>.goods-order-titel {
+    padding: 20px 20px 0 20px;
+}
+
+.add_left-content>.goods-order>li>.goods-order-titel>.input {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    border: 1px solid #c5c5c5;
+    background-color: #c5c5c5;
+    outline: none;
+}
+
+.add_left-content>.goods-order>li>.goods-order-titel>.input:checked {
+    position: relative;
+    background: #ffd119;
+    border: 1px solid #000;
+}
+
+.add_left-content>.goods-order>li>.goods-order-titel>.input:checked::before,
+.add_left-content>.goods-order>li>.goods-order-titel>.input:checked::after {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    color: #000;
+    border: 2px solid;
+    background-color: #000;
+}
+
+.add_left-content>.goods-order>li>.goods-order-titel>.input:checked::before {
+    width: 2px;
+    height: 1px;
+    left: 24%;
+    top: 49%;
+    transform: skew(0deg, 50deg);
+}
+
+.add_left-content>.goods-order>li>.goods-order-titel>.input:checked::after {
+    width: 6px;
+    height: 1px;
+    left: 46%;
+    top: 40%;
+    transform: skew(0deg, -50deg);
+}
+
+.add_left-content>.goods-order>li>.goods-order-titel>.titel {
+    margin-left: 20px;
+}
+
+.add_left-content>.goods-order>li>.goods-order-content {
+    padding: 20px;
+}
+
+.add_left-content>.goods-order>li>.goods-order-content>.pic {
+    width: 160px;
+}
+
+.add_left-content>.goods-order>li>.goods-order-content>.titel {
+    margin-left: 10px;
+    padding: 10px;
+    width: 200px;
+    font-size: 20px;
+    text-align: left;
+    border-left: 2px dashed #000;
+    border-right: 2px dashed #000;
+}
+
+.add_left-content>.goods-order>li>.goods-order-content>.price {
+    margin-left: 20px;
+    font-size: 18px;
+    cursor: default;
+}
+
+.add_left-content>.goods-order>li>.goods-order-content>.price>span {
+    font-size: 36px;
+    color: #f00;
+}
+
+.add_left-content>.goods-order>li>.goods-order-content>.option {
+    margin-right: 20px;
+}
+
+.add_left-content>.goods-order>li>.goods-order-content>.option>button {
+    margin: 3px;
+}
+
+.add_left-content>.package-order {
     display: none;
 }
 
-.add_left-content>.package-order>li{
+.add_left-content>.package-order>li {
     margin-top: 30px;
     width: 100%;
     background-color: #ebebeb;
     border-radius: 10px;
     box-shadow: 0 0 6px #ccc;
+}
+
+.add_left-content>.package-order>li>.package-order-titel{
+    padding: 20px 20px 0 20px;
+}
+
+.add_left-content>.package-order>li>.package-order-titel>.input {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    border: 1px solid #c5c5c5;
+    background-color: #c5c5c5;
+    outline: none;
+}
+
+.add_left-content>.package-order>li>.package-order-titel>.input:checked {
+    position: relative;
+    background: #ffd119;
+    border: 1px solid #000;
+}
+
+.add_left-content>.package-order>li>.package-order-titel>.input:checked::before,
+.add_left-content>.package-order>li>.package-order-titel>.input:checked::after {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    color: #000;
+    border: 2px solid;
+    background-color: #000;
+}
+
+.add_left-content>.package-order>li>.package-order-titel>.input:checked::before {
+    width: 2px;
+    height: 1px;
+    left: 24%;
+    top: 49%;
+    transform: skew(0deg, 50deg);
+}
+
+.add_left-content>.package-order>li>.package-order-titel>.input:checked::after {
+    width: 6px;
+    height: 1px;
+    left: 46%;
+    top: 40%;
+    transform: skew(0deg, -50deg);
+}
+
+.add_left-content>.package-order>li>.package-order-titel>.titel {
+    margin-left:20px;
+}
+
+.add_left-content>.package-order>li>.package-order-content {
+   padding: 20px;
+}
+
+.add_left-content>.package-order>li>.package-order-content>.name{
+    text-align: left;
+    font-size: 20px;
+}
+
+.add_left-content>.package-order>li>.package-order-content>.name>span{
+    text-align: left;
+    font-size: 14px;
+}
+
+.add_left-content>.package-order>li>.package-order-content>.info{
+    margin-top: 10px;
+}
+
+.add_left-content>.package-order>li>.package-order-content>.info>.pic {
+    width: 200px;
+}
+
+.add_left-content>.package-order>li>.package-order-content>.info .price {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.add_left-content>.package-order>li>.package-order-content>.info .price>span {
+    font-size: 36px;
+    color: #f00;
+}
+
+
+
+
+.add_left-content>.package-order>li>.package-order-content>.titel {
+    margin-left: 10px;
+    padding: 10px;
+    width: 200px;
+    font-size: 20px;
+    text-align: left;
+    border-left: 2px dashed #000;
+    border-right: 2px dashed #000;
+}
+
+
+
+.add_left-content>.package-order>li>.package-order-content>.price>span {
+    font-size: 36px;
+    color: #f00;
+}
+
+.add_left-content>.package-order>li>.package-order-content>.option {
+    margin-right:20px;
+}
+
+.add_left-content>.package-order>li>.package-order-content>.option>button {
+    margin: 3px;
 }
