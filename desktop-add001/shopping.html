@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/flexslider.css">
     <link rel="stylesheet" href="../css/viewer.min.css">
     <link rel="stylesheet" href="../css/icon/iconfont.css">
+    <link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -148,19 +149,106 @@
             <h3 class="toptitel">3、配送方式</h3>
             <div class="shopping-table">
                 <div class="radio">
-                    <input class="shopping-radio" type="radio" name="pay">
+                    <input class="shopping-radio" type="radio" name="send">
                     <span>顺丰 <span class="cgray">运费：0.00元</span></span>
                 </div>
                 <div class="radio">
-                    <input class="shopping-radio" type="radio" name="pay">
+                    <input class="shopping-radio" type="radio" name="send">
                     <span>圆通 <span class="cgray">运费：0.00元</span></span>
                 </div>
                 <div class="radio">
-                    <input class="shopping-radio" type="radio" name="pay">
+                    <input class="shopping-radio" type="radio" name="send">
                     <span>邮政 <span class="cgray">运费：0.00元</span></span>
                 </div>
             </div>
             <h3 class="toptitel">4、商品清单</h3>
+            <ul class="shopping-list">
+                <li class="clearfix">
+                    <img class="pic float-left" src="../images/sale (1).jpg">
+                    <div class="box float-left">
+                        <div class="titel">名称</div>
+                        <div class="content">这是个很长很长得名称，长到无法想象，长得无法自拔，长就对了。</div>
+                    </div>
+                    <div class="box float-left">
+                        <div class="titel">单价</div>
+                        <div class="content big">￥100</div>
+                    </div>
+                    <div class="box float-left">
+                        <div class="titel">优惠（元）</div>
+                        <div class="content big">￥0</div>
+                    </div>
+                    <div class="box float-left">
+                        <div class="titel">数量</div>
+                        <div class="content big">5</div>
+                    </div>
+                    <div class="box float-left">
+                        <div class="titel">金额（元）</div>
+                        <div class="content big red">￥500</div>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <img class="pic float-left" src="../images/sale (2).jpg">
+                    <div class="box float-left">
+                        <div class="titel">名称</div>
+                        <div class="content">这是个很长很长得名称，长到无法想象，长得无法自拔，长就对了。</div>
+                    </div>
+                    <div class="box float-left">
+                        <div class="titel">单价</div>
+                        <div class="content big">￥100</div>
+                    </div>
+                    <div class="box float-left">
+                        <div class="titel">优惠（元）</div>
+                        <div class="content big">￥0</div>
+                    </div>
+                    <div class="box float-left">
+                        <div class="titel">数量</div>
+                        <div class="content big">5</div>
+                    </div>
+                    <div class="box float-left">
+                        <div class="titel">金额（元）</div>
+                        <div class="content big red">￥500</div>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <img class="pic float-left" src="../images/sale (3).jpg">
+                    <div class="box float-left">
+                        <div class="titel">名称</div>
+                        <div class="content">这是个很长很长得名称，长到无法想象，长得无法自拔，长就对了。</div>
+                    </div>
+                    <div class="box float-left">
+                        <div class="titel">单价</div>
+                        <div class="content big">￥100</div>
+                    </div>
+                    <div class="box float-left">
+                        <div class="titel">优惠（元）</div>
+                        <div class="content big">￥0</div>
+                    </div>
+                    <div class="box float-left">
+                        <div class="titel">数量</div>
+                        <div class="content big">5</div>
+                    </div>
+                    <div class="box float-left">
+                        <div class="titel">金额（元）</div>
+                        <div class="content big red">￥500</div>
+                    </div>
+                </li>
+            </ul>
+            <h3 class="toptitel">5、结算信息</h3>
+            <div class="shopping-bottom clearfix">
+                <div class="float-left">
+                    <div class="delivery-time">预约发货时间：</div>
+                    <input type="text" name="starttime" class="form-control" id="starttime">
+                </div>
+                <div class="settlement-bottom float-right">
+                    <div class="settlement">商品数量：<span class="f-f00">15</span>件</div>
+                    <div class="settlement">商品金额：<span class="f-f00">￥1500</span>元</div>
+                    <div class="settlement">运费：<span class="f-f00">￥0</span>元</div>
+                    <div class="settlement">手续费：<span class="f-f00">￥0</span>元</div>
+                    <div class="settlement">税费：<span class="f-f00">￥0</span>元</div>
+                    <div class="settlement-all">应付总金额：￥1500元</div>
+                    <button class="btn btn-success">确认提交</button>
+                </div>
+            </div>
         </div>
     </section>
     <!-- 登录弹窗 -->
@@ -196,9 +284,36 @@
     <script src="../js/bootstrap.js"></script>
     <script src="../js/jquery.flexslider-min.js"></script>
     <script src="../js/jqslider.js"></script>
+    <script src="../js/moment.js"></script>
+    <script src="../js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../js/bootstrap-datetimepicker.zh-CN.js"></script>
     <script src="../js/common.js"></script>
     <script>
         clientHeight('.add_shopping', '-144')
+    </script>
+    <script>
+        $("#starttime").datetimepicker({
+            language: 'zh-CN', //用自己设置的时间文字
+            //weekStart: 1,  //一周从那天开始，默认为0，从周日开始，可以设为1从周一开始
+            startDate: new Date(), //开始时间，可以写字符串，也可以直接写日期格式new Date(),在这之前的日期不能选择
+            //endDate:"2018-6-20",
+            //daysOfWeekDisabled: [0,4,6],  //一周的周几不能选
+            todayBtn: 1, //是否显示今天按钮，0为不显示
+            autoclose: 1, //选完时间后是否自动关闭
+            todayHighlight: 1, //高亮显示当天日期
+            startView: 2, //0从小时视图开始，选分;1	从天视图开始，选小时;2从月视图开始，选天;3从年视图开始，选月;4从十年视图开始，选年
+            minView: 2, //最精确时间，默认0；0从小时视图开始，选分；1从天视图开始，选小时；2从月视图开始，选天；3从年视图开始，选月；4从十年视图开始，选年
+            //maxView:4,  //默认值：4, ‘decade’
+            //keyboardNavigation:true,  //是否可以用键盘方向键选日期，默认true
+            forceParse: 0, //强制解析,你输入的可能不正规，但是它胡强制尽量解析成你规定的格式（format）
+            format: 'yyyy-mm-dd', // 格式,注意ii才是分，mm或MM都是月
+            minuteStep: 5, //选择分钟时的跨度，默认为5分钟
+            //pickerPosition:"top-right",  // ‘bottom-left’，’top-right’，’top-left’’bottom-right’
+            showMeridian: 0, //在日期和小时选择界面，出现上下午的选项,默认false
+            // showSecond: false,
+            // showMillisec: false,
+            //timeFormat: 'hh:mm:ss:l'
+        });
     </script>
 </body>
 

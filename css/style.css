@@ -12143,6 +12143,7 @@ a {
 .add_shopping {
     padding: 72px;
     overflow: auto;
+    min-width: 1140px;
 }
 
 .add_shopping::-webkit-scrollbar {
@@ -12205,4 +12206,72 @@ a {
 .add_shopping>.shopping-table .shopping-radio:checked {
     background: #ffd119;
     border: 1px solid #000;
+}
+
+.add_shopping>.shopping-list>li {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #ccc;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.add_shopping>.shopping-list>li>.pic {
+    width: 15%;
+}
+
+.add_shopping>.shopping-list>li>.box {
+    width: 15%;
+    margin-left: 1%;
+}
+
+.add_shopping>.shopping-list>li>.box>.titel {
+    font-size: 20px;
+    cursor: default;
+}
+
+.add_shopping>.shopping-list>li>.box>.content {
+    margin-top: 20px;
+    background-color: #ccc;
+    cursor: default;
+}
+
+.add_shopping>.shopping-list>li>.box>.big {
+    font-size: 20px;
+}
+
+.add_shopping>.shopping-list>li>.box>.red {
+    color:#f00;
+}
+
+.add_shopping>.shopping-bottom{
+    padding-bottom: 200px;
+}
+
+.add_shopping>.shopping-bottom .delivery-time {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.add_shopping>.shopping-bottom #starttime {
+    margin-top: 6px;
+    text-align: center;
+}
+
+.add_shopping>.shopping-bottom>.settlement-bottom {
+    text-align: right;
+}
+
+.add_shopping>.shopping-bottom>.settlement-bottom>.settlement {
+    margin-top: 6px;
+}
+
+.add_shopping>.shopping-bottom>.settlement-bottom>.settlement-all {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.add_shopping>.shopping-bottom>.settlement-bottom>.btn {
+    margin-top: 16px;
 }
