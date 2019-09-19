@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/flexslider.css">
+    <link rel="stylesheet" href="./css/viewer.min.css">
+    <link rel="stylesheet" href="./css/icon/iconfont.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/swipeslider.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script>
+        (function (e, h) {
+            var g = document,
+                d = window;
+            var b = g.documentElement;
+            var c;
+            var i, a;
+
+            function f() {
+                var j = b.getBoundingClientRect().width;
+                var k = window.devicePixelRatio || 1;
+                b.setAttribute("data-dpr", k);
+                if (!h) {
+                    h = 750
+                }
+                if (j > h) {
+                    j = h
+                }
+                var m = j * 100 / e;
+                a = "html{font-size:" + m + "px !important}";
+                i = document.getElementById("rootsize") || document.createElement("style");
+                if (!document.getElementById("rootsize")) {
+                    document.getElementsByTagName("head")[0].appendChild(i);
+                    i.id = "rootsize"
+                }
+                if (i.styleSheet) {
+                    i.styleSheet.disabled || (i.styleSheet.cssText = a)
+                } else {
+                    try {
+                        i.innerHTML = a
+                    } catch (l) {
+                        i.innerText = a
+                    }
+                }
+                b.style.fontSize = m + "px"
+            }
+            f();
+            d.addEventListener("resize", function () {
+                clearTimeout(c);
+                c = setTimeout(f, 300)
+            }, false);
+            d.addEventListener("pageshow", function (j) {
+                if (j.persisted) {
+                    clearTimeout(c);
+                    c = setTimeout(f, 300)
+                }
+            }, false);
+            if (g.readyState === "complete") {
+                g.body.style.fontSize = "16px"
+            } else {
+                g.addEventListener("DOMContentLoaded", function (j) {
+                    g.body.style.fontSize = "16px"
+                }, false)
+            }
+        })(750, 768);
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="m_top">
+            <i class="iconfont icon-caidan"></i>
+            <img class="m_logo" src="../images/m_logo.jpg">
+            <form class="search-input displaynone">
+                <input type="search">
+                <i class="search-exit iconfont icon-cuo"></i>
+            </form>
+            <i class="search-btn iconfont icon-xiazai17"></i>
+            <button class="search-submit displaynone"><i class="iconfont icon-xiazai17"></i></button>
+        </div>
+        <div class="m_top-bottom"></div>
+    </header>
+
+    <section>
+        
+    </section>
+
+    <footer>
+        <div class="m_footer-top"></div>
+        <ul class="m_footer">
+            <li class="active">
+                <a href="#">
+                    <i class="iconfont icon-shouye2"></i>
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="iconfont icon-zhaoxiangji"></i>
+                    <span>品库</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="iconfont icon-menu"></i>
+                    <span>导航</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="iconfont icon-qingdanxinxishebeijichuxinxigongdanxinxi"></i>
+                    <span>清单</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="iconfont icon-wode"></i>
+                    <span>我的</span>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="./js/jquery-1.11.2.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/jquery.flexslider-min.js"></script>
+    <script src="./js/jqslider.js"></script>
+    <script src="./js/swipeslider.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script>
+        $(function () {
+            // 轮播图插件
+            $('#full_feature').swipeslider();
+        });
+    </script>
+    <script>
+        window.onload = function () {
+            document.addEventListener('touchstart', function (event) {
+                if (event.touches.length > 1) {
+                    event.preventDefault();
+                }
+            });
+            var lastTouchEnd = 0;
+            document.addEventListener('touchend', function (event) {
+                var now = (new Date()).getTime();
+                if (now - lastTouchEnd <= 300) {
+                    event.preventDefault();
+                }
+                lastTouchEnd = now;
+            }, false);
+            document.addEventListener('gesturestart', function (event) {
+                event.preventDefault();
+            });
+        }
+    </script>
+</body>
+
+</html>
