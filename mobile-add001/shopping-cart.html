@@ -90,11 +90,60 @@
     </header>
 
     <section>
-        
+        <ul class="m_shopping-cart">
+            <li>
+                <input class="input" type="checkbox">
+                <img class="pic" src="./images/sale (1).jpg">
+                <div class="info">
+                    <div class="titel">我是很长很长的商品名称我是很长很长的商品名称我是很长很长的商品名称</div>
+                    <div class="price">￥100</div>
+                </div>
+            </li>
+            <li>
+                <input class="input" type="checkbox">
+                <img class="pic" src="./images/sale (2).jpg">
+                <div class="info">
+                    <div class="titel">我是很长很长的商品名称我是很长很长的商品名称我是很长很长的商品名称</div>
+                    <div class="price">￥100</div>
+                </div>
+            </li>
+            <li>
+                <input class="input" type="checkbox">
+                <img class="pic" src="./images/sale (3).jpg">
+                <div class="info">
+                    <div class="titel">我是很长很长的商品名称我是很长很长的商品名称我是很长很长的商品名称</div>
+                    <div class="price">￥100</div>
+                </div>
+            </li>
+            <li>
+                <input class="input" type="checkbox">
+                <img class="pic" src="./images/sale (1).jpg">
+                <div class="info">
+                    <div class="titel">我是很长很长的商品名称我是很长很长的商品名称我是很长很长的商品名称</div>
+                    <div class="price">￥100</div>
+                </div>
+            </li>
+            <li>
+                <input class="input" type="checkbox">
+                <img class="pic" src="./images/sale (2).jpg">
+                <div class="info">
+                    <div class="titel">我,很长</div>
+                    <div class="price">￥100</div>
+                </div>
+            </li>
+        </ul>
+        <div class="m_shopping-cart-bottom">
+            <div>
+                <input class="input-all" type="checkbox">
+                <span>全选</span>
+            </div>
+            <div>合计：￥100</div>
+            <button class="settlement">结算</button>
+        </div>
     </section>
 
     <footer>
-        <div class="m_footer-top"></div>
+        <div class="m_footer-top2"></div>
         <ul class="m_footer">
             <li class="active">
                 <a href="#">
@@ -135,12 +184,6 @@
     <script src="./js/swipeslider.min.js"></script>
     <script src="./js/common.js"></script>
     <script>
-        $(function () {
-            // 轮播图插件
-            $('#full_feature').swipeslider();
-        });
-    </script>
-    <script>
         window.onload = function () {
             document.addEventListener('touchstart', function (event) {
                 if (event.touches.length > 1) {
@@ -159,6 +202,26 @@
                 event.preventDefault();
             });
         }
+    </script>
+    <script>
+        //点击全选按钮
+        $(".input-all").click(function () {
+            //如果全选为未选中，则复选框未选中，否则选中
+            if ($(".input-all").is(':checked') == false) {
+                $(".input").prop("checked", false);
+            } else {
+                $(".input").prop("checked", true);
+            };
+        });
+        //点击复选框
+        $(".input").click(function () {
+            //复选框选中的个数为复选框的个数，则全选选中，否则全选未选中
+            if ($('.input:checked').length == $(".input").length) {
+                $(".input-all").prop("checked", true);
+            } else {
+                $(".input-all").prop("checked", false);
+            };
+        });
     </script>
 </body>
 
