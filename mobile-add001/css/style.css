@@ -4709,3 +4709,96 @@ a {
     text-align: center;
     outline: none;
 }
+
+/* login 样式 */
+.m_login-bg {
+    width: 100%;
+    height: 100%;
+    background-color: #394867;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.m_login-bg>img {
+    margin-top: 1rem;
+    width: 4rem;
+}
+
+.m_login-bg>.password-login {
+    width: 7rem;
+    background-color: #fff;
+    border-radius: .1rem;
+    margin: .2rem auto 0 auto;
+    padding: .4rem;
+    text-align: left;
+}
+
+.m_login-bg .input-box {
+    margin-bottom: .3rem;
+}
+
+.m_login-bg .input-box .titel {
+    font-size: .3rem;
+    margin-bottom: .1rem;
+}
+
+.m_login-bg .input-box .input {
+    width: 100%;
+    height: .6rem;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: .3rem;
+    padding: .2rem;
+    line-height: .3rem;
+    background-color: #eee;
+}
+
+.m_login-bg .btn-box {
+    margin-top: .6rem;
+    text-align: center;
+}
+
+.m_login-bg .btn-box .login-btn {
+    text-align: center;
+    width: 1.2rem;
+    height: .6rem;
+    line-height: .3rem;
+    border-radius: .1rem;
+    outline: none;
+    background-color: #394867;
+    color: #fff;
+    font-size: .3rem;
+}
+
+.m_login-bottom {
+    padding: .4rem;
+}
+
+.m_login-bottom>a {
+    font-size: .3rem;
+    color: #fff;
+}
+
+.m_login-bg>.photo-login {
+    width: 7rem;
+    background-color: #fff;
+    border-radius: .1rem;
+    margin: .2rem auto 0 auto;
+    padding: .4rem;
+    text-align: left;
+    display: none;
+}
+
+.m_login-bg .input-box .getnum {
+    width: 1.6rem;
+    height: .4rem;
+    font-size: .2rem;
+    line-height: .2rem;
+    border-radius: .2rem;
+    margin-right: .4rem;
+    background-color: #e44f26;
+    color: #fff;
+    text-align: center;
+    outline: none;
+}
