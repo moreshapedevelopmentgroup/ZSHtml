@@ -4725,6 +4725,12 @@ a {
     width: 4rem;
 }
 
+.m_login-bg>.titel {
+    font-size: .6rem;
+    color: #fff;
+    font-weight: bold;
+}
+
 .m_login-bg>.password-login {
     width: 7rem;
     background-color: #fff;
@@ -4801,4 +4807,16 @@ a {
     color: #fff;
     text-align: center;
     outline: none;
+}
+
+/* registered 样式 */
+.m_registered-bottom {
+    color: #ccc;
+    text-align: left;
+    margin-top: .3rem;
+    margin-left: .3rem;
+}
+
+.m_registered-bottom>a {
+    color: #fff;
 }
