@@ -653,6 +653,7 @@ function textDisplay(element, text) {
 // 给元素添加可视区域高度并随窗口大小改变而改变
 function clientHeight(dom, num) {
 	var hh = $(window).height()
+	// var hh = document.documentElement.clientHeight
 	var div = $(dom)
 	if (num === undefined) {
 		div.height(hh)
@@ -667,6 +668,7 @@ function clientHeight(dom, num) {
 	}
 	$(window).resize(function () {
 		hh = $(window).height()
+		// hh = document.documentElement.clientHeight
 		if (num === undefined) {
 			div.height(hh)
 		} else if (typeof num === 'number') {
@@ -683,6 +685,7 @@ function clientHeight(dom, num) {
 
 // 给元素添加可视区域宽度并随窗口大小改变而改变
 function clientWidth(dom, num) {
+	// var ww = document.documentElement.clientWidth
 	var ww = $(window).width()
 	var div = $(dom)
 	if (num === undefined) {
@@ -697,6 +700,7 @@ function clientWidth(dom, num) {
 		div.width(ww)
 	}
 	$(window).resize(function () {
+		// ww = document.documentElement.clientWidth
 		ww = $(window).width()
 		if (num === undefined) {
 			div.width(ww)
@@ -721,6 +725,70 @@ function ulWidth(dom) {
 	}
 	$(dom).width(num)
 }
+
+// 横向滚动
+$('.product-dot ul').append(dot());
+
+function dot() {
+	dot = '<a><li class="active"></li></a>'
+	var uil = $('.product-ul li').length;
+
+	if (uil > 3) {
+		if (uil % 3 == 0) {
+			dotl = parseInt(uil / 3) - 1;
+		} else {
+			dotl = parseInt(uil / 3);
+		}
+	} else {
+		dotl = 0;
+		$('.product-dot ul').hide();
+	}
+	for (var i = 0; i < dotl; i++) {
+		dot += '<a><li></li></a>'
+	}
+	return dot
+}
+$('.product-ul').width((dotl + 1) * 1149)
+$('.product-dot a').click(function () {
+	$(this).children().addClass('active')
+	$(this).siblings().children().removeClass('active');
+	$('.product-list').stop().animate({
+		scrollLeft: $(this).index() * 1149
+	}, 800);
+});
+
+// 登录界面头顶导航切换以点击登录操作
+$('.login-nav>li').click(function () {
+	$(this).addClass('active').siblings().removeClass('active')
+	console.log($(this).parent().siblings('.login-input'))
+	$('.login-input').eq($(this).index()).removeClass('displaynone').siblings('.login-input').addClass(
+		'displaynone')
+})
+$('.i03').focusin(function () {
+	if ($(this).attr('type') === 'text') {
+		$(this).attr('type', 'password')
+	}
+})
+$('.i03').focusout(function () {
+	if ($(this).val() === '') {
+		$(this).attr('type', 'text')
+	}
+})
+
+valueDisplay('.i01', '手机号')
+valueDisplay('.i02', '输入4位短信验证码')
+valueDisplay('.i03', '密码')
+
+$('#login').click(function () {
+	$('.shadow').show()
+	$('.login-window').show()
+})
+
+$('.shadow').click(function () {
+	$('.shadow').hide()
+	$('.login-window').hide()
+})
+
 
 // 移动端js
 
