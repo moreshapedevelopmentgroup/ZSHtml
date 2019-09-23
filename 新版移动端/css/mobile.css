@@ -4820,3 +4820,107 @@ a {
 .m_registered-bottom>a {
     color: #fff;
 }
+
+/* order-results 样式 */
+
+.m_order-results {
+    width: 7rem;
+    margin: .4rem auto 0 auto;
+    background-color: #fff;
+    border-radius: .1rem;
+}
+
+.m_order-results>li {
+    border-bottom: 1px solid #ccc;
+    padding: .4rem .25rem;
+}
+
+.m_order-results>li:last-child {
+    border: none;
+}
+
+.m_order-results>li>.left {
+    width: 1.3rem;
+}
+
+.m_order-results>li>.right {
+    margin-left: .2rem;
+    width: 5rem;
+    text-align: left;
+}
+
+.m_order-results>li>.right>.titel {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: .3rem;
+}
+
+.m_order-results>li>.right>.price {
+    text-align: right;
+    font-size: .4rem;
+    margin-top: .05rem;
+    margin-right: .2rem;
+    color: #f00;
+}
+
+.m_order-results-content {
+    padding: .4rem .25rem;
+}
+
+.m_order-results-content>.titel {
+    font-size: .4rem;
+    text-align: left;
+    font-weight: bold;
+    color: #394867;
+    margin-top: .4rem;
+}
+
+.m_order-results-content>.info {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 7rem;
+    text-align: left;
+    margin-top: .3rem;
+}
+
+.m_order-results-content>.info>input {
+    -webkit-appearance: none;
+    width: .3rem;
+    height: .3rem;
+    border-radius: .15rem;
+    border: .01rem solid #c5c5c5;
+    background-color: #c5c5c5;
+    outline: none;
+}
+
+.m_order-results-content>.info>input:checked {
+    background: #ffd119;
+    border: .01rem solid #000;
+}
+
+.m_order-results-content>.info>.content {
+    width: 6.3rem;
+    margin-left: .3rem;
+}
+
+.m_order-results-content>.info>.content>.cgray {
+    color: #888;
+}
+
+.m_order-results-content>.results>.settlement {
+    text-align: right;
+    margin-top: .1rem;
+}
+
+.m_order-results-content>.results>.results-btn {
+    margin-top: .3rem;
+    border-radius: .1rem;
+    width: 1.6rem;
+    height: .8rem;
+    outline: none;
+    background-color: #28a745;
+    color: #fff;
+}
