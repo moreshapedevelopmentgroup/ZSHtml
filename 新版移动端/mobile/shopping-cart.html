@@ -177,6 +177,43 @@
             </li>
         </ul>
     </footer>
+
+        <!-- 侧边菜单 -->
+        <div class="m_menu-box">
+            <div class="menu">
+                <div class="titel">菜单</div>
+                <ul class="list">
+                    <li><a href="#">这是菜单啊</a></li>
+                    <li><a href="#">这是菜单啊</a></li>
+                    <li><a href="#">这是菜单啊</a></li>
+                    <li><a href="#">这是菜单啊</a></li>
+                    <li><a href="#">这是菜单啊</a></li>
+                    <li><a href="#">这是菜单啊</a></li>
+                    <li><a href="#">这是菜单啊</a></li>
+                    <li><a href="#">这是菜单啊</a></li>
+                    <li><a href="#">这是菜单啊</a></li>
+                    <li><a href="#">这是菜单啊</a></li>
+                    <li><a href="#">这是菜单啊</a></li>
+                    <li><a href="#">这是菜单啊</a></li>
+                    <li><a href="#">这是菜单啊</a></li>
+                    <li><a href="#">这是菜单啊</a></li>
+                    <li><a href="#">这是菜单啊</a></li>
+                    <li><a href="#">这是菜单啊</a></li>
+                    <li><a href="#">这是菜单啊</a></li>
+                    <li><a href="#">这是菜单啊</a></li>
+                    <li><a href="#">这是菜单啊</a></li>
+                    <li><a href="#">这是菜单啊</a></li>
+                    <li><a href="#">这是菜单啊</a></li>
+                    <li><a href="#">这是菜单啊</a></li>
+                    <li><a href="#">这是菜单啊</a></li>
+                    <li><a href="#">这是菜单啊</a></li>
+                    <li><a href="#">这是菜单啊</a></li>
+                    <li><a href="#">这是菜单啊这是菜单啊这是菜单啊</a></li>
+                </ul>
+            </div>
+        </div>
+
+        
     <script src="../js/jquery-1.11.2.min.js"></script>
     <script src="../js/bootstrap.js"></script>
     <script src="../js/jquery.flexslider-min.js"></script>
@@ -223,6 +260,18 @@
             };
         });
     </script>
+        <script>
+            // 侧边菜单事件
+            $('.icon-caidan').click(function () {
+                $('.m_menu-box').show()
+            })
+            $('.m_menu-box').click(function () {
+                $('.m_menu-box').hide()
+            })
+            $('.m_menu-box>.menu').click(function (e) {
+                e.stopPropagation()
+            })
+        </script>
 </body>
 
 </html>
