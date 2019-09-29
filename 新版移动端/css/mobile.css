@@ -4933,6 +4933,7 @@ a {
     height: 100%;
     background-color:rgba(0,0,0,0.6);
     display: none;
+    z-index: 9999;
 }
 
 .m_menu-box>.menu {
@@ -4990,4 +4991,31 @@ a {
     outline: none;
     line-height: .4rem;
     text-align: center;
+}
+
+.m_order-btn {
+    text-align: right;
+}
+
+.m_order-btn>button {
+    width: 1.8rem;
+    height: .6rem;
+    border-radius: .1rem;
+    font-size: .3rem;
+    line-height: .3rem;
+    text-align: center;
+    outline: none;
+    color: #fff;
+}
+
+.m_order-btn>button.success {
+    background-color: #28a745;
+}
+
+.m_order-btn>button.primary {
+    background-color: #394867;
+}
+
+.m_order-btn>button.warning {
+    background-color: #e44f26;
 }
