@@ -4450,6 +4450,7 @@ a {
     background-color: #000;
     justify-content: space-between;
     align-items: center;
+    z-index: 999;
 }
 
 .m_top-bottom {
@@ -4956,4 +4957,37 @@ a {
     background-color: #fff;
     line-height: .6rem;
     margin-top: .01rem;
+}
+
+.m_pay {
+    width: 7.5rem;
+    height: 7.5rem;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.m_pay>.payimg {
+    width: 3rem;
+}
+
+.m_pay>.titel {
+    margin-top: .3rem;
+    font-size: .6rem;
+}
+
+.m_pay>p {
+    margin-top: .1rem;
+    font-size: .3rem;
+}
+
+.m_pay-btn {
+    margin-top: .5rem;
+    width: 4rem;
+    height: .8rem;
+    border-radius: .1rem;
+    background-color: #02598E;
+    color: #fff;
+    outline: none;
+    line-height: .4rem;
+    text-align: center;
 }
