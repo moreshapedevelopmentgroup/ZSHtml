@@ -4931,7 +4931,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color:rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     display: none;
     z-index: 9999;
 }
@@ -5018,4 +5018,80 @@ a {
 
 .m_order-btn>button.warning {
     background-color: #e44f26;
+}
+
+.m_evaluation {
+    padding: .5rem;
+}
+
+.m_evaluation>.top {
+    width: 6.5rem;
+    border-radius: .1rem;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.m_evaluation>.top>.img {
+    width: 2rem;
+    margin: 0 .25rem;
+}
+
+.m_evaluation>.top>.titel {
+    width: 4rem;
+    padding: .25rem;
+    font-size: .3rem;
+    text-align: left;
+    word-break: break-all;
+    font-weight: bold;
+}
+
+.m_evaluation>.titel {
+    font-size: .4rem;
+    text-align: left;
+    margin-top: .4rem;
+}
+
+.m_evaluation>.xingxing {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: .3rem;
+}
+
+.m_evaluation>.xingxing>.icon-xingxing {
+    font-size: .6rem;
+    color: #666;
+}
+
+.m_evaluation>.content {
+    margin-top: .4rem;
+    width: 100%;
+    height: 3rem;
+    outline: none;
+    border-radius: .1rem;
+    padding: .1rem;
+    font-size: .3rem;
+}
+
+.m_evaluation>.evaluation-btn {
+    margin-top: .4rem;
+}
+
+.m_evaluation>.evaluation-btn>button {
+    width: 1.8rem;
+    height: .6rem;
+    font-size: .3rem;
+    line-height: .3rem;
+    text-align: center;
+    border-radius: .1rem;
+    outline: none;
+    margin: 0 .2rem;
+}
+
+.m_evaluation>.evaluation-btn>.up {
+    background-color: #394867;
+    color: #fff;
 }
