@@ -88,6 +88,19 @@ table {
     overflow: hidden;
 }
 
+/*清除浮动*/
+.clearfloat{
+	zoom: 1;
+}
+
+.clearfloat:after{
+	display: block;
+	clear: both;
+	content: '';
+	visibility: hidden;
+	height: 0;
+}
+
 .line5 {
     clear: both;
     font-size: 0px;
@@ -12057,4 +12070,53 @@ a {
     .link .link-list ul {
         margin-right: 40px;
     }
+}
+
+/* 国庆版样式 */
+/* 查看物流 */
+.add002-body {
+    position: relative;
+    min-width: 1132px;
+    background-color: #fff;
+}
+
+.nav-abs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.national-day_content-box {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    width: 100%;
+}
+
+.national-day_content-box>.n_left-nav {
+    float: left;
+    padding: 0 10px;
+    width: 206px;
+    background-color: #ebebeb;
+    cursor: default;
+}
+
+.national-day_content-box>.n_left-nav>.titel {
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.national-day_content-box>.n_left-nav>.photo {
+    margin-top: 20px;
+    width: 60px;
+    border-radius: 100%;
+}
+
+.national-day_content-box>.n_right-content {
+    float: left;
+    overflow: auto;
+    background-color: #fff;
+    cursor: default;
 }
