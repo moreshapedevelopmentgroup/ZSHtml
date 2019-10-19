@@ -1,0 +1,121 @@
+{
+  "id": "1234268",
+  "name": "美家材配",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "288984",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e679",
+      "unicode_decimal": 59001
+    },
+    {
+      "icon_id": "379095",
+      "name": "装修工程-01",
+      "font_class": "zhuangxiugongcheng01",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "720975",
+      "name": "搜索",
+      "font_class": "xiazai17",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "856395",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "887801",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "915709",
+      "name": "首页 (2)",
+      "font_class": "shouye2",
+      "unicode": "e681",
+      "unicode_decimal": 59009
+    },
+    {
+      "icon_id": "1032410",
+      "name": "星星",
+      "font_class": "xingxing1",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "1132472",
+      "name": "设计师 建筑师",
+      "font_class": "shejishijianzhushi",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "1311978",
+      "name": "错",
+      "font_class": "cuo",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "2471349",
+      "name": "对话框",
+      "font_class": "duihuakuang",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "2529735",
+      "name": "导航、更多",
+      "font_class": "menu",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "2570065",
+      "name": "客服",
+      "font_class": "kefu-tianchong",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "3930502",
+      "name": "老师",
+      "font_class": "laoshi",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "5800632",
+      "name": "照相机",
+      "font_class": "zhaoxiangji",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "7960177",
+      "name": "我的",
+      "font_class": "wode",
+      "unicode": "e6a2",
+      "unicode_decimal": 59042
+    },
+    {
+      "icon_id": "8094205",
+      "name": "清单:信息:设备基础信息:工单信息",
+      "font_class": "qingdanxinxishebeijichuxinxigongdanxinxi",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    }
+  ]
+}
