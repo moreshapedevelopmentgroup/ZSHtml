@@ -32,7 +32,7 @@
                     <div class="new_header-badge">HOT</div>
                 </li>
                 <li>
-                    <a href="#">局部套餐</a>
+                    <a href="#">套餐订单</a>
                 </li>
                 <li class="more-list">
                     <a href="#">商品库<img class="new_header-img" src="../images/down-btn.png"></a>
@@ -167,19 +167,87 @@
                 <h1 class="titel">订单中心</h1>
                 <div class="info clearfloat">
                     <div class="float-left nav">
-                        <span class="bold">套餐订单</span>
+                        <span class="bold f-f00">套餐订单</span>
+                        <div class="triangle"></div>
                     </div>
                     <div class="float-left nav">
-                        <span class="bold f-f00">商品订单</span>
-                        <div class="triangle"></div>
+                        <span class="bold">商品订单</span>
                     </div>
                 </div>
                 <div class="graybg clearfloat">
-                    <div class="float-left f-f00 info-text"><span class="bold">类型：</span>商品订单</div>
-                    <div class="float-left info-text"><span class="bold">组合号：</span>123456789XXX</div>
-                    <div class="float-left info-text"><span class="bold">订单总金额：</span><span class="f-f00">6666</span>元
-                    </div>
+                    <div class="float-left f-f00 info-text"><span class="bold">类型：</span>套餐订单</div>
+                    <div class="float-left info-text"><span class="bold">套餐类别：</span>毛坯整装</div>
+                    <div class="float-left info-text"><span class="bold">套餐号：</span>1234567890XYZ</div>
+                    <div class="float-left info-text"><span class="bold">设计定金：</span>6666元</div>
                     <div class="float-left info-text"><span class="bold">下单日期：</span>2019/09/30 15:35:00</div>
+                </div>
+                <div class="package-info">
+                    <div class="top clearfloat">
+                        <div class="float-left">
+                            <span class="bold">所属设计师：</span>
+                            <a href="#">
+                                <img class="photo" src="../images/designer (5).jpg">
+                            </a>
+                            <span>一木设计</span>
+                        </div>
+                        <div class="float-left hr"></div>
+                        <div class="float-left">
+                            <span class="bold">专属客服：</span>
+                            <a href="#">
+                                <img class="photo" src="../images/designer (5).jpg">
+                            </a>
+                            <span>阿雅</span>
+                        </div>
+                        <div class="float-left hr"></div>
+                        <div class="float-left">
+                            <span class="bold">项目监理：</span>
+                            <a href="#">
+                                <img class="photo" src="../images/designer (5).jpg">
+                            </a>
+                            <span>样样</span>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="middle clearfloat">
+                        <div class="titel float-left bold">我的操作：</div>
+                        <button class="float-left">上传参考美图<div class="triangle"></div></button>
+                        <button class="float-left">查看设计图<div class="triangle"></div></button>
+                        <button class="float-left">查看现场图<div class="triangle"></div></button>
+                        <button class="float-left">申请售后<div class="triangle"></div></button>
+                        <button class="float-left">申请小区代理<div class="triangle"></div></button>
+                    </div>
+                    <div class="bottom clearfloat">
+                        <div class="titel bold float-left">订单进度：</div>
+                        <div class="float-left list">
+                            <div class="bar">
+                                <div class="y"></div>
+                            </div>
+                            <div class="dot1">
+                                <div class="titel">支付定金</div>
+                                <div class="round"></div>
+                            </div>
+                            <div class="dot2">
+                                <div class="titel">确认设计图</div>
+                                <div class="round"></div>
+                            </div>
+                            <div class="dot3">
+                                <div class="titel">选材-装修</div>
+                                <div class="round"></div>
+                            </div>
+                            <div class="dot4">
+                                <div class="titel">验收</div>
+                                <div class="round"></div>
+                            </div>
+                            <div class="dot5">
+                                <div class="titel">总评</div>
+                                <div class="round"></div>
+                            </div>
+                            <div class="dot6">
+                                <div class="titel">生成分享</div>
+                                <div class="round"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="list-top clearfloat">
                     <div class="float-left input"><input type="checkbox"><span>全选</span></div>
@@ -213,7 +281,7 @@
                             <div class="middle clearfloat">
                                 <div class="titel float-left">预约发货时间</div>
                                 <div class="time float-left">
-                                    <input type="text" name="starttime" class="form-control" id="starttime">
+                                    <input type="text" name="starttime" class="form-control">
                                 </div>
                                 <div class="titel float-left">商品备注</div>
                                 <div class="input float-left">
@@ -250,7 +318,7 @@
                             <div class="middle clearfloat">
                                 <div class="titel float-left">预约发货时间</div>
                                 <div class="time float-left">
-                                    <input type="text" name="starttime" class="form-control" id="starttime">
+                                    <input type="text" name="starttime" class="form-control">
                                 </div>
                                 <div class="titel float-left">商品备注</div>
                                 <div class="input float-left">
@@ -325,7 +393,7 @@
         })
     </script>
     <script>
-        $("#starttime").datetimepicker({
+        $(".form-control").datetimepicker({
             language: 'zh-CN', //用自己设置的时间文字
             //weekStart: 1,  //一周从那天开始，默认为0，从周日开始，可以设为1从周一开始
             startDate: new Date(), //开始时间，可以写字符串，也可以直接写日期格式new Date(),在这之前的日期不能选择
@@ -367,6 +435,31 @@
                 $(".list-top>.input>input").prop("checked", false);
             };
         });
+    </script>
+    <script>
+        // 进度条
+        var w = [166, 332, 498, 664, 830, 996]
+
+        function jdt(num) {
+            if (num === 1 || 2 || 3 || 4 || 5 || 6) {
+                $('.bar>.y').width(w[num - 1])
+                $('.dot' + num + '>.titel').css('color', '#f00')
+                for (var i = 0; i < num; i++) {
+                    $('.dot' + (i + 1) + '>.round').css('background-color', '#ffe24d')
+                }
+            }
+        }
+        // 改变数字对应进度条
+        /**
+        0：空
+        1：支付定金
+        2：确认设计图
+        3：选材-装修
+        4：验收
+        5：宗派
+        6：生成分享
+        **/ 
+        jdt(2)
     </script>
 </body>
 

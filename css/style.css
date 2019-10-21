@@ -12709,6 +12709,124 @@ a {
     background-color: #eff2f6;
 }
 
+.national-day_content-box>.n_right-content>.package-info {
+    padding: 26px 80px;
+    width: 100%;
+    height: 320px;
+    background: url(../images/add002/package-bg.jpg) repeat-x;
+}
+
+.national-day_content-box>.n_right-content>.package-info>.top>.hr {
+    margin: 0 30px;
+    width: 1px;
+    height: 48px;
+    background-color: #b7b7b7;
+}
+
+.national-day_content-box>.n_right-content>.package-info>.top .photo {
+    margin: 0 20px;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+}
+
+.national-day_content-box>.n_right-content>.package-info>.middle>.titel {
+    margin-top: 4px;
+}
+
+.national-day_content-box>.n_right-content>.package-info>.middle>button {
+    position: relative;
+    margin-left: 40px;
+    padding-left: 16px;
+    width: 166px;
+    height: 30px;
+    border: 3px solid #000;
+    border-radius: 15px;
+    background-color: #ffe24d;
+    text-align: left;
+    vertical-align: middle;
+    outline: none;
+}
+
+.national-day_content-box>.n_right-content>.package-info>.middle>button>.triangle {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent transparent #000;
+}
+
+.national-day_content-box>.n_right-content>.package-info>.bottom {
+    margin-top: 50px;
+}
+
+.national-day_content-box>.n_right-content>.package-info>.bottom>.titel {
+    margin-top: 38px;
+}
+
+.national-day_content-box>.n_right-content>.package-info>.bottom>.list {
+    position: relative;
+    width: 1200px;
+    height: 120px;
+}
+
+.national-day_content-box>.n_right-content>.package-info>.bottom>.list>.bar {
+    position: absolute;
+    top: 42px;
+    left: 30px;
+    width: 996px;
+    height: 12px;
+    background-color: #b7b7b7;
+}
+
+.national-day_content-box>.n_right-content>.package-info>.bottom>.list>.bar>.y {
+    width: 0;
+    height: 12px;
+    background-color: #ffe24d;
+}
+
+.national-day_content-box>.n_right-content>.package-info>.bottom>.list>.dot1 {
+    position: absolute;
+    left: 156px;
+}
+
+.national-day_content-box>.n_right-content>.package-info>.bottom>.list>.dot2 {
+    position: absolute;
+    left: 322px;
+}
+
+.national-day_content-box>.n_right-content>.package-info>.bottom>.list>.dot3 {
+    position: absolute;
+    left: 488px;
+}
+
+.national-day_content-box>.n_right-content>.package-info>.bottom>.list>.dot4 {
+    position: absolute;
+    left: 654px;
+}
+
+.national-day_content-box>.n_right-content>.package-info>.bottom>.list>.dot5 {
+    position: absolute;
+    left: 820px;
+}
+
+.national-day_content-box>.n_right-content>.package-info>.bottom>.list>.dot6 {
+    position: absolute;
+    left: 986px;
+}
+
+.national-day_content-box>.n_right-content>.package-info>.bottom>.list .round {
+    margin: 14px auto 0 auto;
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    background-color: #b7b7b7;
+}
+
 .bold {
     font-weight: bold;
 }
