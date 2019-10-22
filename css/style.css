@@ -12829,6 +12829,79 @@ a {
     background-color: #b7b7b7;
 }
 
+.national-day_content-box>.n_right-content>.agency-p {
+    margin-left: 50px;
+    margin-top: 18px;
+    font-size: 14px;
+    color: #5e5e5e;
+    font-weight: bold;
+}
+
+.national-day_content-box>.n_right-content>.agency-input {
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.national-day_content-box>.n_right-content>.agency-input>.inline {
+    margin-bottom: 16px;
+}
+
+.national-day_content-box>.n_right-content>.agency-input>.inline>.titel {
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+}
+
+.national-day_content-box>.n_right-content>.agency-input>.inline>input {
+    padding: 0 16px;
+    width: 496px;
+    height: 34px;
+    border-radius: 17px;
+    background-color: #ebebeb;
+    outline: none;
+}
+
+.national-day_content-box>.n_right-content>.agency-input>.inline>.f-f00 {
+    margin-left: 40px;
+}
+
+.national-day_content-box>.n_right-content>.agency-input>.inline>.info {
+    color: #c4c4c4;
+}
+
+.national-day_content-box>.n_right-content>.agency-input>.block>.titel {
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+}
+
+.national-day_content-box>.n_right-content>.agency-input>.block>textarea {
+    padding: 16px;
+    width: 496px;
+    height: 213px;
+    border-radius: 17px;
+    background-color: #ebebeb;
+    outline: none;
+    resize: none;
+}
+
+.national-day_content-box>.n_right-content>.agency-input>.block>.f-f00 {
+    margin-left: 40px;
+}
+
+.national-day_content-box>.n_right-content>.agency-input>.agency-btn {
+    margin-top: 56px;
+    margin-left: 130px;
+    width: 238px;
+    height: 38px;
+    border-radius: 19px;
+    color: #fff;
+    background-color: #207171;
+    text-align: center;
+    line-height: 19px;
+    outline: none;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -12948,7 +13021,7 @@ a {
     .national-day_content-box>.n_right-content>.list>li>.other>.middle>.input>input {
         width: 200px;
     }
-    
+
     .national-day_content-box>.n_right-content>.list-top>.input>input {
         margin-left: 8px;
     }
