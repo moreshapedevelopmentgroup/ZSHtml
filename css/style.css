@@ -12978,4 +12978,8 @@ a {
     .national-day_content-box>.n_right-content>.list>li>.input>input {
         margin-top: 67px;
     }
+
+    .national-day_content-box>.n_right-content>.list>li>.other>.bottom>div>.ml-btn {
+        margin-left: 12px;
+    }
 }
