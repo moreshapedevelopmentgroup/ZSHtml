@@ -12101,6 +12101,10 @@ a {
     user-select: none;
 }
 
+.bg-eff2f6 {
+    background-color: #eff2f6;
+}
+
 .nav-abs {
     position: absolute;
     top: 0;
