@@ -12099,6 +12099,7 @@ a {
     -khtml-user-select: none;
     /*早期浏览器*/
     user-select: none;
+    overflow: hidden;
 }
 
 .bg-eff2f6 {
@@ -12112,16 +12113,19 @@ a {
     z-index: 99;
 }
 
-.national-day_content-box {
+/* .national-day_content-box {
     position: absolute;
     top: 72px;
     left: 0;
     width: 100%;
     min-width: 1910px;
-}
+} */
 
 .national-day_content-box>.n_left-nav {
-    float: left;
+    /* float: left; */
+    position: absolute;
+    top: 72px;
+    left: 0;
     padding: 0 10px;
     width: 206px;
     background-color: #ebebeb;
@@ -12195,7 +12199,10 @@ a {
 }
 
 .national-day_content-box>.n_right-content {
-    float: left;
+    /* float: left; */
+    position: absolute;
+    top: 72px;
+    left: 206px;
     padding: 48px 66px;
     overflow: auto;
     background-color: #fff;
@@ -12771,10 +12778,12 @@ a {
 }
 
 .national-day_content-box>.n_right-content>.package-info>.bottom>.titel {
+    float: left;
     margin-top: 38px;
 }
 
 .national-day_content-box>.n_right-content>.package-info>.bottom>.list {
+    float: left;
     position: relative;
     width: 1200px;
     height: 120px;
@@ -12917,9 +12926,9 @@ a {
         min-width: 1132px;
     }
 
-    .national-day_content-box {
+    /* .national-day_content-box {
         min-width: 1132px;
-    }
+    } */
 
     .national-day_content-box>.n_right-content {
         min-width: 926px;
@@ -13058,5 +13067,15 @@ a {
 
     .national-day_content-box>.n_right-content>.list>li>.other>.bottom>div>.ml-btn {
         margin-left: 12px;
+    }
+
+    .national-day_content-box>.n_right-content>.package-info>.bottom>.titel {
+        float: none;
+    }
+    
+    .national-day_content-box>.n_right-content>.package-info>.bottom>.list {
+        float: none;
+        margin-top: 20px;
+        width: 980px;
     }
 }
