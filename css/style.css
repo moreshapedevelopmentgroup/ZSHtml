@@ -12949,7 +12949,7 @@ a {
     width: 100%;
     height: 54px;
     background-color: #fbfcfd;
-    box-shadow:  0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
     font-size: 18px;
 }
 
@@ -13036,6 +13036,46 @@ a {
 .national-day_content-box>.n_center-box>.middle-box>.recommend {
     text-align: left;
     background-color: #fbdf4b;
+}
+
+.national-day_content-box>.n_right-content>.info>.titel {
+    font-size: 18px;
+}
+
+.national-day_content-box>.n_right-content>.info>.titel>span {
+    margin: 0 10px;
+}
+
+.national-day_content-box>.n_right-content>.offer-info {
+    margin: 0 auto;
+    padding: 80px;
+    height: 320px;
+    background: url(../images/add002/package-bg.jpg) repeat-x;
+}
+
+.national-day_content-box>.n_right-content>.offer-info>.offer-top>li {
+    float: left;
+    font-weight: bold;
+    text-align: center;
+}
+
+.national-day_content-box>.n_right-content>.offer-info>.hr {
+    margin: 10px auto;
+    width: 800px;
+    height: 14px;
+    background-color: #dadada;
+}
+
+.national-day_content-box>.n_right-content>.offer-info>.offer-list>li.hr {
+    margin: 10px auto;
+    width: 800px;
+    height: 6px;
+    background-color: #dadada;
+}
+
+.national-day_content-box>.n_right-content>.offer-info>.offer-list>li>div {
+    float: left;
+    text-align: center;
 }
 
 .bold {
@@ -13195,7 +13235,7 @@ a {
     .national-day_content-box>.n_right-content>.package-info>.bottom>.titel {
         float: none;
     }
-    
+
     .national-day_content-box>.n_right-content>.package-info>.bottom>.list {
         float: none;
         margin-top: 20px;
