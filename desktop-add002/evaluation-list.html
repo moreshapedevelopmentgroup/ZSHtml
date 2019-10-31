@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>评价</title>
+    <title>我的评价</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="../css/flexslider.css">
     <link rel="stylesheet" href="../css/viewer.min.css">
     <link rel="stylesheet" href="../css/icon/iconfont.css">
     <link rel="stylesheet" href="../css/iconfont.css">
-    <link rel="stylesheet" href="../css/desktopicon/iconfont.css">
     <link rel="stylesheet" href="../css/style.css">
 
     <!--[if lt IE 9]>
@@ -164,56 +164,13 @@
 
             <!-- 内容 -->
             <div class="n_right-content">
-                <h1 class="titel">用户评价</h1>
+                <h1 class="titel">我的评价</h1>
                 <div class="info clearfloat">
-                    <div class="float-left info-text"><span class="bold">订单号：</span>254568547454</div>
-                    <div class="float-left info-text"><span class="bold">订单金额：</span>3165 元</div>
-                    <div class="float-left info-text"><span class="bold">订单时间：</span>2019/9/30 15:30:00</div>
+                    <div class="titel float-left">评价列表</div>
+                    <div class="titel float-right">共<span>3</span>张</div>
                 </div>
-                <div class="info-content clearfloat">
-                    <div class="float-left">
-                        <img class="img" src="../images/designer-show (1).jpg">
-                        <p class="paragraph">瓷砖800MM*800MM-通体大理石-XANYUE香悦品牌STONE原石系列</p>
-                    </div>
-                    <div class="float-left box">
-                        <div class="evaluation clearflaot">
-                            <h5 class="titel float-left">物流评价：</h5>
-                            <div class="xingxing float-left">
-                                <i class="iconfont icon-xingxing1 wlpj"></i>
-                                <i class="iconfont icon-xingxing1 wlpj"></i>
-                                <i class="iconfont icon-xingxing1 wlpj"></i>
-                                <i class="iconfont icon-xingxing1 wlpj"></i>
-                                <i class="iconfont icon-xingxing1 wlpj"></i>
-                            </div>
-                        </div>
-                        <div class="evaluation clearfloat">
-                            <h5 class="titel float-left">服务评价：</h5>
-                            <div class="xingxing float-left">
-                                <i class="iconfont icon-xingxing1 fwpj"></i>
-                                <i class="iconfont icon-xingxing1 fwpj"></i>
-                                <i class="iconfont icon-xingxing1 fwpj"></i>
-                                <i class="iconfont icon-xingxing1 fwpj"></i>
-                                <i class="iconfont icon-xingxing1 fwpj"></i>
-                            </div>
-                        </div>
-                        <hr />
-                        <textarea class="info"></textarea>
-                        <h5 class="titel">我要晒图：</h5>
-                        <ul class="upload clearfloat">
-                            <li class="upload-btn"><span>+</span></li>
-                        </ul>
-                        <input style="display: none;" class="upload-file" type="file" multiple="multiple">
-                        <ul class="label clearfloat">
-                            <li>推荐购买</li>
-                            <li>色彩很正</li>
-                            <li>款式很潮</li>
-                            <li>安装完美</li>
-                            <li>性价比高</li>
-                            <li>纹理漂亮</li>
-                            <li>质感超好</li>
-                        </ul>
-                        <button class="btn">发布评价</button>
-                    </div>
+                <div class="offer-info">
+                    
                 </div>
             </div>
             <!-- 固定按钮 -->
@@ -240,72 +197,17 @@
     <script src="../js/bootstrap.js"></script>
     <script src="../js/jquery.flexslider-min.js"></script>
     <script src="../js/jqslider.js"></script>
+    <script src="../js/moment.js"></script>
+    <script src="../js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../js/bootstrap-datetimepicker.zh-CN.js"></script>
     <script src="../js/common.js"></script>
     <script>
         clientHeight('.n_left-nav', '-72')
         clientHeight('.n_right-content', '-168')
         clientWidth('.n_right-content', '-338')
         clientHeight('.menu', '-350')
-    </script>
-    <script>
-        // 星星点击事件
-        $('.wlpj').click(function () {
-            var all = $('.wlpj').length
-            for (var i = 0; i < $(this).index() + 1; i++) {
-                $('.wlpj').eq(i).css('color', '#ff962f')
-            }
-            for (var j = all - 1; j > $(this).index(); j--) {
-                $('.wlpj').eq(j).css('color', '#666')
-            }
-        })
-        $('.fwpj').click(function () {
-            var all = $('.fwpj').length
-            for (var i = 0; i < $(this).index() + 1; i++) {
-                $('.fwpj').eq(i).css('color', '#ff962f')
-            }
-            for (var j = all - 1; j > $(this).index(); j--) {
-                $('.fwpj').eq(j).css('color', '#666')
-            }
-        })
-    </script>
-    <script>
-        // 图片上传
-        $('.upload-btn').click(function () {
-            $('.upload-file').click()
-        })
-        $('.upload-file').change(function () {
-            $('.photo-box').remove()
-            var f = this.files
-
-            function getObjectURL(file) {
-                var url = null;
-                if (window.createObjectURL != undefined) {
-                    url = window.createObjectURL(file);
-                } else if (window.URL != undefined) {
-                    url = window.URL.createObjectURL(file);
-                } else if (window.webkitURL != undefined) {
-                    url = window.webkitURL.createObjectURL(file);
-                }
-                return url;
-            }
-            var objUrl = ''
-            for (var i = 0; i < f.length; i++) {
-                objUrl = getObjectURL(f[i])
-                $(".upload").prepend('<li class="photo-box"><img class="photo' + i + '"></li>')
-                $('.photo' + i).attr("src", objUrl)
-            }
-        })
-    </script>
-    <script>
-        $('.label>li').click(function () {
-            if ($(this).css('color') === 'rgb(0, 0, 0)') {
-                $(this).css('color', '#f00')
-                $(this).css('border-color', '#f00')
-            } else {
-                $(this).css('color', '#000')
-                $(this).css('border-color', '#b7b7b7')
-            }
-        })
+        clientWidth('.offer-info', '-550')
+        clientWidth('.left', '-900')
     </script>
 </body>
 

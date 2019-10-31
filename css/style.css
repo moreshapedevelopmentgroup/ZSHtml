@@ -13120,6 +13120,8 @@ a {
     font-weight: bold;
 }
 
+/* 我的评价 */
+
 /* 低分辨率页面适配（小于1600px） */
 
 @media (max-width: 1600px) {
@@ -13283,4 +13285,5 @@ a {
     .national-day_content-box>.n_right-content>.offer-info {
         min-width: 1000px;
     }
+    /* 我的评价 */
 }
