@@ -13200,6 +13200,11 @@ a {
 .national-day_content-box>.n_right-content>.offer-info>.evaluation-list>li>.right .label {
     margin-top: 18px;
     padding: 0 28px 0 98px;
+    float: left;
+}
+
+.national-day_content-box>.n_right-content>.offer-info>.evaluation-list>li>.right .btn {
+    float: left;
 }
 
 .national-day_content-box>.n_right-content>.offer-info>.evaluation-list>li>.right .label>li {
@@ -13217,7 +13222,7 @@ a {
 
 .national-day_content-box>.n_right-content>.offer-info>.evaluation-list>li>.right .delete,
 .national-day_content-box>.n_right-content>.offer-info>.evaluation-list>li>.right .editor {
-    margin-top: 18px;
+    margin-top: 10px;
     background-color: #ebebeb;
     font-size: 14px;
     text-align: center;
@@ -13397,6 +13402,40 @@ a {
 
     .national-day_content-box>.n_right-content>.offer-info {
         min-width: 1000px;
+        padding: 20px;
     }
     /* 我的评价 */
+    .national-day_content-box>.n_right-content>.offer-info>.evaluation-list>li>.right {
+        width: 780px;
+    }
+
+    .national-day_content-box>.n_right-content>.offer-info>.evaluation-list>li>.left>.img-box>.left-img {
+        width: 160px;
+    }
+
+    .national-day_content-box>.n_right-content>.offer-info>.evaluation-list>li>.left .content {
+        width: 160px;
+    }
+
+    .national-day_content-box>.n_right-content>.offer-info>.evaluation-list>li>.right>.top>span {
+        margin-right: 40px;
+        font-size: 14px;
+    }
+
+    .national-day_content-box>.n_right-content>.offer-info>.evaluation-list>li>.right>.nr>.content {
+        width: auto;
+    }
+
+    .national-day_content-box>.n_right-content>.offer-info>.evaluation-list>li>.right .label {
+        padding: 0;
+        float: none;
+    }
+
+    .national-day_content-box>.n_right-content>.offer-info>.evaluation-list>li>.right .btn {
+        float: none;
+    }
+
+    .national-day_content-box>.n_right-content>.offer-info>.evaluation-list>li>.right>.pjimg {
+        padding: 0;
+    }
 }
