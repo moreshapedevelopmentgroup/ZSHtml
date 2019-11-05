@@ -13101,7 +13101,7 @@ a {
 .national-day_content-box>.n_right-content>.offer-info>.share-list>li>.left>.img>img {
     margin-top: 20px;
     margin-left: 20px;
-    width:130px;
+    width: 130px;
 }
 
 .national-day_content-box>.n_right-content>.offer-info>.share-list>li>.right>.time {
@@ -13298,6 +13298,244 @@ a {
     background-color: #fff;
 }
 
+.my-upload-img>li {
+    float: left;
+    margin-bottom: 40px;
+    width: 400px;
+    height: 430px;
+    background-color: #ebebeb;
+}
+
+.my-upload-img>li>.img {
+    margin: 20px auto;
+    width: 360px;
+    height: 224px;
+    overflow: hidden;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.my-upload-img>li>.img>img {
+    width: 360px;
+}
+
+.my-upload-img>li>.text {
+    margin-left: 40px;
+    margin-bottom: 18px;
+}
+
+.my-upload-img>li>.bold {
+    margin-left: 40px;
+}
+
+.my-upload-img>li>.text>.tag {
+    margin-right: 12px;
+}
+
+.my-upload-img>li>.text>.d-btn {
+    float: right;
+    margin-right: 30px;
+    width: 78px;
+    height: 30px;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #ffe24d;
+    outline: none;
+}
+
+.my-upload-up>.left {
+    margin-left: 20px;
+    width: 650px;
+}
+
+.my-upload-up>.left>.text {
+    margin-top: 40px;
+}
+
+.my-upload-up>.left>.text>.upload-btn {
+    display: inline-block;
+    position: relative;
+    margin-left: 60px;
+    width: 178px;
+    height: 90px;
+    cursor: pointer;
+    font-size: 90px;
+    background-color: #e8e8e8;
+    vertical-align: text-top;
+}
+
+.my-upload-up>.left>.text>.upload-btn>span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    font-size: 60px;
+    color: #a2a2a2;
+}
+
+.my-upload-up>.left>.text>.textarea {
+    padding: 20px;
+    display: inline-block;
+    vertical-align: text-top;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    margin-left: 60px;
+    outline:none;
+    resize: none;
+    font-size: 18px;
+    width:500px;
+    height: 110px;
+}
+
+.my-upload-up>.left>.find {
+    width:500px;
+    margin-top: 30px;
+    margin-left: 130px;
+}
+
+.my-upload-up>.left>.find>li {
+    float: left;
+    margin-right: 70px;
+    margin-bottom: 30px;
+    width: 180px;
+}
+
+.my-upload-up>.left>.find>li>input {
+    -webkit-appearance: none;
+    margin-right: 40px;
+    vertical-align: text-top;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    border: 1px solid #c5c5c5;
+    background-color: #c5c5c5;
+    outline: none;
+}
+
+.my-upload-up>.left>.find>li>input:checked {
+    position: relative;
+    background: #ffd119;
+    border: 1px solid #000;
+}
+
+.my-upload-up>.left>.find>li>input:checked::before,
+.my-upload-up>.left>.find>li>input:checked::after {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    color: #000;
+    border: 2px solid;
+    background-color: #000;
+}
+
+.my-upload-up>.left>.find>li>input:checked::before {
+    width: 2px;
+    height: 1px;
+    left: 24%;
+    top: 49%;
+    transform: skew(0deg, 50deg);
+}
+
+.my-upload-up>.left>.find>li>input:checked::after {
+    width: 6px;
+    height: 1px;
+    left: 46%;
+    top: 40%;
+    transform: skew(0deg, -50deg);
+}
+
+.my-upload-up>.left>.upbtn {
+    text-align: center;
+}
+
+.my-upload-up>.left>.upbtn>button {
+    width: 98%;
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #ffe24d;
+    outline: none;
+}
+
+.my-upload-up>.right {
+    margin-left:30px;
+    width: 600px;
+    padding: 0 15px;
+    height: 750px;
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-upload-up>.right>img {
+    width: 100%;
+}
+
+.my-upload-img>li>.yesbtn {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.my-upload-img>li>.yesbtn>button {
+    width: 188px;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 10px;
+    background-color: #ffe24d;
+    outline: none;
+    text-align: center;
+}
+
+.my-upload-img>li>.yesbtn>button.active {
+    background-color: #d7d7d7;
+}
+/* 确认支付 */
+.confirm-titel {
+    margin-bottom: 36px;
+    font-size: 30px;
+    color: #404040;
+    text-align: center;
+}
+
+.confirm-box {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.confirm-box>.info>li {
+    margin-top: 24px;
+    font-size: 16px;
+}
+
+.confirm-box>.info>li>.title {
+    width: 120px;
+    text-align: right;
+    color: #88898a;
+}
+.confirm-box>.info>li>.content {
+    margin-left: 30px;
+    width: 450px;
+    color: #000;
+    background-color: #fff;
+    text-align: left;
+}
+
+.confirm-box>.confirm-btn {
+    width: 100%;
+    margin-top: 76px;
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+    color: #fff;
+    background-color: #c8333e;
+    outline: none;
+    font-size: 18px;
+    border-radius: 10px;
+}
 
 /* 低分辨率页面适配（小于1600px） */
 
@@ -13463,6 +13701,7 @@ a {
         min-width: 1000px;
         padding: 20px;
     }
+
     /* 我的评价 */
     .national-day_content-box>.n_right-content>.offer-info>.evaluation-list>li>.right {
         width: 780px;
@@ -13496,5 +13735,36 @@ a {
 
     .national-day_content-box>.n_right-content>.offer-info>.evaluation-list>li>.right>.pjimg {
         padding: 0;
+    }
+    /* 我的上传图 */
+    .my-upload-up>.left {
+        margin-left: 0;
+        width: 400px;
+    }
+
+    .my-upload-up>.left>.text>.upload-btn {
+        margin-left: 0;
+    }
+    
+    .my-upload-up>.left>.text>.textarea {
+        margin-left: 0;
+        width: 320px;
+    }
+
+    .my-upload-up>.left>.find {
+        width:400px;
+        margin-left: 0;
+    }
+
+    .my-upload-up>.left>.find>li {
+        margin-right: 20px;
+    }
+
+    .my-upload-up>.left>.find>li>input {
+        margin-right: 10px;
+    }
+
+    .my-upload-up>.right {
+        width: 500px;
     }
 }
