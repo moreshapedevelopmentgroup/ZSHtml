@@ -13240,6 +13240,65 @@ a {
     background-color: #cce5ff;
 }
 
+/* 找回密码 */
+.new2_designer-login-box {
+    padding: 50px 20px;
+    width: 1232px;
+    height: 615px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background-color: #fff;
+}
+
+.new2_designer-login-box>.title {
+    margin-left: 40px;
+    font-size: 24px;
+    text-align: left;
+}
+
+.new2_designer-login-box>.content {
+    margin: 0 auto;
+    width: 800px;
+    font-size: 18px;
+    text-align: left;
+    background-color: #fff;
+}
+
+.new2_designer-login-box>.back {
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #fff;
+    color: #1270bc;
+}
+
+.new2_designer-login-box>.back>a {
+    color: #1270bc;
+}
+
+.new2_designer-login-box>.back>a:hover {
+    color: #f00;
+}
+
+.new2_noaccount {
+    margin-top: 80px;
+}
+
+.new2_designer-login-box>.d-title {
+    margin-top: 26px;
+    font-size: 28px;
+    text-align: center;
+    color: #394866;
+}
+
+.new2_designer-login-box>.d-content {
+    margin-top: 26px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #fff;
+}
+
+
 /* 低分辨率页面适配（小于1600px） */
 
 @media (max-width: 1600px) {
