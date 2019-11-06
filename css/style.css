@@ -13537,6 +13537,390 @@ a {
     border-radius: 10px;
 }
 
+.new2-bg {
+    background-color: #eff2f6;
+    padding: 120px 0 50px;
+}
+
+.new2_pay-box {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.new2_pay-box>.white-box {
+    margin-bottom: 30px;
+    padding: 20px 50px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px #ccc;
+}
+
+.new2_pay-box>.white-box>.choose,
+.new2_pay-box>.white-box>.choose2 {
+    margin-left: 90px;
+}
+
+.new2_pay-box>.white-box>.choose>li {
+    margin-bottom: 22px;
+}
+
+.new2_pay-box>.white-box>.choose>li>input,
+.new2_pay-box>.white-box>.choose2>li>input {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.new2_pay-box>.white-box>.choose2>li {
+    float: left;
+    margin-right:40px;
+}
+
+.new2_pay-box>.white-box>.choose2>li>span {
+    margin-left: 6px;
+}
+
+.new2_pay-box>.yellow-box>.top {
+    padding: 20px 50px;
+    width: 100%;
+    background-color: #fbdf4b;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px #ccc;
+    text-align: left;
+}
+
+.new2_pay-box>.yellow-box>.bottom {
+    margin: 0 auto;
+    padding: 30px;
+    width: 98%;
+    background-color: #fff;
+    box-shadow: 0 10px 10px #ccc;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list-top {
+    text-align: center;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list-top>.input,
+.new2_pay-box>.yellow-box>.bottom>.list>li>.input {
+    width: 70px;
+    text-align: left;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list-top>.info,
+.new2_pay-box>.yellow-box>.bottom>.list>li>.info {
+    width: 150px;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list-top>.titel,
+.new2_pay-box>.yellow-box>.bottom>.list>li>.other>.top>.titel {
+    width: 150px;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list-top>.specifications,
+.new2_pay-box>.yellow-box>.bottom>.list>li>.other>.top>.specifications {
+    width: 100px;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list-top>.time,
+.new2_pay-box>.yellow-box>.bottom>.list>li>.other>.top>.time {
+    width: 100px;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list-top>.price,
+.new2_pay-box>.yellow-box>.bottom>.list>li>.other>.top>.price {
+    width: 100px;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list-top>.preferential,
+.new2_pay-box>.yellow-box>.bottom>.list>li>.other>.top>.preferential {
+    width: 100px;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list-top>.num,
+.new2_pay-box>.yellow-box>.bottom>.list>li>.other>.top>.num {
+    width: 100px;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list-top>.pay,
+.new2_pay-box>.yellow-box>.bottom>.list>li>.other>.top>.pay {
+    width: 100px;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list-top>.total,
+.new2_pay-box>.yellow-box>.bottom>.list>li>.other>.top>.total {
+    width: 100px;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list-top>.input {
+    font-size: 16px;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list-top>.info {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list-top>.titel {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list-top>.specifications {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list-top>.time {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list-top>.price {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list-top>.preferential {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list-top>.num {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list-top>.pay {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list-top>.total {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list>li>.other>.top>div {
+    padding: 0 20px;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list>li>.other>.top>div.titel {
+    text-align: left;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list-top>.input>input {
+    -webkit-appearance: none;
+    margin-right: 10px;
+    vertical-align: text-top;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    border: 1px solid #c5c5c5;
+    background-color: #c5c5c5;
+    outline: none;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list-top>.input>input:checked {
+    position: relative;
+    background: #ffd119;
+    border: 1px solid #000;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list-top>.input>input:checked::before,
+.new2_pay-box>.yellow-box>.bottom>.list-top>.input>input:checked::after {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    color: #000;
+    border: 2px solid;
+    background-color: #000;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list-top>.input>input:checked::before {
+    width: 2px;
+    height: 1px;
+    left: 24%;
+    top: 49%;
+    transform: skew(0deg, 50deg);
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list-top>.input>input:checked::after {
+    width: 6px;
+    height: 1px;
+    left: 46%;
+    top: 40%;
+    transform: skew(0deg, -50deg);
+}
+
+
+
+
+
+
+
+
+
+.new2_pay-box>.yellow-box>.bottom>.list>li>.input>input {
+    -webkit-appearance: none;
+    margin-top: 60px;
+    margin-left: 4px;
+    vertical-align: text-top;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    border: 1px solid #c5c5c5;
+    background-color: #c5c5c5;
+    outline: none;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list>li>.input>input:checked {
+    position: relative;
+    background: #ffd119;
+    border: 1px solid #000;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list>li>.input>input:checked::before,
+.new2_pay-box>.yellow-box>.bottom>.list>li>.input>input:checked::after {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    color: #000;
+    border: 2px solid;
+    background-color: #000;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list>li>.input>input:checked::before {
+    width: 2px;
+    height: 1px;
+    left: 24%;
+    top: 49%;
+    transform: skew(0deg, 50deg);
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list>li>.input>input:checked::after {
+    width: 6px;
+    height: 1px;
+    left: 46%;
+    top: 40%;
+    transform: skew(0deg, -50deg);
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list>li>.info>img {
+    width: 144px;
+    border: 3px solid #000;
+    border-radius: 3px;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list>li>.other>.middle>.titel {
+    padding: 4px 20px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #fbdf4b;
+    font-weight: bold;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list>li>.other>.middle>.time>.form-control {
+    margin-left: 22px;
+    margin-right: 50px;
+    width: 148px;
+    height: 30px;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list>li>.other>.middle>.input>input {
+    margin-left: 22px;
+    margin-right: 50px;
+    width: 340px;
+    height: 30px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list>li>.other>.middle {
+    padding: 20px;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list>li>.other>.bottom>div {
+    margin-right: 46px;
+    height: 30px;
+    font-size: 18px;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list>li>.other>.bottom>div>.input-btn {
+    width: 128px;
+    height: 30px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 15px;
+    color: #fff;
+    background-color: #b72e22;
+    outline: none;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list>li>.other>.bottom {
+    padding: 20px;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list>li>.other>.hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list>li {
+    padding: 10px 0;
+    /* height: 270px; */
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list>li.hr {
+    margin: 20px 0;
+    height: 20px;
+    background-color: #eff2f6;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.list>li.hr {
+    margin: 20px 0;
+    height: 20px;
+    background-color: #eff2f6;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.info {
+    text-align: right;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.info>.title {
+    margin-right: 60px;
+    font-weight: bold;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.info>.title>.f-f00 {
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.pay-btn {
+    margin-top: 50px;
+    text-align: right;
+}
+
+.new2_pay-box>.yellow-box>.bottom>.pay-btn>button {
+    margin-right: 70px;
+    width: 500px;
+    height: 58px;
+    border-radius: 10px;
+    background-color: #c8333e;
+    color: #fff;
+    font-size: 18px;
+    line-height: 58px;
+    text-align: center;
+    outline: none;
+}
+
+
 /* 低分辨率页面适配（小于1600px） */
 
 @media (max-width: 1600px) {

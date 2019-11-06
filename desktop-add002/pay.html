@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>确认支付</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../css/flexslider.css">
+    <link rel="stylesheet" href="../css/viewer.min.css">
+    <link rel="stylesheet" href="../css/icon/iconfont.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="new_header clearfix p-0 nav-abs">
+            <img class="new_header-logo float-left" src="../images/new_logo.png">
+            <ul class="new_header-nav float-left clearfix">
+                <li>
+                    <a href="#">首页</a>
+                </li>
+                <li>
+                    <a href="#">主材套餐</a>
+                    <div class="new_header-badge">HOT</div>
+                </li>
+                <li>
+                    <a href="#">局部套餐</a>
+                </li>
+                <li class="more-list">
+                    <a href="#">商品库<img class="new_header-img" src="../images/down-btn.png"></a>
+                    <div class="new_header-menu">
+                        <img src="../images/up.jpg">
+                        <div class="new_header-menu-nav">
+                            <ul class="clearfix">
+                                <li class="deep-blue">功能区</li>
+                                <li><a class="f-f00" href="#">限时特卖</a></li>
+                                <li><a href="#">客厅</a></li>
+                                <li><a href="#">卧室</a></li>
+                                <li><a href="#">儿童房</a></li>
+                                <li><a href="#">书房</a></li>
+                                <li><a href="#">卫生间</a></li>
+                                <li><a href="#">厨房</a></li>
+                                <li><a href="#">走廊</a></li>
+                                <li><a href="#">玄关</a></li>
+                                <li><a href="#">阳台</a></li>
+                            </ul>
+                            <hr class="new_header-menu-hr">
+                            <ul class="clearfix">
+                                <li class="light-blue">基础类</li>
+                                <li><a href="#">瓷砖</a></li>
+                                <li><a href="#">木地板</a></li>
+                                <li><a href="#">地脚线</a></li>
+                                <li><a href="#">门</a></li>
+                                <li><a href="#">集成吊顶</a></li>
+                                <li><a href="#">色彩漆</a></li>
+                                <li><a href="#">灯具</a></li>
+                                <li><a href="#">窗帘</a></li>
+                                <li><a href="#">背景墙</a></li>
+                                <li><a href="#">卫浴</a></li>
+                            </ul>
+                            <hr class="new_header-menu-hr">
+                            <ul class="clearfix">
+                                <li class="light-blue">升级类</li>
+                                <li><a href="#">墙板</a></li>
+                                <li><a href="#">卫浴隔断</a></li>
+                                <li><a href="#">隔断吧台</a></li>
+                                <li><a href="#">线条</a></li>
+                                <li><a href="#">装饰画</a></li>
+                                <li><a href="#">墙布/涂料</a></li>
+                                <li><a href="#">置物墙板</a></li>
+                                <li><a href="#">不锈钢门</a></li>
+                                <li><a href="#">软包/硬包</a></li>
+                            </ul>
+                            <hr class="new_header-menu-hr">
+                            <ul class="clearfix">
+                                <li class="black">定制类</li>
+                                <li><a href="#">全屋整装</a></li>
+                                <li><a href="#">橱柜定制</a></li>
+                                <li><a href="#">阳台定制</a></li>
+                                <li><a href="#">飘窗定制</a></li>
+                                <li><a href="#">门定制</a></li>
+                                <li><a href="#">软硬包定制</a></li>
+                                <li><a href="#">护墙板定制</a></li>
+                                <li><a href="#">瓷砖定制</a></li>
+                                <li><a href="#">大理石定制</a></li>
+                                <li><a href="#">全屋窗帘</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">以图找材</a>
+                </li>
+                <li>
+                    <a href="#">我的清单</a>
+                    <div class="new_header-badge">NEW</div>
+                </li>
+                <li>
+                    <a href="#">装修视频</a>
+                </li>
+                <li>
+                    <a href="#">个人中心</a>
+                </li>
+            </ul>
+            <div class="new_header-btn float-right">
+                <button class="new_btn">登录</button>
+                <button class="new_btn new_btn-primary">注册</button>
+            </div>
+        </div>
+    </header>
+    <!-- 内容 -->
+    <section>
+        <div class="new2-bg">
+            <div class="common-box">
+                <h1 class="confirm-titel">商品结算</h1>
+                <div class="new2_pay-box">
+                    <div class="white-box clearfloat">
+                        <div class="float-left bold">1、请选择发货地址</div>
+                        <ul class="float-left choose">
+                            <li><input name="arr" type="radio">广东省,佛山市,顺德区大良嘉信三期26座8D (彭敏 收) 18025968567</li>
+                            <li><input name="arr" type="radio">广东省,佛山市,顺德区大良嘉信三期26座8D (彭敏 收) 18025968567</li>
+                        </ul>
+                    </div>
+                    <div class="white-box clearfloat">
+                        <div class="float-left bold">2、请选择支付方式</div>
+                        <ul class="float-left choose2 clearfloat">
+                            <li><input name="pay" type="radio">货到付款<span>手续费：0.00</span></li>
+                            <li><input name="pay" type="radio">账户余额<span>手续费：0.00</span></li>
+                            <li><input name="pay" type="radio">支付宝<span>手续费：0.00</span></li>
+                        </ul>
+                    </div>
+                    <div class="white-box clearfloat">
+                        <div class="float-left bold">3、请选择快递方式</div>
+                        <ul class="float-left choose2 clearfloat">
+                            <li><input name="kd" type="radio">顺丰快递<span>手续费：0.00</span></li>
+                        </ul>
+                    </div>
+                    <div class="yellow-box">
+                        <div class="top bold">4、结算清单</div>
+                        <div class="bottom">
+                            <ul class="list-top clearfloat">
+                                <li class="float-left input"><input type="checkbox"><span>全选</span></li>
+                                <li class="float-left info">商品信息</li>
+                                <li class="float-left titel">标题</li>
+                                <li class="float-left specifications">规格</li>
+                                <li class="float-left time">发货时间</li>
+                                <li class="float-left price">单价（元）</li>
+                                <li class="float-left preferential">优惠（元）</li>
+                                <li class="float-left num">数量</li>
+                                <li class="float-left pay">已支付（元）</li>
+                                <li class="float-left total">总价（元）</li>
+                            </ul>
+                            <hr />
+                            <ul class="list">
+                                <li class="clearfloat">
+                                    <div class="float-left input"><input type="checkbox"></div>
+                                    <div class="float-left info"><img src="../images/designer-show (1).jpg"></div>
+                                    <div class="float-left other">
+                                        <div class="top clearfloat">
+                                            <div class="titel">瓷砖800MM*800MM-通体大理石-XANYUE香悦品牌STONE原石系列</div>
+                                            <div class="specifications">TF82021-1塞尚</div>
+                                            <div class="time">15天后</div>
+                                            <div class="price">500</div>
+                                            <div class="preferential">0</div>
+                                            <div class="num">1</div>
+                                            <div class="pay">500</div>
+                                            <div class="total">6666</div>
+                                        </div>
+                                        <hr class="hr" />
+                                        <div class="middle clearfloat">
+                                            <div class="titel float-left">预约发货时间</div>
+                                            <div class="time float-left">
+                                                <input type="text" name="starttime" class="form-control">
+                                            </div>
+                                            <div class="titel float-left">商品备注</div>
+                                            <div class="input float-left">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="hr"></li>
+                                <li class="clearfloat">
+                                    <div class="float-left input"><input type="checkbox"></div>
+                                    <div class="float-left info"><img src="../images/designer-show (1).jpg"></div>
+                                    <div class="float-left other">
+                                        <div class="top clearfloat">
+                                            <div class="titel">瓷砖800MM*800MM-通体大理石-XANYUE香悦品牌STONE原石系列</div>
+                                            <div class="specifications">TF82021-1塞尚</div>
+                                            <div class="time">15天后</div>
+                                            <div class="price">500</div>
+                                            <div class="preferential">0</div>
+                                            <div class="num">1</div>
+                                            <div class="pay">500</div>
+                                            <div class="total">6666</div>
+                                        </div>
+                                        <hr class="hr" />
+                                        <div class="middle clearfloat">
+                                            <div class="titel float-left">预约发货时间</div>
+                                            <div class="time float-left">
+                                                <input type="text" name="starttime" class="form-control">
+                                            </div>
+                                            <div class="titel float-left">商品备注</div>
+                                            <div class="input float-left">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="hr"></li>
+                            </ul>
+                            <div class="info">
+                                <span class="title">商品共<span class="f-f00">2</span>件</span>
+                                <span class="title">商品金额：<span class="f-f00">￥1000</span>元</span>
+                                <span class="title">应付总金额：<span class="f-f00">￥1000.00</span>元</span>
+                            </div>
+                            <div class="pay-btn">
+                                <button>立即支付</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 尾部 -->
+    <footer>
+        <div class="certification">
+            <ul class="certification-list common-box clearfix">
+                <li class="clearfix">
+                    <img class="float-left" src="../images/certification (1).jpg">
+                    <div class="float-left">
+                        <h3>绝对正品</h3>
+                        <h4>假冒伪劣&nbsp;&nbsp;双倍赔偿</h4>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <img class="float-left" src="../images/certification (2).jpg">
+                    <div class="float-left">
+                        <h3>权威认证</h3>
+                        <h4>国标质检&nbsp;&nbsp;严控质量</h4>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <img class="float-left" src="../images/certification (3).jpg">
+                    <div class="float-left">
+                        <h3>退换无忧</h3>
+                        <h4>15天无理由退换货</h4>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <img class="float-left" src="../images/certification (4).jpg">
+                    <div class="float-left">
+                        <h3>买贵速赔</h3>
+                        <h4>买贵补差&nbsp;&nbsp;急速返还</h4>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <img class="float-left" src="../images/certification (5).jpg">
+                    <div class="float-left">
+                        <h3>先行赔付</h3>
+                        <h4>服务纠纷&nbsp;&nbsp;先行赔付</h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="link">
+            <div class="link-list common-box clearfix">
+                <ul>
+                    <li>购物指南</li>
+                    <li><a href="#">会员制度</a></li>
+                    <li><a href="#">优惠活动</a></li>
+                    <li><a href="#">交易条款</a></li>
+                    <li><a href="#">购物流程</a></li>
+                </ul>
+                <ul>
+                    <li>配送方式</li>
+                    <li><a href="#">物流运输</a></li>
+                    <li><a href="#">上门自提</a></li>
+                </ul>
+                <ul>
+                    <li>支付方式</li>
+                    <li><a href="#">在线支付</a></li>
+                    <li><a href="#">银行柜台汇款</a></li>
+                </ul>
+                <ul>
+                    <li>售后服务</li>
+                    <li><a href="#">价格保护</a></li>
+                    <li><a href="#">退换货申请</a></li>
+                    <li><a href="#">售后服务政策</a></li>
+                    <li><a href="#">售后服务流程</a></li>
+                </ul>
+                <ul>
+                    <li>新手帮助</li>
+                    <li><a href="#">常见问题</a></li>
+                    <li><a href="#">索取发票</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">投诉建议</a></li>
+                </ul>
+                <ul>
+                    <li>招商加盟</li>
+                    <li><a href="#">加入我们</a></li>
+                </ul>
+                <ul class="mr-0">
+                    <li>关注我们</li>
+                    <li><a href="#"><img src="../images/weibo.jpg">新浪微博</a></li>
+                    <li><a href="#"><img src="../images/wechat.jpg">微信公众号</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- 尾部end -->
+    <script src="../js/jquery-1.11.2.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/jquery.flexslider-min.js"></script>
+    <script src="../js/jqslider.js"></script>
+    <script src="../js/moment.js"></script>
+    <script src="../js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../js/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script src="../js/common.js"></script>
+    <script>
+        $(".form-control").datetimepicker({
+            language: 'zh-CN', //用自己设置的时间文字
+            //weekStart: 1,  //一周从那天开始，默认为0，从周日开始，可以设为1从周一开始
+            startDate: new Date(), //开始时间，可以写字符串，也可以直接写日期格式new Date(),在这之前的日期不能选择
+            //endDate:"2018-6-20",
+            //daysOfWeekDisabled: [0,4,6],  //一周的周几不能选
+            todayBtn: 1, //是否显示今天按钮，0为不显示
+            autoclose: 1, //选完时间后是否自动关闭
+            todayHighlight: 1, //高亮显示当天日期
+            startView: 2, //0从小时视图开始，选分;1	从天视图开始，选小时;2从月视图开始，选天;3从年视图开始，选月;4从十年视图开始，选年
+            minView: 2, //最精确时间，默认0；0从小时视图开始，选分；1从天视图开始，选小时；2从月视图开始，选天；3从年视图开始，选月；4从十年视图开始，选年
+            //maxView:4,  //默认值：4, ‘decade’
+            //keyboardNavigation:true,  //是否可以用键盘方向键选日期，默认true
+            forceParse: 0, //强制解析,你输入的可能不正规，但是它胡强制尽量解析成你规定的格式（format）
+            format: 'yyyy-mm-dd', // 格式,注意ii才是分，mm或MM都是月
+            minuteStep: 5, //选择分钟时的跨度，默认为5分钟
+            //pickerPosition:"top-right",  // ‘bottom-left’，’top-right’，’top-left’’bottom-right’
+            showMeridian: 0, //在日期和小时选择界面，出现上下午的选项,默认false
+            // showSecond: false,
+            // showMillisec: false,
+            //timeFormat: 'hh:mm:ss:l'
+        });
+    </script>
+    <script>
+        //点击全选按钮
+        $(".list-top>.input>input").click(function () {
+            //如果全选为未选中，则复选框未选中，否则选中
+            if ($(".list-top>.input>input").is(':checked') == false) {
+                $(".list>li>.input>input").prop("checked", false);
+            } else {
+                $(".list>li>.input>input").prop("checked", true);
+            };
+        });
+        //点击复选框
+        $(".list>li>.input>input").click(function () {
+            //复选框选中的个数为复选框的个数，则全选选中，否则全选未选中
+            if ($('.list>li>.input>input:checked').length == $(".list>li>.input>input").length) {
+                $(".list-top>.input>input").prop("checked", true);
+            } else {
+                $(".list-top>.input>input").prop("checked", false);
+            };
+        });
+    </script>
+</body>
+
+</html>
