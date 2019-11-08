@@ -13756,14 +13756,6 @@ a {
     transform: skew(0deg, -50deg);
 }
 
-
-
-
-
-
-
-
-
 .new2_pay-box>.yellow-box>.bottom>.list>li>.input>input {
     -webkit-appearance: none;
     margin-top: 60px;
@@ -13920,6 +13912,233 @@ a {
     outline: none;
 }
 
+.argument-top>.left {
+    text-align: left;
+    width: 700px;
+}
+
+.argument-top>.left>.title {
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.argument-top>.left>.state {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #8d8080;
+}
+
+.argument-top>.right>button {
+    width: 238px;
+    height: 38px;
+    border-radius: 10px;
+    line-height: 38px;
+    text-align: center;
+    background-color: #ffd119;
+    outline: none;
+    margin-top: 80px;
+}
+
+.argument-bottom>.left>button {
+    width: 238px;
+    height: 38px;
+    border-radius: 10px;
+    line-height: 38px;
+    text-align: center;
+    background-color: #5a4b5e;
+    outline: none;
+    margin-top: 80px;
+    color: #fff;
+}
+
+.argument-bottom>.right>button {
+    width: 238px;
+    height: 38px;
+    border-radius: 10px;
+    line-height: 38px;
+    text-align: center;
+    background-color: #ffd119;
+    outline: none;
+    margin-top: 80px;
+}
+
+.argument-list>li {
+    margin-top:34px;
+    padding: 20px 4px;
+    width: 360px;
+    height: 520px;
+    border-radius: 10px;
+    box-shadow: 0 3px 3px #ccc;
+    background-color: #fff;
+    text-align: left;
+}
+
+.argument-list>li>.top {
+    font-size: 16px;
+}
+
+.argument-list>li>.top>input {
+    -webkit-appearance: none;
+    margin-left: 10px;
+    margin-right: 16px;
+    vertical-align: text-top;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    border: 1px solid #c5c5c5;
+    background-color: #c5c5c5;
+    outline: none;
+}
+
+.argument-list>li>.top>input:checked {
+    position: relative;
+    background: #ffd119;
+    border: 1px solid #000;
+}
+
+.argument-list>li>.top>input:checked::before,
+.argument-list>li>.top>input:checked::after {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    color: #000;
+    border: 2px solid;
+    background-color: #000;
+}
+
+.argument-list>li>.top>input:checked::before {
+    width: 2px;
+    height: 1px;
+    left: 24%;
+    top: 49%;
+    transform: skew(0deg, 50deg);
+}
+
+.argument-list>li>.top>input:checked::after {
+    width: 6px;
+    height: 1px;
+    left: 46%;
+    top: 40%;
+    transform: skew(0deg, -50deg);
+}
+
+.argument-list>li>.img {
+    margin-top: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.argument-list>li>.img>img {
+    width: 100%;
+}
+
+.argument-list>li>.text {
+    padding: 0 20px;
+    font-size: 12px;
+}
+
+.argument-list>li>.text .price {
+    font-size: 18px;
+    color: #f00;
+}
+
+.argument-list>li>hr {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.user_evaluate-list>li {
+    padding: 20px 60px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.user_evaluate-list>li>.top>.img {
+    width: 75px;
+    border-radius: 75px;
+}
+
+.user_evaluate-list>li>.top>.name {
+    margin-left: 10px;
+}
+
+.user_evaluate-list>li>.top>span {
+    margin-top: 26px;
+}
+
+.user_evaluate-list>li>.top>.text {
+    margin-left: 120px;
+}
+
+.user_evaluate-list>li>.top .pj {
+    color: #ff962f;
+}
+
+.user_evaluate-list>li>.content {
+    margin-top: 40px;
+    text-indent: 2em;
+    background-color: #eff2f6;
+}
+
+.user_evaluate-list>li>.img-list2 {
+    margin-top: 20px;
+}
+
+.user_evaluate-list>li>.img-list2>li {
+    float: left;
+    margin-left: 28px;
+    width: 140px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.user_evaluate-list>li>.img-list2>li>img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.user_evaluate-list>li>.bottom {
+    margin-top: 40px;
+    margin-left: 28px;
+    color: #bebebe;
+}
+
+.user_evaluate-more {
+    text-align: center;
+    padding-top: 66px;
+}
+
+.evaluate-bigimg-box {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+
+.evaluate-bigimg-box>.bg-box {
+    position: relative;
+    padding: 20px 80px;
+    background-color: #2b1332;
+}
+
+.evaluate-bigimg-box>.bg-box>.zuo,
+.evaluate-bigimg-box>.bg-box>.you {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.evaluate-bigimg-box>.bg-box>.zuo {
+    left: 30px;
+}
+
+.evaluate-bigimg-box>.bg-box>.you {
+    right: 30px;
+}
 
 /* 低分辨率页面适配（小于1600px） */
 
