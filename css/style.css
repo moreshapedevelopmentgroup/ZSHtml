@@ -14356,6 +14356,10 @@ a {
     overflow: hidden;
 }
 
+.new2-index-box>.floor-box>.right>.list>li>a>.img>img {
+    width: 100%;
+}
+
 .new2-index-box>.floor-box>.right>.list>li>a>.img>.badge {
     padding: 2px 12px;
     border-radius: 100px;
@@ -14365,10 +14369,6 @@ a {
     top: 6px;
     right: 10px;
     font-size: 18px;
-}
-
-.new2-index-box>.floor-box>.right>.list>li>a>.img>img {
-    width: 260px;
 }
 
 .new2-index-box>.floor-box>.right>.list>li>a>.title {
@@ -14880,5 +14880,169 @@ a {
 
     .my-upload-up>.right {
         width: 500px;
+    }
+
+    .new2-index-box {
+        width: 1132px;
+        overflow: hidden;
+    }
+
+    .new2-index-box>.floor-box>.left {
+        width: 272px;
+        padding: 0 10px;
+    }
+
+    .new2-index-box>.floor-box>.left>.list>li {
+        margin-right: 40px;
+        width: 80px;
+    }
+    
+    .new2-index-box>.floor-box>.left>.list>li>a>img {
+        width: 50px;
+    }
+    
+    .new2-index-box>.floor-box>.left>.list>li>a>div {
+        font-size: 16px;
+    }
+
+    .new2-index-box>.floor-box>.left>.bottom-img {
+        width: 252px;
+    }
+    
+    .new2-index-box>.floor-box>.left>.bottom-img>img {
+        width: 252px;
+    }
+
+    .new2-index-box>.floor-box>.right {
+        width: 860px;
+    }
+
+    .new2-index-box>.floor-box>.right>.top {
+        padding-left: 20px;
+        padding-right: 10px;
+        font-size: 18px;
+    }
+    
+    .new2-index-box>.floor-box>.right>.top>.logo>img {
+        margin-left: 20px;
+        height: 30px;
+    }
+
+    .new2-index-box>.floor-box>.right>.list {
+        padding-left: 0;
+    }
+
+    .new2-index-box>.floor-box>.right>.list>li {
+        margin-right: 0;
+        margin-left: 8px;
+        width: 207px;
+        overflow: hidden;
+    }
+    
+    .new2-index-box>.floor-box>.right>.list>li>a>.img {
+        width: 187px;
+        height: 187px;
+    }
+
+    .new2-index-box>.floor-box>.right>.list>li>a>.title {
+        margin: 40px auto;
+        width: 180px;
+    }
+
+    .new2-index-box>.floor-box>.right>.bottom>.page {
+        margin: 18px 60px 0 60px;
+    }
+
+    .new2-index-box>.floor-box>.left>.bottom-img>.fcjk {
+        width: 252px;
+        height: 129px;
+        background: url(../images/add002/3f-bg-s.png);
+    }
+
+    .new2-index-box>.floor-box>.left>.bottom-img>.fcjk>h1 {
+        padding-top: 20px;
+    }
+    
+    .new2-index-box>.floor-box>.left>.bottom-img>.fcjk>p {
+        font-size: 12px;
+    }
+    
+    .new2-index-box>.floor-box>.left>.bottom-img>.fcjk>button {
+        width: 200px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 18px;
+    }
+
+    .new2-index-box>.floor-box>.left>.bottom-img>.bdjk {
+        width: 252px;
+        height: 129px;
+        background: url(../images/add002/4f-bg-s.png);
+    }
+    
+    .new2-index-box>.floor-box>.left>.bottom-img>.bdjk>h1 {
+        padding-top: 20px;
+    }
+    
+    .new2-index-box>.floor-box>.left>.bottom-img>.bdjk>p {
+        font-size: 10px;
+    }
+    
+    .new2-index-box>.floor-box>.left>.bottom-img>.bdjk>button {
+        width: 200px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 18px;
+    }
+
+    .new2-index-box>.floor-box>.left>.bottom-img>button {
+        width: 252px;
+    }
+
+    .new2-index-box>.floor-box>.right>.list2 {
+        padding-left: 0;
+    }
+    
+    .new2-index-box>.floor-box>.right>.list2>li {
+        width: 425px;
+        height: 372px;
+        margin-right: 10px;
+    }
+    
+    .new2-index-box>.floor-box>.right>.list2>li>a {
+        width: 425px;
+        height: 372px;
+    }
+
+    .new2-index-box>.floor2-box>.left {
+        width: 272px;
+        padding: 0 10px;
+    }
+    
+    .new2-index-box>.floor2-box>.left>.info1 {
+        font-size: 12px;
+    }
+    
+    .new2-index-box>.floor2-box>.left>.info2 {
+        font-size: 12px;
+    }
+
+    .new2-index-box>.floor2-box>.right {
+        width: 860px;
+    }
+
+    .new2-index-box>.floor2-box>.right>.top>input {
+        width: 100px;
+        margin-right: 20px;
+    }
+    
+    .new2-index-box>.floor2-box>.right>.top>select {
+        width: 100px;
+        margin-right: 20px;
+    }
+
+    .new2-index-box>.floor2-box>.right>.list {
+        width: 100%;
+        padding: 0 20px;
     }
 }
