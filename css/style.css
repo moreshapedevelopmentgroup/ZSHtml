@@ -15045,4 +15045,28 @@ a {
         width: 100%;
         padding: 0 20px;
     }
+
+    .new2-index-box>.floor2-box>.right>.list>li {
+        float: left;
+        font-size: 14px;
+        margin-right: 30px;
+    }
+
+    .new2-index-box>.floor-list>li {
+        width: 372px;
+    }
+
+    .new2-index-box>.floor-list>li>.img {
+        height: 210px;
+    }
+
+    .new2-index-box>.floor-list>li>.yzs {
+        width: 312px;
+        height: 280px;
+        margin: 36px auto;
+        border-radius: 10px;
+        background-color: #f3f3f3;
+        padding: 16px 30px;
+        text-align: left;
+    }
 }
